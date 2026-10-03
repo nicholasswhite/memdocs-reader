@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="A readable, independent record of changes to Microsoft Intune, Configuration Manager, and Windows Autopilot documentation. Explore changed text and the preserved history.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>MemDocs Reader — What changed in the docs?</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#updates">Skip to updates</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="MemDocs Reader home"><span class="monogram" aria-hidden="true">M<span>·</span></span><span>MemDocs <span class="brand-light">Reader</span></span></a>
+    <a class="header-link" href="https://github.com/nicholasswhite/memdocs-change-tracker" target="_blank" rel="noopener noreferrer">Public tracker <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+  </header>
+  <main class="content">
+    <div class="eyebrow">An independent community project</div>
+    <h1>What changed<br class="small-break"> in the docs?</h1>
+    <p class="intro">Follow changes to Microsoft’s device management documentation. Find the updates relevant to you, then see the text that changed.</p>
+    <p class="independence">Created by <a href="https://nicholasscottwhite.com/work/memdocs-change-tracker" target="_blank" rel="noopener noreferrer">Nicholas White<span class="sr-only"> (opens in a new tab)</span></a>. Unaffiliated with Microsoft.</p>
+
+    <div class="publication" id="publication" hidden>
+      <span class="publication-marker" aria-hidden="true"></span>
+      <p id="publication-text"></p>
+    </div>
+
+    <section class="filters" aria-label="Filter documentation updates" id="filters" hidden>
+      <div class="search-row">
+        <label class="field search-field" for="query"><span>Find an update</span><input type="search" id="query" placeholder="Search a topic, setting, or article…" autocomplete="off" maxlength="300"></label>
+      </div>
+      <div class="filter-grid">
+        <label class="field" for="product"><span>Product</span><select id="product"><option value="all">All products</option></select></label>
+        <label class="field" for="platform"><span>Platform</span><select id="platform"><option value="all">All platforms</option></select></label>
+        <label class="field" for="kind"><span>Change type</span><select id="kind"><option value="all">All change types</option></select></label>
+      </div>
+      <div class="filter-bottom">
+        <label class="minor-filter"><input id="minor" type="checkbox"><span>Include minor edits</span></label>
+        <button class="text-button" id="reset" type="button" hidden>Clear filters</button>
+      </div>
+    </section>
+
+    <section id="updates" class="updates" aria-labelledby="updates-heading" tabindex="-1">
+      <div class="results-line"><h2 id="updates-heading">Documentation updates</h2><p id="results" role="status" aria-live="polite" aria-atomic="true"></p></div>
+      <div class="notice" id="loading" role="status" hidden><span class="loading-dot" aria-hidden="true"></span><p>Loading the latest published changes…</p></div>
+      <div class="notice error-notice" id="error" hidden><h3>We couldn’t load the updates</h3><p>The reader may still be publishing, or your connection may have been interrupted.</p><button class="button" id="retry" type="button">Try again</button><a href="https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/" target="_blank" rel="noopener noreferrer">View changes on GitHub<span class="sr-only"> (opens in a new tab)</span></a></div>
+      <div class="notice" id="empty" hidden><h3>No matching updates</h3><p id="empty-description">Try a different keyword or clear your filters.</p><button class="button" id="empty-reset" type="button">Clear filters</button></div>
+      <div id="feed"></div>
+      <div class="pagination" id="pagination" hidden><p id="page-count"></p><button class="button" id="load-more" type="button">Show more updates</button></div>
+      <p class="note" id="feed-window" hidden></p>
+      <noscript><div class="notice"><h3>Read the changes on GitHub</h3><p>This reader uses JavaScript to filter and display the published updates. You can also <a href="https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/">browse the complete commit history</a>.</p></div></noscript>
+    </section>
+
+    <aside class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">A record of what we observed</h2>
+      <p>These dates show when the tracker observed a documentation change, which can be later than when Microsoft made it. A newly discovered article is new to this tracker; it doesn’t necessarily announce a new feature.</p>
+      <p>Cards show changed text excerpts or reviewed plain-language comparisons, not an assessment of product behavior or what you need to do. Open the exact change or the current Microsoft Learn article for the full context.</p>
+      <p class="schedule">Scheduled checks at 9 a.m. and 3 p.m. Eastern; publication can be delayed.</p>
+      <p id="baseline-note" hidden></p>
+      <nav class="about-links" aria-label="Project sources"><a id="history-link" href="https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/" target="_blank" rel="noopener noreferrer">Complete change history <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a id="archive-link" href="https://github.com/nicholasswhite/memdocs" target="_blank" rel="noopener noreferrer">Preserved archive <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></nav>
+    </aside>
+  </main>
+  <footer class="site-footer"><p>MemDocs Reader · An independent project by Nicholas White</p><p>Documentation belongs to its respective authors. <a href="https://github.com/nicholasswhite/memdocs-change-tracker/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Documentation license<span class="sr-only"> (opens in a new tab)</span></a></p></footer>
+</body>
+</html>
