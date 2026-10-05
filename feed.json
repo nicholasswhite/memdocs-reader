@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-03T22:50:06.077697Z",
-  "latest_commit_at": "2026-10-03T14:53:47Z",
+  "generated_at": "2026-10-05T19:38:04.801877Z",
+  "latest_commit_at": "2026-10-05T19:38:01Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,10 +11,43 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts are exact changed text, not a complete article comparison.",
-  "total_updates": 22,
-  "loaded_updates": 22,
+  "total_updates": 23,
+  "loaded_updates": 23,
   "truncated": false,
   "updates": [
+    {
+      "id": "6cbeae976397-1b095ce07f09",
+      "observed_at": "2026-10-05T19:38:01Z",
+      "observed_date": "2026-10-05",
+      "commit_sha": "6cbeae9763973f167d2c71bca00fe50b8083a863",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6cbeae9763973f167d2c71bca00fe50b8083a863",
+      "title": "What's new in Microsoft Intune",
+      "summary": "The captured documentation changed in “Week of September 28, 2026 (Service release 2609)”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "Windows",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "What's new",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "#### Remote Help support for GCCH environments\n\nRemote Help is now available in US Government Community Cloud High (GCCH) environments. This expansion extends the same secure, cloud-based remote assistance capabilities currently available in GCC to GCCH tenants.\n\nIT support staff can establish Remote Help sessions with users on enrolled devices to provide real-time troubleshooting. Remote Help uses role-based access controls through Intune, and both helpers and sharers must sign in with their organization's Microsoft Entra ID accounts. DoD environments aren't supported.\n\nFor more information, see [Planning for Remote Help](../remote-help/plan.md).\n\nApplies to:\n\n- Android\n- macOS\n- Windows",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/whats-new/index.md",
+          "title": "What's new in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/b6071a7a8e001f2046686d195765c5b6d41f2e9d/intune/whats-new/index.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6cbeae9763973f167d2c71bca00fe50b8083a863/intune/whats-new/index.md"
+        }
+      ],
+      "lines_added": 14,
+      "lines_removed": 0
+    },
     {
       "id": "512ccb5f38a8-713525107b22",
       "observed_at": "2026-10-03T14:53:47Z",
