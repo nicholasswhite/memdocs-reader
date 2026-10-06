@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-06T13:42:14.357457Z",
-  "latest_commit_at": "2026-10-06T13:42:09Z",
+  "generated_at": "2026-10-06T19:35:22.116761Z",
+  "latest_commit_at": "2026-10-06T19:35:19Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,10 +11,41 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts are exact changed text, not a complete article comparison.",
-  "total_updates": 26,
-  "loaded_updates": 26,
+  "total_updates": 27,
+  "loaded_updates": 27,
   "truncated": false,
   "updates": [
+    {
+      "id": "0b7cc0906f76-5e74c9f0e01e",
+      "observed_at": "2026-10-06T19:35:19Z",
+      "observed_date": "2026-10-06",
+      "commit_sha": "0b7cc0906f76dd19626ea5536b332f0286794dc7",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0b7cc0906f76dd19626ea5536b332f0286794dc7",
+      "title": "Enable the Mobile Threat Defense connector in Microsoft Intune",
+      "summary": "The captured documentation changed in “Mobile Threat Defense toggle options”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "- **Automatically launch Defender for Endpoint during setup on Android COBO and COPE devices**: This toggle is available only for the Defender for Endpoint connector. When you turn on this option, the Defender for Endpoint app automatically launches during the device setup process on Android Enterprise COBO and COPE devices, allowing Defender for Endpoint to complete its initial configuration without requiring the user to manually open it.\n\n  > [!NOTE]\n  >\n  > This toggle requires that the **Grant MTD role permissions** toggle is also turned on for Defender for Endpoint.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/mobile-threat-defense/enable-connector.md",
+          "title": "Enable the Mobile Threat Defense connector in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/mobile-threat-defense/enable-connector",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fe244440ebc1cd92ca8f1e4f876c0731878c98ab/intune/device-security/mobile-threat-defense/enable-connector.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0b7cc0906f76dd19626ea5536b332f0286794dc7/intune/device-security/mobile-threat-defense/enable-connector.md"
+        }
+      ],
+      "lines_added": 5,
+      "lines_removed": 0
+    },
     {
       "id": "fe244440ebc1-1d67a41545ac",
       "observed_at": "2026-10-06T13:42:09Z",
