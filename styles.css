@@ -115,6 +115,10 @@ h1 { font-size: clamp(33px, 5vw, 51px); line-height: 1.12; font-weight: 620; let
 .diff-heading { margin: 0; padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--before); font: 600 13px/1.5 ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
 .diff-before .diff-heading { color: var(--diff-removed-ink); }
 .diff-after .diff-heading { color: var(--diff-added-ink); }
+.diff-context-before .diff-heading { color: var(--muted); }
+.diff-location { margin: 16px 0 7px; font-size: 12px; font-weight: 650; color: var(--muted); }
+.diff-gap { margin: 0; padding: 7px 12px 7px 25px; background: var(--before); color: var(--muted); font-size: 12px; }
+.diff-insertion { border-top: 1px dashed var(--line); border-bottom: 1px dashed var(--line); font-style: italic; }
 .diff-lines { padding: 5px 0; }
 .diff-line { display: grid; grid-template-columns: 25px minmax(0, 1fr); min-height: 24px; }
 .diff-before .diff-line.is-changed { background: var(--diff-removed); }

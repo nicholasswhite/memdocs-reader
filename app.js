@@ -12,7 +12,7 @@
   };
   // Keep the comparison algorithm testable without a browser or feed request.
   if (typeof document === "undefined") {
-    if (typeof module !== "undefined") module.exports = { diffWords, comparisonLines };
+    if (typeof module !== "undefined") module.exports = { diffWords, comparisonLines, additionComparison };
     return;
   }
   const el = Object.fromEntries([
@@ -194,6 +194,39 @@
     return lines;
   }
 
+  function additionComparison(update) {
+    const comparison = update.addition_context;
+    if (update.summary_source === "editorial" || !comparison || !Array.isArray(comparison.hunks) || !comparison.hunks.length) return null;
+    const validRows = (rows, after) => Array.isArray(rows) && rows.length && rows.every(row =>
+      row && typeof row.text === "string" &&
+      (after ? ["context", "added", "gap"] : ["context", "insertion", "gap"]).includes(row.kind));
+    if (!comparison.hunks.every(hunk => hunk && validRows(hunk.before, false) && validRows(hunk.after, true))) return null;
+    return comparison;
+  }
+
+  function contextVersion(rows, after) {
+    const panel = node("section", "diff-version " + (after ? "diff-after" : "diff-context-before"));
+    panel.append(node("h4", "diff-heading", after ? "+ After" : "Before"));
+    const lines = node("div", "diff-lines");
+    rows.forEach(line => {
+      if (line.kind === "gap" || line.kind === "insertion") {
+        lines.append(node("p", "diff-gap" + (line.kind === "insertion" ? " diff-insertion" : ""),
+          line.kind === "insertion" ? "New text is inserted here" : line.text));
+        return;
+      }
+      const added = after && line.kind === "added";
+      const row = node("div", "diff-line" + (added ? " is-changed" : ""));
+      const sign = node("span", "diff-sign", added ? "+" : " ");
+      sign.setAttribute("aria-hidden", "true");
+      const text = node("pre", "diff-code");
+      text.append(added ? node("ins", "diff-word", line.text || "\u200b") : document.createTextNode(line.text || "\u200b"));
+      row.append(sign, text);
+      lines.append(row);
+    });
+    panel.append(lines);
+    return panel;
+  }
+
   function version(label, parts, after, emptyMessage) {
     const panel = node("section", "diff-version " + (after ? "diff-after" : "diff-before"));
     const heading = node("h4", "diff-heading", label);
@@ -265,8 +298,16 @@
     details.append(node("summary", "", update.kind === "media" ? "View the tracked media change" : "See before & after"));
     const body = node("div", "comparison-body");
     const editorial = update.summary_source === "editorial";
-    body.append(node("p", "comparison-caption", editorial ? "Plain-language comparison · editorial summary of the tracked edit" : "Changed text excerpts · compare the captured documentation"));
-    if (update.kind !== "media" || update.before || update.after) {
+    const contextual = additionComparison(update);
+    body.append(node("p", "comparison-caption", contextual ? "Added text with surrounding context · unchanged lines show where it fits" : editorial ? "Plain-language comparison · editorial summary of the tracked edit" : "Changed text excerpts · compare the captured documentation"));
+    if (contextual) {
+      contextual.hunks.forEach((hunk, index) => {
+        if (contextual.hunks.length > 1) body.append(node("p", "diff-location", "Location " + (index + 1) + " of " + contextual.hunks.length));
+        const compare = node("div", "compare diff");
+        compare.append(contextVersion(hunk.before, false), contextVersion(hunk.after, true));
+        body.append(compare);
+      });
+    } else if (update.kind !== "media" || update.before || update.after) {
       const compare = node("div", "compare diff");
       // This exporter notice is not part of the source change. The existing
       // shortened-excerpt note below carries it outside the colored rows.
@@ -280,7 +321,10 @@
       );
       body.append(compare);
     }
-    if (update.excerpts_truncated) body.append(node("p", "note", "These excerpts are shortened. Open the exact change for the complete diff and surrounding context."));
+    if (contextual) body.append(node("p", "note", contextual.truncated
+      ? "Some text or locations are omitted. Open the exact change for the complete diff."
+      : "Up to three unchanged lines surround each addition. Open the exact change for the full article context."));
+    else if (update.excerpts_truncated) body.append(node("p", "note", "These excerpts are shortened. Open the exact change for the complete diff and surrounding context."));
     else if (!editorial && update.kind !== "media") body.append(node("p", "note", "Excerpts can retain Markdown formatting. The exact change includes surrounding context."));
     if (update.kind === "new") body.append(node("p", "note", "New to this tracker; this observation does not establish when the article or feature first became available."));
     if (update.kind === "removed") body.append(node("p", "note", "Removal from the tracked snapshot does not by itself establish that a feature was retired."));

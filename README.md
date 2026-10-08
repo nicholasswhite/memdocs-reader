@@ -8,6 +8,8 @@ Browse updates by product, platform, topic, and change type. Expand an update fo
 
 Comparisons use a GitHub-style diff: red removals, green additions, and word-level highlights. The two views stack on narrow screens. Editorial comparisons remain labeled as summaries; the exact GitHub change provides the full source diff.
 
+For additions to an existing article with no removed body text, both views include up to three unchanged lines before and after the insertion. The Before view marks where the new text goes, and the After view highlights only the additions. Separate locations remain separate, and shortened comparisons link to the complete diff.
+
 ## Understanding the updates
 
 - Observation dates describe when the community tracker recorded changes, not Microsoft's private edit timestamps.
