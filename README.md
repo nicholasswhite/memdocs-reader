@@ -6,6 +6,8 @@ An independent, read-only community view of changes observed in public Microsoft
 
 Browse updates by product, platform, topic, and change type. Expand an update for a comparison and links to the exact public commit, tracked article versions, and Microsoft Learn.
 
+Comparisons use a GitHub-style diff: red removals, green additions, and word-level highlights. The two views stack on narrow screens. Editorial comparisons remain labeled as summaries; the exact GitHub change provides the full source diff.
+
 ## Understanding the updates
 
 - Observation dates describe when the community tracker recorded changes, not Microsoft's private edit timestamps.

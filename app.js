@@ -10,6 +10,11 @@
     media: "Media updated",
     minor: "Minor edit"
   };
+  // Keep the comparison algorithm testable without a browser or feed request.
+  if (typeof document === "undefined") {
+    if (typeof module !== "undefined") module.exports = { diffWords, comparisonLines };
+    return;
+  }
   const el = Object.fromEntries([
     "publication", "publication-text", "filters", "query", "product", "platform", "kind", "minor", "reset",
     "results", "loading", "error", "retry", "empty", "empty-description", "empty-reset", "feed", "pagination",
@@ -126,9 +131,92 @@
     return parts.join(" · ");
   }
 
-  function version(label, text, after) {
-    const panel = node("div", "version" + (after ? " after" : ""));
-    panel.append(node("h4", "", label), node("pre", "excerpt", text));
+  function diffWords(before, after) {
+    const tokenize = text => text.match(/\r\n|\r|\n|[^\S\r\n]+|[\p{L}\p{N}_]+|[^\s\p{L}\p{N}_]/gu) || [];
+    const left = tokenize(before).map(text => ({ text, changed: true }));
+    const right = tokenize(after).map(text => ({ text, changed: true }));
+    let start = 0;
+    let leftEnd = left.length;
+    let rightEnd = right.length;
+    while (start < leftEnd && start < rightEnd && left[start].text === right[start].text) {
+      left[start].changed = right[start].changed = false;
+      start++;
+    }
+    while (leftEnd > start && rightEnd > start && left[leftEnd - 1].text === right[rightEnd - 1].text) {
+      left[--leftEnd].changed = right[--rightEnd].changed = false;
+    }
+    const m = leftEnd - start;
+    const n = rightEnd - start;
+    // Excerpts are bounded by the exporter. Also cap the work here for a large
+    // feed entry: shared edges stay visible and the remaining span is changed.
+    if (m && n && m <= 600 && n <= 600) {
+      const lengths = Array.from({ length: m + 1 }, () => new Uint16Array(n + 1));
+      for (let i = m - 1; i >= 0; i--) {
+        for (let j = n - 1; j >= 0; j--) {
+          lengths[i][j] = left[start + i].text === right[start + j].text
+            ? lengths[i + 1][j + 1] + 1
+            : Math.max(lengths[i + 1][j], lengths[i][j + 1]);
+        }
+      }
+      let i = 0;
+      let j = 0;
+      while (i < m && j < n) {
+        if (left[start + i].text === right[start + j].text) {
+          left[start + i++].changed = right[start + j++].changed = false;
+        } else if (lengths[i + 1][j] >= lengths[i][j + 1]) i++;
+        else j++;
+      }
+    }
+    return { before: left, after: right };
+  }
+
+  function comparisonLines(parts) {
+    const lines = [[]];
+    let previousCR = false;
+    parts.forEach(part => {
+      for (const character of part.text) {
+        if (previousCR && character === "\n") {
+          previousCR = false;
+          continue;
+        }
+        previousCR = character === "\r";
+        const line = lines[lines.length - 1];
+        if (character === "\r" || character === "\n") {
+          if (part.changed) line.push({ text: "", changed: true });
+          lines.push([]);
+        } else {
+          const last = line[line.length - 1];
+          if (last && last.changed === part.changed) last.text += character;
+          else line.push({ text: character, changed: part.changed });
+        }
+      }
+    });
+    return lines;
+  }
+
+  function version(label, parts, after, emptyMessage) {
+    const panel = node("section", "diff-version " + (after ? "diff-after" : "diff-before"));
+    const heading = node("h4", "diff-heading", label);
+    panel.append(heading);
+    if (!parts.length) {
+      panel.append(node("p", "diff-empty", emptyMessage));
+      return panel;
+    }
+    const lines = node("div", "diff-lines");
+    comparisonLines(parts).forEach(parts => {
+      const changed = parts.some(part => part.changed);
+      const row = node("div", "diff-line" + (changed ? " is-changed" : ""));
+      const sign = node("span", "diff-sign", changed ? (after ? "+" : "−") : " ");
+      sign.setAttribute("aria-hidden", "true");
+      const text = node("pre", "diff-code");
+      parts.forEach(part => text.append(part.changed
+        ? node(after ? "ins" : "del", "diff-word", part.text)
+        : document.createTextNode(part.text)));
+      if (!parts.length) text.append(document.createTextNode("\u200b"));
+      row.append(sign, text);
+      lines.append(row);
+    });
+    panel.append(lines);
     return panel;
   }
 
@@ -179,10 +267,17 @@
     const editorial = update.summary_source === "editorial";
     body.append(node("p", "comparison-caption", editorial ? "Plain-language comparison · editorial summary of the tracked edit" : "Changed text excerpts · compare the captured documentation"));
     if (update.kind !== "media" || update.before || update.after) {
-      const compare = node("div", "compare");
-      const before = update.before || (update.kind === "new" ? "Not previously in the tracker." : "No removed text in this excerpt.");
-      const after = update.after || (update.kind === "removed" ? "No longer present in this tracked snapshot." : "No added text in this excerpt.");
-      compare.append(version("Previously tracked", before, false), version("Now tracked", after, true));
+      const compare = node("div", "compare diff");
+      // This exporter notice is not part of the source change. The existing
+      // shortened-excerpt note below carries it outside the colored rows.
+      const excerpt = text => update.excerpts_truncated
+        ? text.replace(/\s*\[Excerpt shortened — open the full change for the rest\.\]$/, "")
+        : text;
+      const words = diffWords(excerpt(update.before), excerpt(update.after));
+      compare.append(
+        version("− Before", words.before, false, update.kind === "new" ? "Not previously in the tracker." : "No removed text in this excerpt."),
+        version("+ After", words.after, true, update.kind === "removed" ? "No longer present in this tracked snapshot." : "No added text in this excerpt.")
+      );
       body.append(compare);
     }
     if (update.excerpts_truncated) body.append(node("p", "note", "These excerpts are shortened. Open the exact change for the complete diff and surrounding context."));
