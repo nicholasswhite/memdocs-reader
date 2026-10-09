@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-08T12:14:24.491889Z",
+  "generated_at": "2026-10-09T12:38:27.484273Z",
   "latest_commit_at": "2026-10-07T19:36:39Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
@@ -14,6 +14,7 @@
   "total_updates": 28,
   "loaded_updates": 28,
   "truncated": false,
+  "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
     {
       "id": "e053e0d34b5c-29ce0e4574e2",
@@ -254,7 +255,17 @@
           }
         ],
         "truncated": false
-      }
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-06-09T00:00:00Z",
+          "after": "2026-09-30T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "fe244440ebc1-1adbea8d5318",
@@ -580,7 +591,24 @@
           }
         ],
         "truncated": true
-      }
+      },
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "View the default setting configuration of the various Microsoft Intune security baselines for Windows.",
+          "after": "Review the default settings in each Microsoft Intune Windows security baseline version and compare recommended configurations for managed devices.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-06-23T00:00:00Z",
+          "after": "2026-09-30T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "fe244440ebc1-1b095ce07f09",
@@ -860,7 +888,17 @@
           }
         ],
         "truncated": false
-      }
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-29T00:00:00Z",
+          "after": "2026-10-05T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "6cbeae976397-1b095ce07f09",
@@ -1075,7 +1113,17 @@
         }
       ],
       "lines_added": 4,
-      "lines_removed": 2
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-23T00:00:00Z",
+          "after": "2026-10-02T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "512ccb5f38a8-1b5572cff98e",
@@ -1106,7 +1154,17 @@
         }
       ],
       "lines_added": 4,
-      "lines_removed": 2
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-12-04T00:00:00Z",
+          "after": "2026-10-02T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "512ccb5f38a8-4ee26c40ae56",
@@ -1168,7 +1226,17 @@
         }
       ],
       "lines_added": 5,
-      "lines_removed": 4
+      "lines_removed": 4,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-10-20T00:00:00Z",
+          "after": "2026-06-23T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "89fee1b3c383-fd53d103e6f9",
@@ -1515,7 +1583,17 @@
           }
         ],
         "truncated": true
-      }
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-24T00:00:00Z",
+          "after": "2026-09-30T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "adfdc3c96d8c-fd53d103e6f9",
@@ -1737,7 +1815,17 @@
           }
         ],
         "truncated": false
-      }
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-22T00:00:00Z",
+          "after": "2026-09-29T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     },
     {
       "id": "adfdc3c96d8c-61543ef21f04",
@@ -2041,7 +2129,17 @@
         }
       ],
       "lines_added": 1,
-      "lines_removed": 13
+      "lines_removed": 13,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-24T00:00:00Z",
+          "after": "2026-09-29T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
     }
   ]
 }

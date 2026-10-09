@@ -15,8 +15,10 @@ For additions to an existing article with no removed body text, both views inclu
 - Observation dates describe when the community tracker recorded changes, not Microsoft's private edit timestamps.
 - Newly discovered means new to this tracker. It does not establish a feature's release date.
 - Automatically generated descriptions identify the article or changed sections. Comparisons contain bounded excerpts; the linked commit retains the complete diff. Some entries have individually reviewed plain-language summaries.
+- Article changes are shown by default. Enable **Include metadata changes** for document ownership, dates, descriptions, and classification updates; each field includes its captured before and after values. **Include minor edits** separately reveals link-only and formatting changes.
+- When metadata tracking expands, first captures are labeled. A newly recorded value may predate its observation; it is not presented as proof that Microsoft changed it that day. The reader reserves space for article updates even during large metadata captures. The complete record remains in Git.
 - The initial September 29 capture is a baseline; it includes publishing conversions and is not presented as thousands of new edits. Later observations are listed separately.
-- Checks are scheduled for 9 a.m. and 3 p.m. Eastern. Scheduling and publication can be delayed. Changes made and reversed between checks cannot be recovered.
+- Checks are scheduled for 9 a.m., 3 p.m., and 9 p.m. Eastern. Scheduling and publication can be delayed. Changes made and reversed between checks cannot be recovered.
 
 This repository contains only the generated public website and its public change feed. It accepts no contributions. Visitors may read, clone, or fork it, but only the owner and authorized publisher can change this repository.
 

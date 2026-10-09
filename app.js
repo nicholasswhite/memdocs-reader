@@ -8,15 +8,16 @@
     moved: "Article moved",
     removed: "Article removed",
     media: "Media updated",
-    minor: "Minor edit"
+    minor: "Minor edit",
+    metadata: "Metadata updated"
   };
   // Keep the comparison algorithm testable without a browser or feed request.
   if (typeof document === "undefined") {
-    if (typeof module !== "undefined") module.exports = { diffWords, comparisonLines, additionComparison };
+    if (typeof module !== "undefined") module.exports = { diffWords, comparisonLines, additionComparison, normalizeMetadataChanges, visibleChange };
     return;
   }
   const el = Object.fromEntries([
-    "publication", "publication-text", "filters", "query", "product", "platform", "kind", "minor", "reset",
+    "publication", "publication-text", "filters", "query", "product", "platform", "kind", "minor", "metadata", "reset",
     "results", "loading", "error", "retry", "empty", "empty-description", "empty-reset", "feed", "pagination",
     "page-count", "load-more", "feed-window", "baseline-note", "history-link", "archive-link"
   ].map(id => [id, document.getElementById(id)]));
@@ -65,6 +66,7 @@
   function normalizeUpdate(update, index) {
     if (!update || typeof update !== "object") return null;
     const articles = Array.isArray(update.articles) ? update.articles.filter(article => article && typeof article === "object") : [];
+    const metadataChanges = normalizeMetadataChanges(update.metadata_changes);
     return {
       ...update,
       id: asText(update.id) || "update-" + index,
@@ -76,14 +78,17 @@
       platforms: Array.isArray(update.platforms) ? [...new Set(update.platforms.filter(value => typeof value === "string" && value))] : [],
       product: asText(update.product),
       area: asText(update.area),
-      minor: update.minor === true || update.kind === "minor",
+      minor: update.minor === true || update.kind === "minor" || update.kind === "metadata",
+      metadata_changes: metadataChanges,
+      metadata_baseline: update.metadata_baseline === true,
       observed_at: asText(update.observed_at),
       observed_date: asText(update.observed_date),
       summary_source: update.summary_source === "editorial" ? "editorial" : "automatic",
       articles,
       search: [update.title, update.summary, update.before, update.after, update.product, update.area,
         ...(Array.isArray(update.platforms) ? update.platforms : []),
-        ...articles.flatMap(article => [article.title, article.path, article.previous_path])
+        ...articles.flatMap(article => [article.title, article.path, article.previous_path]),
+        ...metadataChanges.flatMap(change => [change.field, change.label, ...[change.before, change.after].flat().filter(value => typeof value === "string")])
       ].map(asText).join(" ").toLocaleLowerCase()
     };
   }
@@ -109,7 +114,7 @@
     el["feed-window"].hidden = feed.truncated !== true;
     if (feed.truncated === true) {
       const total = Number.isSafeInteger(feed.total_updates) && feed.total_updates >= state.updates.length ? " of " + number(feed.total_updates) : "";
-      el["feed-window"].append(document.createTextNode("This reader contains the latest " + number(state.updates.length) + total + " recorded updates. Older changes remain in the "));
+      el["feed-window"].append(document.createTextNode("This reader contains " + number(state.updates.length) + total + " recorded updates, with space reserved for article changes alongside recent metadata updates. Other changes remain in the "));
       const link = sourceLink("complete history on GitHub", history || el["history-link"].href);
       if (link) el["feed-window"].append(link);
       else el["feed-window"].append(document.createTextNode("complete history on GitHub"));
@@ -129,6 +134,45 @@
     const parts = [update.product, update.area].filter(Boolean);
     if (update.platforms.length) parts.push(update.platforms.join(", "));
     return parts.join(" · ");
+  }
+
+  function normalizeMetadataChanges(changes) {
+    if (!Array.isArray(changes)) return [];
+    const validValue = value => value === null || typeof value === "string" ||
+      Array.isArray(value) && value.every(item => typeof item === "string");
+    return changes.filter(change => change && typeof change.field === "string" &&
+      validValue(change.before) && validValue(change.after)).map(change => ({
+        field: change.field,
+        label: typeof change.label === "string" ? change.label : change.field,
+        before: change.before,
+        after: change.after,
+        first_captured: change.first_captured === true
+      }));
+  }
+
+  function visibleChange(update, includeMinor = false, includeMetadata = false) {
+    return update.kind === "metadata" ? includeMetadata : includeMinor || !update.minor;
+  }
+
+  function renderMetadata(update, container) {
+    if (!update.metadata_changes.length) return;
+    container.append(node("h4", "sources-heading", "Document metadata"));
+    container.append(node("p", "comparison-caption", update.metadata_baseline
+      ? "Tracking expanded in this capture. Newly recorded values may be older; this is not evidence that Microsoft changed them on the observation date."
+      : "Published document attributes, shown separately from article text."));
+    update.metadata_changes.forEach(change => {
+      const field = node("section", "metadata-field");
+      field.append(node("h5", "metadata-label", change.label === change.field ? change.field : change.label + " (" + change.field + ")"));
+      const values = node("div", "compare metadata-values");
+      [["Before", change.before], [change.first_captured ? "First captured" : "After", change.after]].forEach(([label, value]) => {
+        const panel = node("section", "metadata-value");
+        panel.append(node("h6", "diff-heading", label));
+        panel.append(node("pre", "metadata-code", value === null ? "Not captured in this snapshot." : Array.isArray(value) ? JSON.stringify(value, null, 2) : value || "(empty value)"));
+        values.append(panel);
+      });
+      field.append(values);
+      container.append(field);
+    });
   }
 
   function diffWords(before, after) {
@@ -281,7 +325,7 @@
     const titleId = "update-title-" + index;
     article.setAttribute("aria-labelledby", titleId);
     const meta = node("div", "meta");
-    meta.append(node("span", "tag" + (update.kind === "new" ? " tag-new" : ""), KINDS[update.kind]));
+    meta.append(node("span", "tag" + (update.kind === "new" ? " tag-new" : ""), update.kind === "metadata" && update.metadata_baseline ? "Metadata first captured" : KINDS[update.kind]));
     if (update.articles.length) {
       const noun = update.kind === "media" ? (update.articles.length === 1 ? " media file" : " media files") : (update.articles.length === 1 ? " article" : " articles");
       meta.append(node("span", "", number(update.articles.length) + noun));
@@ -295,11 +339,11 @@
 
     const details = node("details", "comparison");
     details.open = state.open.has(update.id);
-    details.append(node("summary", "", update.kind === "media" ? "View the tracked media change" : "See before & after"));
+    details.append(node("summary", "", update.kind === "media" ? "View the tracked media change" : update.kind === "metadata" ? "See metadata details" : "See before & after"));
     const body = node("div", "comparison-body");
     const editorial = update.summary_source === "editorial";
     const contextual = additionComparison(update);
-    body.append(node("p", "comparison-caption", contextual ? "Added text with surrounding context · unchanged lines show where it fits" : editorial ? "Plain-language comparison · editorial summary of the tracked edit" : "Changed text excerpts · compare the captured documentation"));
+    if (update.kind !== "metadata") body.append(node("p", "comparison-caption", contextual ? "Added text with surrounding context · unchanged lines show where it fits" : editorial ? "Plain-language comparison · editorial summary of the tracked edit" : "Changed text excerpts · compare the captured documentation"));
     if (contextual) {
       contextual.hunks.forEach((hunk, index) => {
         if (contextual.hunks.length > 1) body.append(node("p", "diff-location", "Location " + (index + 1) + " of " + contextual.hunks.length));
@@ -307,7 +351,7 @@
         compare.append(contextVersion(hunk.before, false), contextVersion(hunk.after, true));
         body.append(compare);
       });
-    } else if (update.kind !== "media" || update.before || update.after) {
+    } else if (update.kind !== "metadata" && (update.kind !== "media" || update.before || update.after)) {
       const compare = node("div", "compare diff");
       // This exporter notice is not part of the source change. The existing
       // shortened-excerpt note below carries it outside the colored rows.
@@ -325,9 +369,10 @@
       ? "Some text or locations are omitted. Open the exact change for the complete diff."
       : "Up to three unchanged lines surround each addition. Open the exact change for the full article context."));
     else if (update.excerpts_truncated) body.append(node("p", "note", "These excerpts are shortened. Open the exact change for the complete diff and surrounding context."));
-    else if (!editorial && update.kind !== "media") body.append(node("p", "note", "Excerpts can retain Markdown formatting. The exact change includes surrounding context."));
+    else if (!editorial && !["media", "metadata"].includes(update.kind)) body.append(node("p", "note", "Excerpts can retain Markdown formatting. The exact change includes surrounding context."));
     if (update.kind === "new") body.append(node("p", "note", "New to this tracker; this observation does not establish when the article or feature first became available."));
     if (update.kind === "removed") body.append(node("p", "note", "Removal from the tracked snapshot does not by itself establish that a feature was retired."));
+    renderMetadata(update, body);
     renderSources(update, body);
     details.append(body);
     details.addEventListener("toggle", () => details.open ? state.open.add(update.id) : state.open.delete(update.id));
@@ -344,13 +389,13 @@
   }
 
   function hasFilters() {
-    return Boolean(el.query.value.trim() || el.product.value !== "all" || el.platform.value !== "all" || el.kind.value !== "all" || el.minor.checked);
+    return Boolean(el.query.value.trim() || el.product.value !== "all" || el.platform.value !== "all" || el.kind.value !== "all" || el.minor.checked || el.metadata.checked);
   }
 
   function filterUpdates() {
     const terms = el.query.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     state.filtered = state.updates.filter(update =>
-      (el.minor.checked || !update.minor) &&
+      visibleChange(update, el.minor.checked, el.metadata.checked) &&
       (el.product.value === "all" || update.product === el.product.value) &&
       (el.platform.value === "all" || update.platforms.includes(el.platform.value)) &&
       (el.kind.value === "all" || update.kind === el.kind.value) &&
@@ -368,7 +413,7 @@
     el.reset.hidden = !hasFilters();
     el.empty.hidden = count !== 0;
     el["empty-reset"].hidden = !hasFilters();
-    el["empty-description"].textContent = state.updates.length ? (hasFilters() ? "Try a different keyword or clear your filters." : "There are no substantive updates in this published feed. Try including minor edits.") : "There are no tracked updates in the published feed yet. You can still explore the preserved archive below.";
+    el["empty-description"].textContent = state.updates.length ? (hasFilters() ? "Try a different keyword or clear your filters." : "There are no article updates in this published feed. Try including minor edits or metadata changes.") : "There are no tracked updates in the published feed yet. You can still explore the preserved archive below.";
     const fragment = document.createDocumentFragment();
     let lastDay = null;
     let group;
@@ -396,6 +441,7 @@
     el.query.value = "";
     el.product.value = el.platform.value = el.kind.value = "all";
     el.minor.checked = false;
+    el.metadata.checked = false;
     render();
     el.query.focus();
   }
@@ -431,12 +477,14 @@
   }
 
   el.query.addEventListener("input", () => render());
-  [el.product, el.platform, el.minor].forEach(control => control.addEventListener("change", () => {
+  [el.product, el.platform, el.minor, el.metadata].forEach(control => control.addEventListener("change", () => {
     if (control === el.minor && !el.minor.checked && el.kind.value === "minor") el.kind.value = "all";
+    if (control === el.metadata && !el.metadata.checked && el.kind.value === "metadata") el.kind.value = "all";
     render();
   }));
   el.kind.addEventListener("change", () => {
     if (el.kind.value === "minor") el.minor.checked = true;
+    if (el.kind.value === "metadata") el.metadata.checked = true;
     render();
   });
   el.reset.addEventListener("click", reset);

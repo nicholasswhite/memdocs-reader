@@ -108,6 +108,10 @@ h1 { font-size: clamp(33px, 5vw, 51px); line-height: 1.12; font-weight: 620; let
 .comparison summary:hover { text-decoration: underline; text-underline-offset: 3px; }
 .comparison-body { padding-bottom: 22px; }
 .comparison-caption { font-size: 12px; color: var(--muted); margin-bottom: 11px; }
+.metadata-field { margin: 14px 0; }
+.metadata-label { margin: 0 0 8px; font-size: 13px; overflow-wrap: anywhere; }
+.metadata-value { min-width: 0; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.metadata-code { margin: 0; padding: 12px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.6; }
 .compare { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .diff { overflow: hidden; border: 1px solid var(--line); border-radius: 6px; }
 .diff-version { min-width: 0; background: var(--panel); }
