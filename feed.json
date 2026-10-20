@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T13:44:12.240514Z",
-  "latest_commit_at": "2026-10-09T13:43:53Z",
+  "generated_at": "2026-10-20T17:46:13.010231Z",
+  "latest_commit_at": "2026-10-20T17:45:59Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,2013 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3594,
+  "total_updates": 3614,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "6d967d2b0c7a-326cc67a8a04",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Add Managed Google Play Apps to Android Enterprise Devices With Intune",
+      "summary": "The captured documentation changed in “Before you start”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "App Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> Android Management API policies support a maximum of 3,000 targeted apps per device. This limit applies to Android Enterprise corporate-owned fully managed, dedicated, corporate-owned work profile, and personally owned work profile devices that use Android Management API. The limit includes apps and web links that Intune targets to the device. Apps installed on the device but not included in the policy don't count toward the limit. For more information, see Google's [Android Management API policy resource](https://developers.google.com/android/management/reference/rest/v1/enterprises.policies).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/app-management/deployment/add-managed-google-play.md",
+          "title": "Add Managed Google Play Apps to Android Enterprise Devices With Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-managed-google-play",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/app-management/deployment/add-managed-google-play.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/app-management/deployment/add-managed-google-play.md"
+        }
+      ],
+      "lines_added": 4,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              },
+              {
+                "kind": "context",
+                "text": "> When you work with Microsoft Intune, we recommend that you use either the Microsoft Edge or Google Chrome browser."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Managed Google Play app types"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              },
+              {
+                "kind": "context",
+                "text": "> When you work with Microsoft Intune, we recommend that you use either the Microsoft Edge or Google Chrome browser."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Android Management API policies support a maximum of 3,000 targeted apps per device. This limit applies to Android Enterprise corporate-owned fully managed, dedicated, corporate-owned work profile, and personally owned work profile devices that use Android Management API. The limit includes apps and web links that Intune targets to the device. Apps installed on the device but not included in the policy don't count toward the limit. For more information, see Google's [Android Management API pol"
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Managed Google Play app types"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": true
+      }
+    },
+    {
+      "id": "6d967d2b0c7a-b99e692eca13",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Removed and deprecated features for Configuration Manager",
+      "summary": "The captured documentation changed in “Deprecated features; Unsupported and removed features”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "| The **MDT Integration with CM and Standalone** is no longer supported with Configuration Manager. Customers should remove MDT TS steps, followed by removing MDT integration, to avoid TS corruption and modification failures. More information on the MDT retirement [here](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/mdt/mdt-retirement). | Dec 2024 | The first release after Oct 10, 2025 |\n| **Office 365 Client Management dashboard add-in support statement**. For more information, see [Office 365 Client Management dashboard](../../../../sum/deploy-use/office-365-dashboard.md). | April 2024 | The first release after April 1, 2025 |\n| The site system roles for on-premises MDM and macOS clients: **enrollment proxy point and enrollment point**. | January 2022 | Mar 31, 2024 |\n| The **Microsoft Store for Business and Education**. For more information, see [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](../../../../apps/deploy-use/manage-apps-from-the-windows-store-for-business.md). | November 2021 | The first release after March 1, 2023 |\n| **Asset intelligence**. For more information, see [Asset intelligence deprecation](../../../clients/manage/asset-intelligence/deprecation.md). | November 2021 | The first release after November 1, 2022 |\n| **On-premises MDM**. For more information, see [On-premises MDM in Configuration Manager](../../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md). | November 2021 | The first release after November 1, 2022 |\n| Azure Active Directory (Azure AD) Graph API and Azure AD Authentication Library (ADAL), which is used by Configuration Manager for some cloud-attached scenarios. If you use cloud-attached features such as co-management, tenant attach, or Microso\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "| The **MDT Integration with CM and Standalone** is no longer supported with Configuration Manager. Customers should remove MDT TS steps, followed by removing MDT integration, to avoid TS corruption and modification failures. More information on the MDT retirement [here](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/mdt/mdt-retirement). | Dec 2024 | The first release after Oct 10, 2025 |\n| **Office 365 Client Management dashboard add-in support statement**. For more information, see [Office 365 Client Management dashboard](../../../../sum/deploy-use/office-365-dashboard.md). | April 2024 | The first release after April 1, 2025 |\n| The site system roles for on-premises MDM and macOS clients: **enrollment proxy point and enrollment point**. | January 2022 | Mar 31, 2024 |\n| The **Microsoft Store for Business and Education**. For more information, see [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](../../../../apps/deploy-use/manage-apps-from-the-windows-store-for-business.md). | November 2021 | The first release after March 1, 2023 |\n| **Asset intelligence**. For more information, see [Asset intelligence deprecation](../../../clients/manage/asset-intelligence/deprecation.md). | November 2021 | The first release after November 1, 2022 |\n| **On-premises MDM**. For more information, see [On-premises MDM in Configuration Manager](../../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md). | November 2021 | The first release after November 1, 2022 |\n| **Exchange Server connector**. For more information, see [Supported clients and devices: Exchange Server connector](../../configs/supported-operating-systems-for-clients-and-devices.md#bkmk_ExSrvConOS). | November 2021 | The first release after\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md",
+          "title": "Removed and deprecated features for Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/configmgr/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures.md"
+        }
+      ],
+      "lines_added": 14,
+      "lines_removed": 13,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/aa9d0281-4c35-44bb-8c75-a0920bde2014",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-12-04T00:00:00Z",
+          "after": "2026-10-06T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/131ba09e-4280-4ae7-8622-1f9f1c0daad1",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/c7449412-70b0-48ea-831f-3b132eafb97e",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-44653ea23525",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "What's new in version 2609 of Configuration Manager current branch",
+      "summary": "The captured documentation changed in “Cloud management gateway”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> Before updating to version 2609, check the vCPU quotas and availability of the new VM sizes in each Azure subscription and region where you deploy a CMG. The VM scale set migration uses a new VM family. Ensure that both the **standard Dadv6 Family vCPUs** quota and the **Total Regional vCPUs** quota have enough available quota for the new instances, with additional headroom for temporary instances during upgrade or maintenance. Quota is the number of vCPUs your subscription is allowed to use. Azure must also have enough resources available in the region to deploy the new VM instances.\n\n> [!IMPORTANT]\n>\n#### Check CMG capacity and vCPU quotas before upgrading\n\nTo identify the subscription, region, current VM size, and instance count for each CMG, run the following read-only SQL query against the site database at your top-level site:\n\n```sql\nSELECT Name, Region, SubscriptionId, VmSize, NumberOfInstances\nFROM Azure_Service;\n```\n\nUse the VM size mapping in the preceding table to calculate the required vCPUs for each CMG: multiply the **New vCPU** value by **NumberOfInstances**. Add the requirements for all CMGs in the same subscription and region, account for other workloads that consume these quotas, and allow additional headroom for temporary instances during CMG upgrade or maintenance.\n\nIn the Azure portal, check the **standard Dadv6 Family vCPUs** and **Total Regional vCPUs** quotas for each subscription and region identified by the query. Request any necessary increases before upgrading. For instructions, see [Increase regional vCPU quotas - Azure Quotas | Microsoft Learn](https://learn.microsoft.com/en-us/azure/quotas/regional-quota-requests).\n\nYou can also run the following Azure CLI commands from PowerShell to check quota usage and limits. Sign in to Azure CLI fir\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/plan-design/changes/whats-new-version-2609.md",
+          "title": "What's new in version 2609 of Configuration Manager current branch",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/changes/whats-new-version-2609",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/plan-design/changes/whats-new-version-2609.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/configmgr/core/plan-design/changes/whats-new-version-2609.md"
+        }
+      ],
+      "lines_added": 41,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> [!IMPORTANT]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> Upgrade the Configuration Manager console after updating to version 2609. The updated console is required to display the new CMG VM sizes correctly."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "| CMG tier | Previous VM size | Previous vCPU | Previous memory | New VM size | New vCPU | New memory |"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> [!IMPORTANT]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Before updating to version 2609, check the vCPU quotas and availability of the new VM sizes in each Azure subscription and region where you deploy a CMG. The VM scale set migration uses a new VM family. Ensure that both the **standard Dadv6 Family vCPUs** quota and the **Total Regional vCPUs** quota have enough available quota for the new instances, with additional headroom for temporary instances during upgrade or maintenance. Quota is the number of vCPUs your subscription is allowed to use. "
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!IMPORTANT]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "context",
+                "text": "> Upgrade the Configuration Manager console after updating to version 2609. The updated console is required to display the new CMG VM sizes correctly."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "| CMG tier | Previous VM size | Previous vCPU | Previous memory | New VM size | New vCPU | New memory |"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Retirement dates are subject to change. For the current retirement date and other VM series retirement details, see [Retired Azure VM size series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retired-sizes-list). VM pricing varies by region. For current pricing, see [Azure Virtual Machines pricing](https://azure.microsoft.com/pricing/details/virtual-machines/windows/)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Asset Intelligence"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Asset Intelligence reports removed"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Retirement dates are subject to change. For the current retirement date and other VM series retirement details, see [Retired Azure VM size series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retired-sizes-list). VM pricing varies by region. For current pricing, see [Azure Virtual Machines pricing](https://azure.microsoft.com/pricing/details/virtual-machines/windows/)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "#### Check CMG capacity and vCPU quotas before upgrading"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "To identify the subscription, region, current VM size, and instance count for each CMG, run the following read-only SQL query against the site database at your top-level site:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "```sql"
+              },
+              {
+                "kind": "added",
+                "text": "SELECT Name, Region, SubscriptionId, VmSize, NumberOfInstances"
+              },
+              {
+                "kind": "added",
+                "text": "FROM Azure_Service;"
+              },
+              {
+                "kind": "added",
+                "text": "```"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Use the VM size mapping in the preceding table to calculate the required vCPUs for each CMG: multiply the **New vCPU** value by **NumberOfInstances**. Add the requirements for all CMGs in the same subscription and region, account for other workloads that consume these quotas, and allow additional headroom for temporary instances during CMG upgrade or maintenance."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "In the Azure portal, check the **standard Dadv6 Family vCPUs** and **Total Regional vCPUs** quotas for each subscription and region identified by the query. Request any necessary increases before upgrading. For instructions, see [Increase regional vCPU quotas - Azure Quotas | Microsoft Learn](https://learn.microsoft.com/en-us/azure/quotas/regional-quota-requests)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "You can also run the following Azure CLI commands from PowerShell to check quota usage and limits. Sign in to Azure CLI first, and replace the placeholders with your subscription ID and Azure region name:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "```powershell"
+              },
+              {
+                "kind": "added",
+                "text": "$subscriptionId = '<subscription ID>'"
+              },
+              {
+                "kind": "added",
+                "text": "$region = '<region name>'"
+              },
+              {
+                "kind": "added",
+                "text": "$usage = az vm list-usage --location $region --query \"[?name.value=='standardDadv6Family']\" --output json --subscription $subscriptionId"
+              },
+              {
+                "kind": "added",
+                "text": "$usage"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "az vm list-usage --location $region --query \"[?name.value=='cores']\" --output json --subscription $subscriptionId"
+              },
+              {
+                "kind": "added",
+                "text": "```"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "If there isn't enough available quota, the CMG migration can fail with a `QuotaExceeded` error in **CloudMgr.log**. For example, the log might include the following details:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "```json"
+              },
+              {
+                "kind": "added",
+                "text": "{"
+              },
+              {
+                "kind": "added",
+                "text": "  \"details\": ["
+              },
+              {
+                "kind": "added",
+                "text": "    {"
+              },
+              {
+                "kind": "added",
+                "text": "      \"code\": \"QuotaExceeded\","
+              },
+              {
+                "kind": "added",
+                "text": "      \"message\": \"Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: <Your location>, Current Limit: 10, Current Usage: 8, Additional Required: 8, (Minimum) New Limit Required: 16.\""
+              },
+              {
+                "kind": "added",
+                "text": "    }"
+              },
+              {
+                "kind": "added",
+                "text": "  ]"
+              },
+              {
+                "kind": "added",
+                "text": "}"
+              },
+              {
+                "kind": "added",
+                "text": "```"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Asset Intelligence"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Asset Intelligence reports removed"
+              }
+            ]
+          }
+        ],
+        "truncated": true
+      }
+    },
+    {
+      "id": "6d967d2b0c7a-beef5100b0a0",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Support for the Windows ADK in Configuration Manager",
+      "summary": "The captured documentation changed in “Windows ADK versions; Support notes”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "> - **ADK 10.1.26100.X (May 2024, Dec 2024)** (10.1.26100.X) or newer is required to deploy Windows ARM64 operating systems on Configuration Manager 2403 or newer.\nThe following table lists the versions of the Windows ADK that you can use with different versions of Configuration Manager.\n| **ADK 10.1.26100.2454 (Updated Dec 2024)**  (10.1.26100.X) | ✅ | ✅ | ✅ |\n| **ADK 10.1.26100.1 (May 2024)**  (10.1.26100.1) | ✅ | ✅ | ✅ |\n| **ADK 10.1.25398.1 (updated September 2023)**  (10.1.25398.1) | ❌ | ❌ | ❌ |\n- **ADK 10.1.25398.1 (updated September 2023)** Windows PE boot images aren't supported for use with Configuration Manager due to known issues:\n  - VBScript doesn't work in WinPE.\n  - The **Pre-provision BitLocker** task doesn't work in WinPE.\n  - Devices with UFS storage, such as the Surface Go 4, don't work in WinPE.\n    Instead use the **ADK 10.1.26100.X (May 2024, Dec 2024)** (10.1.26100.X) or newer where these issues are resolved.\n- For information on applying the [BlackLotus UEFI bootkit vulnerability](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) security updates to boot images from the ADKs before the **ADK 10.1.26100.1 (May 2024, Dec 2024)** (10.1.26100.1), see [Customize Windows PE boot images](https://learn.microsoft.com/en-us/windows/deployment/customize-boot-image). Boot images from the **ADK 10.1.26100.1 (May 2024, Dec 2024)** (10.1.26100.1) and newer already have the BlackLotus UEFI bootkit vulnerability security update applied to them. For this reason, it's recommended to use boot images from the **ADK 10.1.26100.1 (May 2024, Dec 2024)** (10.1.26100.X) or newer.",
+      "after": "> - **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** is required to deploy Windows ARM64 operating systems on Configuration Manager 2403 or newer. See the following table for supported ADK versions.\nThe following table lists the versions of the Windows ADK that you can use with different versions of Configuration Manager. Numbered references link to the applicable support notes.\n| **ADK 10.1.26100.x**  10.1.26100.1 (May 2024) 10.1.26100.2454 (Updated December 2024) 10.1.26100.9457 (Current: September 2026) [[1]](#bkmk_note1) | ✅ | ✅ | ✅ |\n| **ADK 10.1.25398.1 (updated September 2023)**  (10.1.25398.1) [[2]](#bkmk_note2) | ❌ | ❌ | ❌ |\n### Note 1: ADK 10.1.26100.x releases\nAll ADK 10.1.26100.x releases (May 2024, December 2024, and September 2026) ship the same Windows PE binaries, **10.1.26100.1**. Only the Deployment Tools were updated between these releases. Earlier releases are no longer available for download. For the current release, see [Download the ADK 10.1.26100.9457 (September 2026)](https://aka.ms/ConfigMgrADKDownload9457).\n### Note 2: ADK 10.1.25398.1 Windows PE issues\n\n**ADK 10.1.25398.1 (updated September 2023)** Windows PE boot images aren't supported for use with Configuration Manager due to known issues:\n\n- VBScript doesn't work in WinPE.\n- The **Pre-provision BitLocker** task doesn't work in WinPE.\n- Devices with UFS storage, such as the Surface Go 4, don't work in WinPE.\n\nInstead use **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** where these issues are resolved.\n\n### General guidance\n\n- For information on applying the [BlackLotus UEFI bootkit vulnerability](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/plan-design/configs/support-for-windows-adk.md",
+          "title": "Support for the Windows ADK in Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/configs/support-for-windows-adk",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/plan-design/configs/support-for-windows-adk.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/configmgr/core/plan-design/configs/support-for-windows-adk.md"
+        }
+      ],
+      "lines_added": 20,
+      "lines_removed": 12,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-22T00:00:00Z",
+          "after": "2026-10-13T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-eaf22dcdb9ed",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Supported OS versions for clients and devices for Configuration Manager",
+      "summary": "The captured documentation changed in “Exchange Server connector”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!IMPORTANT]\n>\n> Starting in November 2021, this feature of Configuration Manager is [deprecated](../changes/deprecated/removed-and-deprecated-cmfeatures.md).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md",
+          "title": "Supported OS versions for clients and devices for Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md"
+        }
+      ],
+      "lines_added": 5,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Exchange Server connector"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Configuration Manager supports limited management of devices that connect to your Exchange Server, without installing the Configuration Manager client. For more information, see [Manage mobile devices with Configuration Manager and Exchange](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Supported versions of Exchange Server"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Exchange Server connector"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!IMPORTANT]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Starting in November 2021, this feature of Configuration Manager is [deprecated](../changes/deprecated/removed-and-deprecated-cmfeatures.md)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Configuration Manager supports limited management of devices that connect to your Exchange Server, without installing the Configuration Manager client. For more information, see [Manage mobile devices with Configuration Manager and Exchange](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Supported versions of Exchange Server"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-21T00:00:00Z",
+          "after": "2026-10-06T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-4c9fbeb5ba3a",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Security update for the SMS Provider and administration service",
+      "summary": "The captured documentation changed in “Summary of KB38982839”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- An issue with the SMS Provider.",
+      "after": "- An issue with the SMS Provider. This update addresses the elevation of privilege vulnerability described in [CVE-2026-88075](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88075).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/38982839.md",
+          "title": "Security update for the SMS Provider and administration service",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/38982839",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/hotfix/2603/38982839.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/configmgr/hotfix/2603/38982839.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/691e3042-55ad-4ce1-b5e9-649b1cc47b5c"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b7d11190-096c-4ddb-87db-63764f603aac"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-02cdbc751097",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Security update for scripts, the SMS Provider, the Message Processing Engine, and Discovery Data Record processing",
+      "summary": "The captured documentation changed in “Summary of KB39398030”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- An issue with the Message Processing Engine.",
+      "after": "- An issue with the Message Processing Engine. This update addresses the elevation of privilege vulnerability described in [CVE-2026-70049](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70049).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/39398030.md",
+          "title": "Security update for scripts, the SMS Provider, the Message Processing Engine, and Discovery Data Record processing",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/39398030",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/hotfix/2603/39398030.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/configmgr/hotfix/2603/39398030.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 1,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-3f3ad8a614e9",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Manage macOS ADE devices and tokens",
+      "summary": "The captured documentation changed in “Sync restrictions”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- A sync runs automatically every 24 hours. You can also trigger a sync manually by selecting **Sync**, no more than once every 15 minutes. All sync requests have 15 minutes to finish. The **Sync** button becomes inactive until the sync completes.",
+      "after": "- A sync runs automatically every 12 hours. You can also trigger a sync manually by selecting **Sync**, no more than once every 15 minutes. All sync requests have 15 minutes to finish. The **Sync** button becomes inactive until the sync completes.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/apple/manage-devices-tokens-macos.md",
+          "title": "Manage macOS ADE devices and tokens",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/apple/manage-devices-tokens-macos",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/device-enrollment/apple/manage-devices-tokens-macos.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-enrollment/apple/manage-devices-tokens-macos.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
+    {
+      "id": "6d967d2b0c7a-d2b9ead1bd3c",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Set up automated device enrollment for macOS",
+      "summary": "The captured documentation changed in “Create an enrollment policy”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "iOS/iPadOS",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "> This article reflects the updated policy creation experience (**Enrollment program tokens** &gt; **Enrollment policies**) for devices going through automated device enrollment. The older experience (**Enrollment program tokens** &gt; **Profiles**) differs and will eventually be retired. The older experience won't receive new features, so be sure to create new policies under **Enrollment policies**. For more information, see [New iOS/iPadOS, visionOS, tvOS and macOS ADE enrollment policies experience](https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531).\n    > Do not target Platform SSO (PSSO) configuration profiles that enable PSSO registration during Setup Assistant to userless Automated Device Enrollment (ADE) devices. Doing so can cause unexpected enrollment behavior and results in the device losing expected affinity. See [Configure platform SSO during enrollment](https://learn.microsoft.com/en-us/configure-platform-sso-during-enrollment)",
+      "after": "> This article reflects the updated policy creation experience (**Enrollment program tokens** &gt; **Enrollment policies**) for devices going through automated device enrollment. The older experience (**Enrollment program tokens** &gt; **Profiles**) differs and will eventually be retired. The older experience won't receive new features, so be sure to create new policies under **Enrollment policies**. For more information, see [New iOS/iPadOS, visionOS, tvOS and macOS ADE enrollment policies experience](https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-iosipados-visionos-tvos-and-macos-ade-enrollment-policies-experience/4393531). A script to migrate older enrollment profiles to new enrollment policies is available in the [Microsoft shell-intune-samples repository](https://github.com/microsoft/shell-intune-samples/tree/master/macOS/Tools/EnrollmentProfileMigrationToPolicy).\n    > Do not target Platform SSO (PSSO) configuration profiles that enable PSSO registration during Setup Assistant to userless Automated Device Enrollment (ADE) devices. Doing so can cause unexpected enrollment behavior and results in the device losing expected affinity. See [Configure platform SSO during enrollment](../../device-configuration/settings-catalog/configure-platform-sso-during-enrollment.md)",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/apple/setup-automated-macos.md",
+          "title": "Set up automated device enrollment for macOS",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/apple/setup-automated-macos",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/device-enrollment/apple/setup-automated-macos.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-enrollment/apple/setup-automated-macos.md"
+        }
+      ],
+      "lines_added": 4,
+      "lines_removed": 4,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-91096db0faaf",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Support third-party device compliance partners in Intune",
+      "summary": "The captured documentation changed in “Supported device compliance partners”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- 42Gears SureMDM\n- Addigy\n- BlackBerry UEM\n- Citrix Workspace device compliance\n- CLOMO MDM\n- Fleet\n- Iru\n- Ivanti Neurons for MDM\n- mobiconnect\n- Omnissa Workspace ONE UEM\n- Scalefusion\n- SOTI MobiControl",
+      "after": "- [42Gears SureMDM](https://docs.42gears.com/suremdm/docs/SureMDM/ConditionalAccessintheSureMDMCon.html)\n- [Addigy](https://support.addigy.com/hc/en-us/articles/12346305032211)\n- [BlackBerry UEM](https://docs.blackberry.com/en/id-comm-collab/blackberry-workspaces/blackberry-workspaces-plug-in-for-blackberry-uem/4_10/compatibility-matrix/imm1460398825659/ioz1460399956336)\n- [Citrix Endpoint Management integration with Microsoft Endpoint Manager](https://docs.citrix.com/en-us/citrix-endpoint-management/integration-with-mem.html)\n- [CLOMO MDM](https://support.clomo.com/?page_id=61477)\n- [Fleet](https://fleetdm.com/guides/entra-conditional-access-integration)\n- [Iru](https://docs.iru.com/en/endpoint/integrations/microsoft-device-compliance/getting-started-with-microsoft-device-compliance#getting-started-with-microsoft-device-compliance)\n- [Ivanti Neurons for MDM](https://forums.ivanti.com/s/article/MobileIron-Cloud-Azure-Device-Compliance-for-iOS-and-Android)\n- [mobiconnect](https://help.mobi-connect.net/function/function_category/c0119/?func_os=ios-ipados)\n- [Omnissa Workspace ONE UEM](https://docs.omnissa.com/bundle/WorkspaceONE-UEM-Managing-DevicesVSaaS/page/ConditionalAccessMicrosoftEntraID.html)\n- [Samsung Knox Manage](https://docs.samsungknox.com/admin/knox-manage/new-console/connect-with-identity-providers/configure-knox-manage-as-a-compliance-partner-for-microsoft-intune/)\n- [Scalefusion](https://help.scalefusion.com/docs/microsoft-intune-partner-compliance)\n- [SOTI MobiControl](https://pulse.soti.net/support/soti-mobicontrol/help/?T=console%2Fsystem%2Fmicrosoft_365_integration%2Fadd_mc_to_microsoft_intune_and_compliance_partner_configuration)",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/compliance/third-party-partners.md",
+          "title": "Support third-party device compliance partners in Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/third-party-partners",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/device-security/compliance/third-party-partners.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-security/compliance/third-party-partners.md"
+        }
+      ],
+      "lines_added": 13,
+      "lines_removed": 12
+    },
+    {
+      "id": "6d967d2b0c7a-2a8c74145ef1",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Configure support for macOS ADE local account configuration with LAPS in Microsoft Intune",
+      "summary": "The captured documentation changed in “Manually rotate admin account password”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!TIP]\n>\n> To manage the lockout timer, configure **Failed Attempts Reset In Minutes** in the [settings catalog](../../device-configuration/settings-catalog/index.md) before rotating the password.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/laps/setup-macos.md",
+          "title": "Configure support for macOS ADE local account configuration with LAPS in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/laps/setup-macos",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/device-security/laps/setup-macos.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-security/laps/setup-macos.md"
+        }
+      ],
+      "lines_added": 4,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "   1. Expand **Monitor** and then select **Passwords and keys**."
+              },
+              {
+                "kind": "context",
+                "text": "   2. On the **Passwords and keys** pane, you can find the last date and time that the password was rotated."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Monitor password rotation"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Password viewing and rotation both create Intune Audit events that you can view from within the Intune admin center."
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "   1. Expand **Monitor** and then select **Passwords and keys**."
+              },
+              {
+                "kind": "context",
+                "text": "   2. On the **Passwords and keys** pane, you can find the last date and time that the password was rotated."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!TIP]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> To manage the lockout timer, configure **Failed Attempts Reset In Minutes** in the [settings catalog](../../device-configuration/settings-catalog/index.md) before rotating the password."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Monitor password rotation"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Password viewing and rotation both create Intune Audit events that you can view from within the Intune admin center."
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "6d967d2b0c7a-635e985699ff",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Prerequisites for the Microsoft Tunnel in Intune",
+      "summary": "The captured documentation changed in “Linux server”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Linux"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "Encryption at rest is optional, but we strongly recommend configuring your Docker or Podman environment to encrypt files used by Microsoft Tunnel containers. For information about available options, see the documentation for your Linux distribution and container platform.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/microsoft-tunnel/prerequisites.md",
+          "title": "Prerequisites for the Microsoft Tunnel in Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/prerequisites",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/device-security/microsoft-tunnel/prerequisites.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-security/microsoft-tunnel/prerequisites.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 2,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "  - Podman version 3.0 or 4.0 depending on the version of RHEL."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "  Microsoft Tunnel requires Docker or Podman on the Linux server to provide support for containers. Containers provide a consistent execution environment, health monitoring and proactive remediation, and a clean upgrade experience."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "  For information about installing and configuring Docker or Podman, see:"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "  - Podman version 3.0 or 4.0 depending on the version of RHEL."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "  Microsoft Tunnel requires Docker or Podman on the Linux server to provide support for containers. Containers provide a consistent execution environment, health monitoring and proactive remediation, and a clean upgrade experience."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "  Encryption at rest is optional, but we strongly recommend configuring your Docker or Podman environment to encrypt files used by Microsoft Tunnel containers. For information about available options, see the documentation for your Linux distribution and container platform."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "  For information about installing and configuring Docker or Podman, see:"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": "msecd-doc-authoring-1026",
+          "after": "msecd-doc-authoring-1030",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-03T00:00:00Z",
+          "after": "2026-10-15T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-460fa7395df4",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Samsung Knox E-FOTA integration with Microsoft Intune",
+      "summary": "The captured documentation changed in “Prerequisites; Process overview”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "Device Updates",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": ">\n> Each Intune tenant supports only one connected Samsung Knox E-FOTA account. You can't connect multiple Samsung Knox E-FOTA accounts to the same tenant, including separate accounts for different regions.\n\n> [!IMPORTANT]\n>\n> Connect the Samsung Knox E-FOTA account and region where your devices are registered. A device's Knox E-FOTA client might enroll in a different account or region from the one connected to Intune. In that case, device registration in Intune can fail even when the connector status is **Connected**.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-updates/android/setup-samsung-knox.md",
+          "title": "Samsung Knox E-FOTA integration with Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-updates/android/setup-samsung-knox",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/device-updates/android/setup-samsung-knox.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-updates/android/setup-samsung-knox.md"
+        }
+      ],
+      "lines_added": 8,
+      "lines_removed": 2,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "![](../../media/icons/16/tenant-administration.svg) **Tenant configuration requirements**"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> You must configure Managed Google Play for your tenant. For setup instructions, see [Set up Managed Google Play](../../device-enrollment/android/connect-managed-google-play.md)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "![](../../media/icons/16/cloud.svg) **Cloud requirements**"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "![](../../media/icons/16/tenant-administration.svg) **Tenant configuration requirements**"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> You must configure Managed Google Play for your tenant. For setup instructions, see [Set up Managed Google Play](../../device-enrollment/android/connect-managed-google-play.md)."
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Each Intune tenant supports only one connected Samsung Knox E-FOTA account. You can't connect multiple Samsung Knox E-FOTA accounts to the same tenant, including separate accounts for different regions."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "![](../../media/icons/16/cloud.svg) **Cloud requirements**"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "### ![](media/setup-samsung-knox/connector.svg) Set up the Samsung connector"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "In the Microsoft Intune admin center, link Intune and Samsung Knox E-FOTA by creating a connector. The connector allows Intune to communicate with Samsung Knox E-FOTA and manage firmware updates for eligible Samsung devices."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)."
+              },
+              {
+                "kind": "context",
+                "text": "2. Select **[Tenant administration](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/TenantAdminMenu/%7E/tenantStatus)** &gt; **[Connectors and tokens](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/TenantAdminMenu/%7E/connectorsAndTokens)** &gt; **[Firmware over-the-air update](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/TenantAdminConnectorsMenu/%7E/fotaUpdate)**."
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "### ![](media/setup-samsung-knox/connector.svg) Set up the Samsung connector"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "In the Microsoft Intune admin center, link Intune and Samsung Knox E-FOTA by creating a connector. The connector allows Intune to communicate with Samsung Knox E-FOTA and manage firmware updates for eligible Samsung devices."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!IMPORTANT]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Connect the Samsung Knox E-FOTA account and region where your devices are registered. A device's Knox E-FOTA client might enroll in a different account or region from the one connected to Intune. In that case, device registration in Intune can fail even when the connector status is **Connected**."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)."
+              },
+              {
+                "kind": "context",
+                "text": "2. Select **[Tenant administration](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/TenantAdminMenu/%7E/tenantStatus)** &gt; **[Connectors and tokens](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/TenantAdminMenu/%7E/connectorsAndTokens)** &gt; **[Firmware over-the-air update](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/TenantAdminConnectorsMenu/%7E/fotaUpdate)**."
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": "msecd-doc-authoring-1017",
+          "after": "msecd-doc-authoring-1030",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-10-02T00:00:00Z",
+          "after": "2026-10-16T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-ea396e2bc9dc",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Creating elevation rules with Endpoint Privilege Management",
+      "summary": "The captured documentation changed in “Deploying rules created with Endpoint Privilege Management”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Endpoint Privilege Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "Unlike elevation rules assigned to groups that contain users, the default elevation response is a device-scoped client setting configured by the *Windows elevation settings policy* and applies to all users on the device. Assigning this policy to a group that contains users doesn't create a per-user default. To provide different application elevation behavior for particular users, assign elevation rules to groups that contain those users. For more information, see [Policy scope and user assignments](manage-elevation-settings.md#policy-scope-and-user-assignments).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/epm/create-elevation-rules.md",
+          "title": "Creating elevation rules with Endpoint Privilege Management",
+          "url": "https://learn.microsoft.com/en-us/intune/epm/create-elevation-rules",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/epm/create-elevation-rules.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/epm/create-elevation-rules.md"
+        }
+      ],
+      "lines_added": 5,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "Rules deployed to a device apply to *every user* that uses that device. Rules that are deployed to a *user* apply only to that user on each device that they utilize. When an elevation action occurs, rules deployed to the user are given precedence to rules deployed to a device. This behavior allows you to deploy a set of rules to all users of a device, and a more permissive set of rules to a specific user (such as a support admin). This would allow the support administrator to elevate a broader s"
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "*Default Elevation behavior* is used only when no rule match can be found. The default elevation behavior only applies when an elevation is triggered with the *Run with elevated access* right-click menu."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Create elevation rules policy"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "Rules deployed to a device apply to *every user* that uses that device. Rules that are deployed to a *user* apply only to that user on each device that they utilize. When an elevation action occurs, rules deployed to the user are given precedence to rules deployed to a device. This behavior allows you to deploy a set of rules to all users of a device, and a more permissive set of rules to a specific user (such as a support admin). This would allow the support administrator to elevate a broader s"
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "*Default Elevation behavior* is used only when no rule match can be found. The default elevation behavior only applies when an elevation is triggered with the *Run with elevated access* right-click menu."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Unlike elevation rules assigned to groups that contain users, the default elevation response is a device-scoped client setting configured by the *Windows elevation settings policy* and applies to all users on the device. Assigning this policy to a group that contains users doesn't create a per-user default. To provide different application elevation behavior for particular users, assign elevation rules to groups that contain those users. For more information, see [Policy scope and user assignmen"
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Create elevation rules policy"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": true
+      },
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-10-20T00:00:00Z",
+          "after": "2026-10-16T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-dd91ae553246",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Plan and Prepare for Endpoint Privilege Management Deployment",
+      "summary": "The captured documentation changed in “Policy conflict handling for Endpoint Privilege Management”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Endpoint Privilege Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "The client settings configured by the *Windows elevation settings policy* are device-scoped, even when the policy is assigned to a group that contains users. Assigning different policies to groups that contain different users doesn't establish separate per-user default elevation responses. For more information, see [Policy scope and user assignments](manage-elevation-settings.md#policy-scope-and-user-assignments).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/epm/deployment-planning.md",
+          "title": "Plan and Prepare for Endpoint Privilege Management Deployment",
+          "url": "https://learn.microsoft.com/en-us/intune/epm/deployment-planning",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/epm/deployment-planning.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/epm/deployment-planning.md"
+        }
+      ],
+      "lines_added": 5,
+      "lines_removed": 3,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "Except for the following situations, conflicting policies for EPM are handled like any other [policy conflict](../device-configuration/troubleshoot-device-profiles.md#conflicts)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "**Windows elevation settings policy**:"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "When a device receives two separate elevation settings policies with conflicting values, the EPM client reverts to the default client behavior until the conflict is resolved."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "Except for the following situations, conflicting policies for EPM are handled like any other [policy conflict](../device-configuration/troubleshoot-device-profiles.md#conflicts)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "**Windows elevation settings policy**:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "The client settings configured by the *Windows elevation settings policy* are device-scoped, even when the policy is assigned to a group that contains users. Assigning different policies to groups that contain different users doesn't establish separate per-user default elevation responses. For more information, see [Policy scope and user assignments](manage-elevation-settings.md#policy-scope-and-user-assignments)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "When a device receives two separate elevation settings policies with conflicting values, the EPM client reverts to the default client behavior until the conflict is resolved."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/e0ffb20c-01c6-407b-a9bd-29111652a1dc",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ec6774-09b8-473e-a17e-b17b518bbad7",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ec6774-09b8-473e-a17e-b17b518bbad7",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-01-26T00:00:00Z",
+          "after": "2026-10-16T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/3904bce4-d817-48cf-85fd-b6146fca83b7",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ade36b61-c646-4bd8-87ee-f3a843461962"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ade36b61-c646-4bd8-87ee-f3a843461962"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-e3892e44f78e",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Managing elevation settings with Endpoint Privilege Management",
+      "summary": "The captured documentation changed in “Policy scope and user assignments; Create a Windows elevation settings policy”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Endpoint Privilege Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "To configure Endpoint Privilege Management (EPM) on devices, deploy *Windows elevation settings policy* to users or devices:\n5. For **Assignments**, select the groups that receive the policy. For more information on assigning profiles, see [Assign user and device profiles](../device-configuration/assign-device-profile.md). Select **Next**.",
+      "after": "To configure Endpoint Privilege Management (EPM) on devices, deploy *Windows elevation settings policy* to groups that contain users or devices:\n\n## Policy scope and user assignments\n\nThe *Windows elevation settings policy* configures the EPM client's settings. These client settings, including the default elevation response, are device-scoped and apply to all users on the device.\n\nYou can assign a *Windows elevation settings policy* to groups that contain users or devices. Assigning the policy to a group that contains users doesn't change the scope of its settings or create a separate default elevation response for each user. Once applied, the device-scoped configuration remains effective until another configuration is applied. Signing in as a different user doesn't, by itself, replace that configuration.\n\n> [!IMPORTANT]\n>\n> Don't assign different *Windows elevation settings policies* to groups that contain users to switch the device's default elevation response between users. Instead, configure a consistent device-wide default and use elevation rules assigned to groups that contain users to define how specific applications can be elevated by those users. For more information, see [Deploying elevation rules](create-elevation-rules.md#deploying-rules-created-with-endpoint-privilege-management).\n5. For **Assignments**, select the groups that receive the policy. For more information on assigning profiles, see [Assign user and device profiles](../device-configuration/assign-device-profile.md). Assigning this policy to a group that contains users doesn't make its settings user-scoped; see [Policy scope and user assignments](#policy-scope-and-user-assignments). Select **Next**.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/epm/manage-elevation-settings.md",
+          "title": "Managing elevation settings with Endpoint Privilege Management",
+          "url": "https://learn.microsoft.com/en-us/intune/epm/manage-elevation-settings",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/epm/manage-elevation-settings.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/epm/manage-elevation-settings.md"
+        }
+      ],
+      "lines_added": 13,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-09-10T00:00:00Z",
+          "after": "2026-10-16T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "6d967d2b0c7a-2629c46d7375",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Microsoft Intune licensing",
+      "summary": "The captured documentation changed in “Device-only licenses”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "Fundamentals",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- [Apple Device Enrollment Program without user affinity](../device-enrollment/apple/setup-automated-ios.md)",
+      "after": "- [Apple Device Enrollment Program without user affinity or Entra Shared Device Mode](../device-enrollment/apple/setup-automated-ios.md)",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/fundamentals/licensing.md",
+          "title": "Microsoft Intune licensing",
+          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/licensing",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/fundamentals/licensing.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/fundamentals/licensing.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
+    {
+      "id": "6d967d2b0c7a-1233e1e57744",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Planning for Remote Help with Microsoft Intune",
+      "summary": "The captured documentation changed in “Limitations”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Remote Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "- Windows unattended remote sign-in isn't available for tenants in the Switzerland North datacenter region.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/remote-help/plan.md",
+          "title": "Planning for Remote Help with Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/remote-help/plan.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/remote-help/plan.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- You can't establish a Remote Help session from one tenant to a different tenant."
+              },
+              {
+                "kind": "context",
+                "text": "- Remote Help might not be available in all markets or localizations."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- Remote Help is supported in Government Community Cloud (GCC) and GCC High environments on the following platforms:"
+              },
+              {
+                "kind": "context",
+                "text": "  - Windows"
+              },
+              {
+                "kind": "context",
+                "text": "  - Windows on ARM64 devices"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- You can't establish a Remote Help session from one tenant to a different tenant."
+              },
+              {
+                "kind": "context",
+                "text": "- Remote Help might not be available in all markets or localizations."
+              },
+              {
+                "kind": "added",
+                "text": "- Windows unattended remote sign-in isn't available for tenants in the Switzerland North datacenter region."
+              },
+              {
+                "kind": "context",
+                "text": "- Remote Help is supported in Government Community Cloud (GCC) and GCC High environments on the following platforms:"
+              },
+              {
+                "kind": "context",
+                "text": "  - Windows"
+              },
+              {
+                "kind": "context",
+                "text": "  - Windows on ARM64 devices"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "6d967d2b0c7a-b58c339ce0a0",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "Windows Enterprise multi-session remote desktops",
+      "summary": "The captured documentation changed in “Retirement”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Solutions",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Deleting VMs from Azure will leave orphaned device records in the Microsoft Intune admin center. AVD machines are deleted automatically after 30 days and removed permanently after 60 days. For more information, see:\n\n- [Using Intune device cleanup rules](https://techcommunity.microsoft.com/t5/device-management-in-microsoft/using-intune-device-cleanup-rules-updated-version/ba-p/3760854).\n- [Automatically remove devices with cleanup rules](../governance/configure-cleanup-rules.md)",
+      "after": "Deleting VMs from Azure will leave orphaned device records in the Microsoft Intune admin center. Intune attempts to permanently delete device records for devices that have been inactive for 60 days or more. This process is separate from admin-configured device cleanup rules. Device record deletion isn't guaranteed at 60 days and can take longer.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/solutions/azure-virtual-desktop-multi-session.md",
+          "title": "Windows Enterprise multi-session remote desktops",
+          "url": "https://learn.microsoft.com/en-us/intune/solutions/azure-virtual-desktop-multi-session",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/solutions/azure-virtual-desktop-multi-session.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/solutions/azure-virtual-desktop-multi-session.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 4
+    },
+    {
+      "id": "6d967d2b0c7a-1b095ce07f09",
+      "observed_at": "2026-10-20T17:45:59Z",
+      "observed_date": "2026-10-20",
+      "commit_sha": "6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0",
+      "title": "What's new in Microsoft Intune",
+      "summary": "The captured documentation changed in “Week of October 12, 2026”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "What's new",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "## Week of October 12, 2026\n\n### Advanced capabilities (formerly \"Microsoft Intune Suite\")\n\n#### New Remote Help for Windows version available\n\nRemote Help for Windows version 5.2.1210.0 is now available. This release includes stability and observability improvements.\n\nApplies to:\n\n- Windows",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/whats-new/index.md",
+          "title": "What's new in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/whats-new/index.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/whats-new/index.md"
+        }
+      ],
+      "lines_added": 13,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "> - [Windows Autopilot: What's new](../../autopilot/whats-new.md)"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs.md#notifications)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Week of October 5, 2026"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "> - [Windows Autopilot: What's new](../../autopilot/whats-new.md)"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs.md#notifications)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "## Week of October 12, 2026"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "### Advanced capabilities (formerly \"Microsoft Intune Suite\")"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "#### New Remote Help for Windows version available"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Remote Help for Windows version 5.2.1210.0 is now available. This release includes stability and observability improvements."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Applies to:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- Windows"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Week of October 5, 2026"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-10-05T00:00:00Z",
+          "after": "2026-10-12T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "a52014febbb5-435bdb4968c3",
       "observed_at": "2026-10-09T13:43:53Z",
@@ -45030,1466 +47032,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1908",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1908.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1908.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-07d2ebfdf806",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1909",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1909.md",
-          "title": "Features in Configuration Manager technical preview version 1909",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1909",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1909.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1909.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-db320b4a6ffb",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1910",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1910.md",
-          "title": "Features in Configuration Manager technical preview version 1910",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1910",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1910.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1910.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-e4c4aa1d3ef8",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1911",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1911.md",
-          "title": "Features in Configuration Manager technical preview version 1911",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1911",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1911.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1911.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-748c74b5161d",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1912",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1912.md",
-          "title": "Features in Configuration Manager technical preview version 1912",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1912",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1912.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1912.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-b60d3e9e2d81",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2001.2",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2001-2.md",
-          "title": "Features in Configuration Manager technical preview version 2001.2",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2001-2",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2001-2.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2001-2.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-67a65d33557f",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2001",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2001.md",
-          "title": "Features in Configuration Manager technical preview version 2001",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2001",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2001.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2001.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-5ea1e3fa418e",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2002.2",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2002-2.md",
-          "title": "Features in Configuration Manager technical preview version 2002.2",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2002-2",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2002-2.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2002-2.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-ae5da28c30ee",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2002",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2002.md",
-          "title": "Features in Configuration Manager technical preview version 2002",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2002",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2002.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2002.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-d53a0e7572c8",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2003",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2003.md",
-          "title": "Features in Configuration Manager technical preview version 2003",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2003",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2003.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2003.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-bb4d847bc794",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2004",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2004.md",
-          "title": "Features in Configuration Manager technical preview version 2004",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2004",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2004.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2004.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-16e08556802f",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2005",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2005.md",
-          "title": "Features in Configuration Manager technical preview version 2005",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2005",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2005.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2005.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-064f78835a78",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2006",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2006.md",
-          "title": "Features in Configuration Manager technical preview version 2006",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2006",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2006.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2006.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-d326af34b488",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2007",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2007.md",
-          "title": "Features in Configuration Manager technical preview version 2007",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2007",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2007.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2007.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-9ae19f43d553",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2008",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2008.md",
-          "title": "Features in Configuration Manager technical preview version 2008",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2008",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2008.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2008.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-0cafc26c9cc4",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2009",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2009.md",
-          "title": "Features in Configuration Manager technical preview version 2009",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2009",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2009.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2009.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-d814c677c3eb",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2010.2",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2010-2.md",
-          "title": "Features in Configuration Manager technical preview version 2010.2",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2010-2",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2010-2.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2010-2.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-cf90a3cd70ad",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2010",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2010.md",
-          "title": "Features in Configuration Manager technical preview version 2010",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2010",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2010.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2010.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-122ec8c73c02",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2011",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2011.md",
-          "title": "Features in Configuration Manager technical preview version 2011",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2011",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2011.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2011.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-d699bc4016f0",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2012",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2020/technical-preview-2012.md",
-          "title": "Features in Configuration Manager technical preview version 2012",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2012",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2020/technical-preview-2012.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2020/technical-preview-2012.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-466ed6f65948",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 2101",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2021/technical-preview-2101.md",
-          "title": "Features in Configuration Manager technical preview version 2101",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2021/technical-preview-2101",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2021/technical-preview-2101.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2021/technical-preview-2101.md"
         }
       ],
       "lines_added": 10,
