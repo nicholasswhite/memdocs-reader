@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T01:49:31.655389Z",
-  "latest_commit_at": "2026-10-21T01:49:18Z",
+  "generated_at": "2026-10-21T13:39:38.980692Z",
+  "latest_commit_at": "2026-10-21T13:39:25Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,134 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3615,
+  "total_updates": 3618,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "afe73e94452b-068df35ec1c8",
+      "observed_at": "2026-10-21T13:39:25Z",
+      "observed_date": "2026-10-21",
+      "commit_sha": "afe73e94452b76bba220b657285175062b545da8",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/afe73e94452b76bba220b657285175062b545da8",
+      "title": "Microsoft Intune Protected Apps",
+      "summary": "The captured documentation changed in “Microsoft apps; Partner productivity apps”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "App Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "| Microsoft Azure Information Protection Viewer | [iOS](https://apps.apple.com/us/app/rms-sharing/id689516635) | ✔ | No settings |\n| Microsoft Power Automate | [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) | ✔ | No settings |\n| Microsoft Power Automate | [iOS](https://apps.apple.com/us/app/microsoft-flow/id1094928825) | ✔ | No settings |\n| Fuze Mobile for Intune ![Partner app - Fuze Mobile for Intune icon](media/ref-protected-apps/icon-p-fuze.png) | Fuze Mobile for Intune allows end users to communicate using voice calling, video meetings, contact center, chat messaging, and content sharing. Admins can deploy Fuze Mobile securely and at scale in a BYOD context. Fuze Mobile for Intune requires both a Fuze account and a Microsoft managed environment. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.fuze.fuzeapp), [App Store link (iOS)](https://apps.apple.com/app/fuze-mobile/id1160444971) |",
+      "after": "| Fuze Mobile for Intune ![Partner app - Fuze Mobile for Intune icon](media/ref-protected-apps/icon-p-fuze.png) | Fuze Mobile for Intune allows end users to communicate using voice calling, video meetings, contact center, chat messaging, and content sharing. Admins can deploy Fuze Mobile securely and at scale in a BYOD context. Fuze Mobile for Intune requires both a Fuze account and a Microsoft managed environment. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.fuze.fuzeapp) |",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/app-management/ref-protected-apps.md",
+          "title": "Microsoft Intune Protected Apps",
+          "url": "https://learn.microsoft.com/en-us/intune/app-management/ref-protected-apps",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/33bafc5ed4a5cddf3540a1c978e135e94687ca9a/intune/app-management/ref-protected-apps.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/app-management/ref-protected-apps.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 6,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/7ebba99b-05c3-4387-8883-f7bbf6632cb8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/006ab567-b18c-4cf1-9a25-c24daa46ede1",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "afe73e94452b-122ec8c73c02",
+      "observed_at": "2026-10-21T13:39:25Z",
+      "observed_date": "2026-10-21",
+      "commit_sha": "afe73e94452b76bba220b657285175062b545da8",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/afe73e94452b76bba220b657285175062b545da8",
+      "title": "Features in Configuration Manager technical preview version 2011",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "Since the content is *open-source* style content, admins should always review what is provided before consuming it. The new curation process is intended to vet the material to make sure there aren't obvious quality or compliance issues, but it will be somewhat of a cursory review. All content stored within GitHub and accessed from the Community hub isn’t supported by Microsoft. Microsoft doesn’t validate content collected from or shared by the general community. For more information, see [GitHub Terms of Service](https://help.github.com/terms) and [GitHub Privacy Statement](https://help.github.com/privacy).",
+      "after": "Since the content is *open-source* style content, admins should always review what is provided before consuming it. The new curation process is intended to vet the material to make sure there aren't obvious quality or compliance issues, but it will be somewhat of a cursory review. All content stored within GitHub and accessed from the Community hub isn’t supported by Microsoft. Microsoft doesn’t validate content collected from or shared by the general community. For more information, see [GitHub Terms of Service](https://docs.github.com/terms) and [GitHub Privacy Statement](https://docs.github.com/privacy).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/get-started/2020/technical-preview-2011.md",
+          "title": "Features in Configuration Manager technical preview version 2011",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2020/technical-preview-2011",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/33bafc5ed4a5cddf3540a1c978e135e94687ca9a/intune/configmgr/core/get-started/2020/technical-preview-2011.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/core/get-started/2020/technical-preview-2011.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
+    {
+      "id": "afe73e94452b-51ca1f3a1417",
+      "observed_at": "2026-10-21T13:39:25Z",
+      "observed_date": "2026-10-21",
+      "commit_sha": "afe73e94452b76bba220b657285175062b545da8",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/afe73e94452b76bba220b657285175062b545da8",
+      "title": "Community hub and GitHub",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "Since the content is *open-source* style content, admins should always review what is provided before consuming it. The new curation process is intended to vet the material to make sure there aren't obvious quality or compliance issues, but it will be somewhat of a cursory review. All content stored within GitHub and accessed from the Community hub isn’t supported by Microsoft. Microsoft doesn’t validate content collected from or shared by the general community. For more information, see [GitHub Terms of Service](https://help.github.com/terms) and [GitHub Privacy Statement](https://help.github.com/privacy).",
+      "after": "Since the content is *open-source* style content, admins should always review what is provided before consuming it. The new curation process is intended to vet the material to make sure there aren't obvious quality or compliance issues, but it will be somewhat of a cursory review. All content stored within GitHub and accessed from the Community hub isn’t supported by Microsoft. Microsoft doesn’t validate content collected from or shared by the general community. For more information, see [GitHub Terms of Service](https://docs.github.com/terms) and [GitHub Privacy Statement](https://docs.github.com/privacy).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/servers/manage/community-hub.md",
+          "title": "Community hub and GitHub",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/servers/manage/community-hub",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/33bafc5ed4a5cddf3540a1c978e135e94687ca9a/intune/configmgr/core/servers/manage/community-hub.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/core/servers/manage/community-hub.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
     {
       "id": "33bafc5ed4a5-9b7019ea49ad",
       "observed_at": "2026-10-21T01:49:18Z",
@@ -46779,225 +46902,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1905",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1905.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1905.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-6ebdd263638a",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1906",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1906.md",
-          "title": "Features in Configuration Manager technical preview version 1906",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1906",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1906.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1906.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-34d380863ba9",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1907",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1907.md",
-          "title": "Features in Configuration Manager technical preview version 1907",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1907",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1907.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1907.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-677cd5c8e01d",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1908.2",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1908-2.md",
-          "title": "Features in Configuration Manager technical preview version 1908.2",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1908-2",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1908-2.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1908-2.md"
         }
       ],
       "lines_added": 10,
