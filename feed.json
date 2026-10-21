@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T17:46:13.010231Z",
-  "latest_commit_at": "2026-10-20T17:45:59Z",
+  "generated_at": "2026-10-21T01:49:31.655389Z",
+  "latest_commit_at": "2026-10-21T01:49:18Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,50 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3614,
+  "total_updates": 3615,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "33bafc5ed4a5-9b7019ea49ad",
+      "observed_at": "2026-10-21T01:49:18Z",
+      "observed_date": "2026-10-21",
+      "commit_sha": "33bafc5ed4a5cddf3540a1c978e135e94687ca9a",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/33bafc5ed4a5cddf3540a1c978e135e94687ca9a",
+      "title": "Device action: run remediation (preview)",
+      "summary": "The captured article wording changed. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "# Device action: run remediation",
+      "after": "# Device action: run remediation (preview)",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-management/actions/run-remediation.md",
+          "title": "Device action: run remediation (preview)",
+          "url": "https://learn.microsoft.com/en-us/intune/device-management/actions/run-remediation",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6d967d2b0c7ae4fb9ca9957e11d886edad0d25f0/intune/device-management/actions/run-remediation.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/33bafc5ed4a5cddf3540a1c978e135e94687ca9a/intune/device-management/actions/run-remediation.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "title",
+          "label": "Page title",
+          "before": "Device action: run remediation",
+          "after": "Device action: run remediation (preview)",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "6d967d2b0c7a-326cc67a8a04",
       "observed_at": "2026-10-20T17:45:59Z",
@@ -46959,79 +46998,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1908-2",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1908-2.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1908-2.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-a348893a031d",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1908",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1908.md",
-          "title": "Features in Configuration Manager technical preview version 1908",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1908",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1908.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1908.md"
         }
       ],
       "lines_added": 10,
