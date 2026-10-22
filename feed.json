@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T13:39:38.980692Z",
-  "latest_commit_at": "2026-10-21T13:39:25Z",
+  "generated_at": "2026-10-22T01:47:22.549690Z",
+  "latest_commit_at": "2026-10-22T01:47:08Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,983 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3618,
+  "total_updates": 3627,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "432b525071a1-71ecce823002",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Integrate an MDM provider with Windows Autopilot device association",
+      "summary": "This article was newly captured in the tracker. This does not establish when Microsoft first published it or released a feature.",
+      "kind": "new",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Windows Autopilot",
+      "area": "Device Preparation",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "# Integrate an MDM provider with Windows Autopilot device association\n\nWindows Autopilot device association can support integration with a mobile device management (MDM) provider other than Microsoft Intune. Provider integration is available through a limited-access onboarding process. Microsoft must authorize the Microsoft Entra application that the provider uses before the application can access the device association service.\n\n> [!IMPORTANT]\n>\n> This process is for MDM providers that are building device association into their service. It doesn't provide an individual customer or administrator with direct access to the device association service.\n\n## Prerequisites\n\nBefore requesting access, the MDM provider should:\n\n- Support Windows device enrollment and management by using the Windows MDM protocols. For more information, see [Mobile Device Management overview](https://learn.microsoft.com/en-us/windows/client-management/mdm-overview).\n- Integrate its MDM service with Microsoft Entra ID. For more information, see [Microsoft Entra integration with MDM](https://learn.microsoft.com/en-us/windows/client-management/azure-active-directory-integration-with-mdm).\n- Register the Microsoft Entra application that the service uses to call device association APIs.\n- Define how customers authorize the provider to perform device association operations for their tenant.\n\n## Request access\n\nContact your Microsoft representative to request onboarding for Windows Autopilot device association. Include the following information:\n\n- The provider's legal company name and MDM product name.\n- Primary business and technical contacts.\n- The Microsoft Entra tenant ID for the provider.\n- The application (client) ID for each Microsoft Entra application and environment that requires access.\n- A des\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "autopilot/device-preparation/device-association/mdm-provider-integration.md",
+          "title": "Integrate an MDM provider with Windows Autopilot device association",
+          "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/device-association/mdm-provider-integration",
+          "old_url": null,
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/autopilot/device-preparation/device-association/mdm-provider-integration.md"
+        }
+      ],
+      "lines_added": 85,
+      "lines_removed": 0
+    },
+    {
+      "id": "432b525071a1-b02fd66e34a2",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "CMPivot for real-time data in Configuration Manager",
+      "summary": "The captured documentation changed in “Prerequisites”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- CMPivot and the [Microsoft Edge](../../../apps/deploy-use/deploy-edge.md) installer are currently signed with the **Microsoft Code Signing PCA 2011** certificate. If you set PowerShell execution policy to **AllSigned**, then you need to make sure that devices trust this signing certificate. You can export the certificate from a computer where you've installed the Configuration Manager console. View the certificate on `\"C:\\Program Files (x86)\\Microsoft Endpoint Manager\\AdminConsole\\bin\\CMPivot.exe\"`, and then export the code signing certificate from the certification path. Then import it to the *machine*'s **Trusted Publishers** store on managed devices. You can use the process in the following blog, but make sure to export the *code signing certificate* from the certification path: [Adding a Certificate to Trusted Publishers using Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/adding-a-certificate-to-trusted-publishers-using-intune/ba-p/1974488).",
+      "after": "- CMPivot is currently signed with the **Microsoft Code Signing PCA 2011** certificate. If you set the PowerShell execution policy to **AllSigned**, devices must trust the certificate used to sign the CMPivot PowerShell script.\n\n  - In [the update rollup for Configuration Manager version 2603](../../../hotfix/2603/39169655.md) or Configuration Manager version 2609 and later, the Configuration Manager client automatically adds the certificate to the *machine*'s **Trusted Publishers** store before the client runs the script. No manual action is required for CMPivot.\n  - For earlier Configuration Manager versions, export the certificate from a computer where the Configuration Manager console is installed. View the certificate on `<AdminConsoleInstallDir>\\bin\\CMPivot.exe`, where `<AdminConsoleInstallDir>` is the Configuration Manager console installation folder. Export the code signing certificate from the certification path, and then import it to the *machine*'s **Trusted Publishers** store on managed devices. For an example, see [Adding a Certificate to Trusted Publishers using Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/adding-a-certificate-to-trusted-publishers-using-intune/ba-p/1974488). Make sure to export the *code signing certificate* from the certification path.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/servers/manage/cmpivot.md",
+          "title": "CMPivot for real-time data in Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/servers/manage/cmpivot",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/core/servers/manage/cmpivot.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/core/servers/manage/cmpivot.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 1,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/1e69816a-aaaa-474e-a36f-3ec7790fadc3",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/1e69816a-aaaa-474e-a36f-3ec7790fadc3",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "432b525071a1-a7f025d98575",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Cloud management gateway virtual machine scale set image update for Microsoft Configuration Manager",
+      "summary": "The captured documentation changed in “Summary of KB37942646; Release history”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup.\n- September 2026: Added inclusion information for KB 39169655",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/37942646.md",
+          "title": "Cloud management gateway virtual machine scale set image update for Microsoft Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/37942646",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/hotfix/2603/37942646.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/hotfix/2603/37942646.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "After the deprecation begins, the legacy images are no longer compliant or supported, and won't receive new OS patch updates via image refresh. Once enforcement begins in early 2027, new CMG deployments and reimaging operations that reference the legacy images fail."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "This update transitions the CMG virtual machine scale set to use the new Windows Server 2022 image offer (`windowsserver2022`) that doesn't include the deprecated .NET 6 packages. For more information on the deprecation timeline and its effect, see [Breaking change for Window Server 2022 Image Users with .NET 6](https://aka.ms/KB37942646_IMGDep)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "After the deprecation begins, the legacy images are no longer compliant or supported, and won't receive new OS patch updates via image refresh. Once enforcement begins in early 2027, new CMG deployments and reimaging operations that reference the legacy images fail."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "This update transitions the CMG virtual machine scale set to use the new Windows Server 2022 image offer (`windowsserver2022`) that doesn't include the deprecated .NET 6 packages. For more information on the deprecation timeline and its effect, see [Breaking change for Window Server 2022 Image Users with .NET 6](https://aka.ms/KB37942646_IMGDep)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- June 2, 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## References"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- September 2026: Added inclusion information for KB 39169655"
+              },
+              {
+                "kind": "context",
+                "text": "- June 2, 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## References"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-06-02T00:00:00Z",
+          "after": "2026-09-07T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "432b525071a1-82d233cfe099",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Security update for Microsoft Configuration Manager Console Extension",
+      "summary": "The captured documentation changed in “Summary of KB38232642; Release history”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup.\n- September 2026: Added inclusion information for KB 39169655",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/38232642.md",
+          "title": "Security update for Microsoft Configuration Manager Console Extension",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/38232642",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/hotfix/2603/38232642.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/hotfix/2603/38232642.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "## Summary of KB38232642"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "An update is available that enhances security in Configuration Manager for importing console extensions. This update resolves the vulnerability described in [CVE-2026-47301](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47301)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "## Summary of KB38232642"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "An update is available that enhances security in Configuration Manager for importing console extensions. This update resolves the vulnerability described in [CVE-2026-47301](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47301)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": ">"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- June 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Added supersedence information for KB 39398030"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- September 2026: Added inclusion information for KB 39169655"
+              },
+              {
+                "kind": "context",
+                "text": "- June 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Added supersedence information for KB 39398030"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-06-02T00:00:00Z",
+          "after": "2026-09-07T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "432b525071a1-4c9fbeb5ba3a",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Security update for the SMS Provider and administration service",
+      "summary": "The captured documentation changed in “Summary of KB38982839; Release history”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup.\n- September 2026: Added inclusion information for KB 39169655",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/38982839.md",
+          "title": "Security update for the SMS Provider and administration service",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/38982839",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/hotfix/2603/38982839.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/hotfix/2603/38982839.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with the SMS Provider. This update addresses the elevation of privilege vulnerability described in [CVE-2026-88075](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88075)."
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with the administration service. This is a defense-in-depth fix related to a Windows SMB Server issue, addressed separately by [CVE-2026-26128](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26128). We strongly recommend that you also install the applicable Windows security update."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Hotfixes that are included in this update"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with the SMS Provider. This update addresses the elevation of privilege vulnerability described in [CVE-2026-88075](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88075)."
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with the administration service. This is a defense-in-depth fix related to a Windows SMB Server issue, addressed separately by [CVE-2026-26128](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26128). We strongly recommend that you also install the applicable Windows security update."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Hotfixes that are included in this update"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Added supersedence information for KB 39398030"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- September 2026: Added inclusion information for KB 39169655"
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Added supersedence information for KB 39398030"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-08-17T00:00:00Z",
+          "after": "2026-09-07T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "432b525071a1-b5476ef6cd58",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Update rollup for Microsoft Configuration Manager version 2603",
+      "summary": "This article was newly captured in the tracker. This does not establish when Microsoft first published it or released a feature.",
+      "kind": "new",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "# Update rollup for Microsoft Configuration Manager version 2603\n\n*Applies to: Configuration Manager (current branch, version 2603)*\n\n## Summary of KB39169655\n\nThis article describes issues that are fixed in this update rollup for Microsoft Configuration Manager current branch, version 2603.\n\nFor more information about changes in Configuration Manager version 2603, see:\n\n- [What's new in version 2603 of Configuration Manager current branch](../../core/plan-design/changes/whats-new-in-version-2603.md)\n- [Summary of changes in Microsoft Configuration Manager current branch, version 2603](37426535.md)\n\n## Issues that are fixed\n\n- **Security improvements in Configuration Manager**\n\n  This update includes security improvements for client notification (BGB), remote control, scripts, the SMS Provider, the administration service, the Configuration Manager console, distribution points, operating system deployment (OSD) PXE, the Message Processing Engine, and Discovery Data Record (DDR) processing. It also includes the security fixes from the [hotfixes included in this update](#hotfixes-that-are-included-in-this-update).\n\n- **CMPivot fails when the device-level PowerShell execution policy is set to AllSigned**\n\n  CMPivot can fail on devices where the device-level PowerShell execution policy is set to **AllSigned** if the certificate used to sign the CMPivot PowerShell script isn't in the **Trusted Publishers** certificate store. The Configuration Manager client now automatically adds the certificate before running the script, without requiring an administrator to manually deploy it.\n\n- **Cloud management gateway infrastructure is updated**\n\n  This update makes the following infrastructure changes to cloud management gateway (CMG) deployments:\n\n  - The CMG virtual machine scale se\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/39169655.md",
+          "title": "Update rollup for Microsoft Configuration Manager version 2603",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/39169655",
+          "old_url": null,
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/hotfix/2603/39169655.md"
+        }
+      ],
+      "lines_added": 135,
+      "lines_removed": 0
+    },
+    {
+      "id": "432b525071a1-02cdbc751097",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Security update for scripts, the SMS Provider, the Message Processing Engine, and Discovery Data Record processing",
+      "summary": "The captured documentation changed in “Summary of KB39398030; Release history”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup.\n- October 2026: Added inclusion information for KB 39169655",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2603/39398030.md",
+          "title": "Security update for scripts, the SMS Provider, the Message Processing Engine, and Discovery Data Record processing",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2603/39398030",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/hotfix/2603/39398030.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/hotfix/2603/39398030.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "- An issue with the SMS Provider."
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with the Message Processing Engine. This update addresses the elevation of privilege vulnerability described in [CVE-2026-70049](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70049)."
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with Discovery Data Record (DDR) processing."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Hotfixes that are included in this update"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "- An issue with the SMS Provider."
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with the Message Processing Engine. This update addresses the elevation of privilege vulnerability described in [CVE-2026-70049](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70049)."
+              },
+              {
+                "kind": "context",
+                "text": "- An issue with Discovery Data Record (DDR) processing."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> For Configuration Manager version 2603, this update is included with the update rollup for Configuration Manager version 2603 [KB 39169655](39169655.md). A separate out of band hotfix isn't required after you install the update rollup."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Hotfixes that are included in this update"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## References"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Release history"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- October 2026: Added inclusion information for KB 39169655"
+              },
+              {
+                "kind": "context",
+                "text": "- August 2026: Initial hotfix release"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## References"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-08-27T00:00:00Z",
+          "after": "2026-10-13T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "432b525071a1-460ec6ae90de",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "Configuration Manager hotfixes and update rollups",
+      "summary": "The captured article wording changed. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "- text: KB 39169655 Update rollup for Microsoft Configuration Manager version 2603\n      url: 2603/39169655.md",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/index.yml",
+          "title": "Configuration Manager hotfixes and update rollups",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/configmgr/hotfix/index.yml",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/hotfix/index.yml"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "      url: 2603/38982839.md"
+              },
+              {
+                "kind": "context",
+                "text": "    - text: KB 39398030 Security update for scripts, SMS Provider, MPE, and DDR"
+              },
+              {
+                "kind": "context",
+                "text": "      url: 2603/39398030.md"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- title: Configuration Manager 2509"
+              },
+              {
+                "kind": "context",
+                "text": "  linkLists:"
+              },
+              {
+                "kind": "context",
+                "text": "  - linkListType: overview"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "      url: 2603/38982839.md"
+              },
+              {
+                "kind": "context",
+                "text": "    - text: KB 39398030 Security update for scripts, SMS Provider, MPE, and DDR"
+              },
+              {
+                "kind": "context",
+                "text": "      url: 2603/39398030.md"
+              },
+              {
+                "kind": "added",
+                "text": "    - text: KB 39169655 Update rollup for Microsoft Configuration Manager version 2603"
+              },
+              {
+                "kind": "added",
+                "text": "      url: 2603/39169655.md"
+              },
+              {
+                "kind": "context",
+                "text": "- title: Configuration Manager 2509"
+              },
+              {
+                "kind": "context",
+                "text": "  linkLists:"
+              },
+              {
+                "kind": "context",
+                "text": "  - linkListType: overview"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "432b525071a1-1b095ce07f09",
+      "observed_at": "2026-10-22T01:47:08Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "432b525071a1904020dca5f2ec08a331d782e66f",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/432b525071a1904020dca5f2ec08a331d782e66f",
+      "title": "What's new in Microsoft Intune",
+      "summary": "The captured documentation changed in “Week of July 27, 2026 (Service release 2607)”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows",
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "What's new",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "#### Improved on-demand device sync for Windows devices\nMicrosoft Intune now supports a more comprehensive on-demand sync for Windows devices. When you select the **Sync** device action in the Microsoft Intune admin center, Intune initiates a full synchronization across key workloads, including configuration policies, apps, and scripts, so devices reflect your latest changes faster. This capability is especially useful during troubleshooting, incident response, and high-priority rollouts.",
+      "after": "#### Improved on-demand device sync for Windows &amp; iOS/iPadOS devices\nMicrosoft Intune now supports a more comprehensive on-demand sync for Windows and iOS/iPadOS devices. When you select the **Sync** device action in the Microsoft Intune admin center, Intune initiates a full synchronization across key workloads, including configuration policies, apps, and scripts, so devices reflect your latest changes faster. This capability is especially useful during troubleshooting, incident response, and high-priority rollouts.\n- iOS/iPadOS",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/whats-new/index.md",
+          "title": "What's new in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/afe73e94452b76bba220b657285175062b545da8/intune/whats-new/index.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/whats-new/index.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 2
+    },
     {
       "id": "afe73e94452b-068df35ec1c8",
       "observed_at": "2026-10-21T13:39:25Z",
@@ -46232,719 +47204,6 @@
             "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
             "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
             "https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-a588130c7361",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to upgrade clients for Windows computers in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md",
-          "title": "How to upgrade clients for Windows computers in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/upgrade/upgrade-clients-for-windows-computers",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-d1c1e2eefe5f",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to upgrade clients on Mac computers in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md",
-          "title": "How to upgrade clients on Mac computers in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/upgrade/upgrade-clients-on-mac-computers",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/upgrade/upgrade-clients-on-mac-computers.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-7c1f668aebea",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Upgrade clients in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/upgrade/upgrade-clients.md",
-          "title": "Upgrade clients in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/upgrade/upgrade-clients",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/upgrade/upgrade-clients.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/upgrade/upgrade-clients.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-c3820fab9100",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1901",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1901.md",
-          "title": "Features in Configuration Manager technical preview version 1901",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1901",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1901.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1901.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-f0c83115b343",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1902.2",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1902-2.md",
-          "title": "Features in Configuration Manager technical preview version 1902.2",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1902-2",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1902-2.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1902-2.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-edaa9ff7af05",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1902",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1902.md",
-          "title": "Features in Configuration Manager technical preview version 1902",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1902",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1902.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1902.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-4d25898a799e",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1903",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1903.md",
-          "title": "Features in Configuration Manager technical preview version 1903",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1903",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1903.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1903.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-9bcb26274d0f",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1904",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1904.md",
-          "title": "Features in Configuration Manager technical preview version 1904",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1904",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1904.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1904.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-f0a15237c2d3",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Features in Configuration Manager technical preview version 1905",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/get-started/2019/technical-preview-1905.md",
-          "title": "Features in Configuration Manager technical preview version 1905",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/get-started/2019/technical-preview-1905",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/get-started/2019/technical-preview-1905.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/get-started/2019/technical-preview-1905.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
           ],
           "first_captured": true
         }
