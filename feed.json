@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T01:47:22.549690Z",
-  "latest_commit_at": "2026-10-22T01:47:08Z",
+  "generated_at": "2026-10-22T13:41:33.404108Z",
+  "latest_commit_at": "2026-10-22T13:41:18Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,532 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3627,
+  "total_updates": 3638,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "0bf1c67e2f4a-f1aa8e84664f",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "Data Protection Framework Using App Protection Policies",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Intune",
+      "area": "App Management",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "Administrators can incorporate the below configuration levels within their ring deployment methodology for testing and production use by importing the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).\nAdministrators can incorporate the above configuration levels within their ring deployment methodology for testing and production use by importing the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).",
+      "after": "Administrators can incorporate the below configuration levels within their ring deployment methodology for testing and production use by importing the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoft/mggraph-intune-samples).\nAdministrators can incorporate the above configuration levels within their ring deployment methodology for testing and production use by importing the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoft/mggraph-intune-samples).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/app-management/protection/data-protection-framework.md",
+          "title": "Data Protection Framework Using App Protection Policies",
+          "url": "https://learn.microsoft.com/en-us/intune/app-management/protection/data-protection-framework",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/app-management/protection/data-protection-framework.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/app-management/protection/data-protection-framework.md"
+        }
+      ],
+      "lines_added": 4,
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "0bf1c67e2f4a-ae3871271a7f",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "Microsoft Configuration Manager documentation",
+      "summary": "The captured documentation changed in “Support articles”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "To subscribe to Atom or RSS notification of new Configuration Manager support articles, see [Support content updates](https://support.microsoft.com/help/4089498/) and select **Microsoft Configuration Manager (current branch)**.",
+      "after": "",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/misc/in-console-documentation.md",
+          "title": "Microsoft Configuration Manager documentation",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/misc/in-console-documentation",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/core/misc/in-console-documentation.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/configmgr/core/misc/in-console-documentation.md"
+        }
+      ],
+      "lines_added": 0,
+      "lines_removed": 2
+    },
+    {
+      "id": "0bf1c67e2f4a-20fcfc9e5fb8",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "How to enable TLS 1.2 on clients",
+      "summary": "The captured documentation changed in “Update and configure the .NET Framework to support TLS 1.2”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- For Windows 8.1 and Server 2012 R2: [Hotfix rollup 3099842](https://support.microsoft.com/topic/hotfix-rollup-3099842-for-the-net-framework-4-5-2-and-the-net-framework-4-5-1-on-windows-7b629c7e-bea4-4838-2512-e22e8bad368a)\n  - For Windows Server 2012: [Hotfix rollup 3099844](https://support.microsoft.com/topic/hotfix-rollup-3099844-for-the-net-framework-4-5-2-4-5-1-and-4-5-on-windows-ee48ac0d-79be-28f7-563d-e7bd46040dd3)",
+      "after": "- For Windows 8.1 and Server 2012 R2: Hotfix rollup 3099842\n  - For Windows Server 2012: Hotfix rollup 3099844",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/plan-design/security/enable-tls-1-2-client.md",
+          "title": "How to enable TLS 1.2 on clients",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/security/enable-tls-1-2-client",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/core/plan-design/security/enable-tls-1-2-client.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/configmgr/core/plan-design/security/enable-tls-1-2-client.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 2
+    },
+    {
+      "id": "0bf1c67e2f4a-57de9a2f37b9",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "How to enable TLS 1.2 on the site servers and remote site systems",
+      "summary": "The captured documentation changed in “Update and configure the .NET Framework to support TLS 1.2”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- For Windows 8.1 and Server 2012 R2: [Hotfix rollup 3099842](https://support.microsoft.com/topic/hotfix-rollup-3099842-for-the-net-framework-4-5-2-and-the-net-framework-4-5-1-on-windows-7b629c7e-bea4-4838-2512-e22e8bad368a)\n  - For Windows Server 2012: [Hotfix rollup 3099844](https://support.microsoft.com/topic/hotfix-rollup-3099844-for-the-net-framework-4-5-2-4-5-1-and-4-5-on-windows-ee48ac0d-79be-28f7-563d-e7bd46040dd3)",
+      "after": "- For Windows 8.1 and Server 2012 R2: Hotfix rollup 3099842\n  - For Windows Server 2012: Hotfix rollup 3099844",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/plan-design/security/enable-tls-1-2-server.md",
+          "title": "How to enable TLS 1.2 on the site servers and remote site systems",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/security/enable-tls-1-2-server",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/configmgr/core/plan-design/security/enable-tls-1-2-server.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/configmgr/core/plan-design/security/enable-tls-1-2-server.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 2
+    },
+    {
+      "id": "0bf1c67e2f4a-ea73055fa6f1",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "How to Use Microsoft Entra ID to Access the Intune APIs in Microsoft Graph",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Developer",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "PowerShell scripts can use the Microsoft Graph PowerShell module for authentication. To learn more, see [Microsoft Graph PowerShell](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).",
+      "after": "PowerShell scripts can use the Microsoft Graph PowerShell module for authentication. To learn more, see [Microsoft Graph PowerShell](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview) and the [Intune PowerShell examples](https://github.com/microsoft/mggraph-intune-samples).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/developer/configure-graph-api-access.md",
+          "title": "How to Use Microsoft Entra ID to Access the Intune APIs in Microsoft Graph",
+          "url": "https://learn.microsoft.com/en-us/intune/developer/configure-graph-api-access",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/developer/configure-graph-api-access.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/developer/configure-graph-api-access.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/5fc61396-d075-4560-aece-fdbda73d243f",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/5fc61396-d075-4560-aece-fdbda73d243f",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/ad9437c1-8cda-4537-ad69-b4b263652e13",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/ad9437c1-8cda-4537-ad69-b4b263652e13",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "0bf1c67e2f4a-a5d1ead293c0",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "Configure and use imported PKCS certificates with Intune",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Configuration",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "> As the authentication is run against Graph, you must provide permissions to the AppID. If it's the first time you've used this utility, an *Intune administrator* role is required. The PowerShell cmdlets use the same AppID as the one used with [PowerShell Intune Samples](https://github.com/microsoftgraph/powershell-intune-samples).",
+      "after": "> As the authentication is run against Graph, you must provide permissions to the AppID. If it's the first time you've used this utility, an *Intune administrator* role is required. The PowerShell cmdlets use the same AppID as the one used with [PowerShell Intune Samples](https://github.com/microsoft/mggraph-intune-samples).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-configuration/certificates/imported-pfx-profiles.md",
+          "title": "Configure and use imported PKCS certificates with Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/certificates/imported-pfx-profiles",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/device-configuration/certificates/imported-pfx-profiles.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/device-configuration/certificates/imported-pfx-profiles.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/4628cbd9-6f47-4ae1-b371-d34636609eaf",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/4628cbd9-6f47-4ae1-b371-d34636609eaf",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/be21deb8-8c64-44b0-b71f-2dc56ca7364f",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/be21deb8-8c64-44b0-b71f-2dc56ca7364f",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "0bf1c67e2f4a-fc63899e1c16",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "App settings configuration for Apple devices",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Configuration",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "- [`app.settings` configuration](https://github.com/apple/device-management/blob/seed_OS_27_0/declarative/declarations/configurations/app.settings.yaml) in Apple's device management GitHub repository—the source schema the settings catalog surfaces.",
+      "after": "- [`app.settings` configuration](https://github.com/apple/device-management/blob/release/declarative/declarations/configurations/app.settings.yaml) in Apple's device management GitHub repository—the source schema the settings catalog surfaces.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-configuration/templates/apple-ddm-app-settings.md",
+          "title": "App settings configuration for Apple devices",
+          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/templates/apple-ddm-app-settings",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/device-configuration/templates/apple-ddm-app-settings.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/device-configuration/templates/apple-ddm-app-settings.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
+    {
+      "id": "0bf1c67e2f4a-269ba63c936b",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "iOS/iPadOS device compliance security configurations examples",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "When using these examples, work with your security team to evaluate the threat environment, risk appetite, and the effect the different levels and configurations can have on usability. After reviewing and adjusting the examples to meet the needs of your organization, you can incorporate them within a ring deployment methodology for testing and production use by importing the sample [iOS/iPadOS Security Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/iOS) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).",
+      "after": "When using these examples, work with your security team to evaluate the threat environment, risk appetite, and the effect the different levels and configurations can have on usability. After reviewing and adjusting the examples to meet the needs of your organization, you can incorporate them within a ring deployment methodology for testing and production use by importing the sample [iOS/iPadOS Security Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/iOS) with [Intune's PowerShell scripts](https://github.com/microsoft/mggraph-intune-samples).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/security-configurations/ios-ipados-compliance.md",
+          "title": "iOS/iPadOS device compliance security configurations examples",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-compliance",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/device-security/security-configurations/ios-ipados-compliance.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/device-security/security-configurations/ios-ipados-compliance.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/8b9ae643-2e85-42b8-beb2-eef4bae8c4bc",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/8b9ae643-2e85-42b8-beb2-eef4bae8c4bc",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/e047e27d-b5f3-43a8-b4b0-4f6dca95e7c9"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/e047e27d-b5f3-43a8-b4b0-4f6dca95e7c9"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "0bf1c67e2f4a-22fdf065e18d",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "iOS/iPadOS personal device security configuration examples",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "When using these examples, work with your security team to evaluate the threat environment, risk appetite, and the effect the different levels and configurations can have on usability. After reviewing and adjusting the examples to meet the needs of your organization, you can incorporate them within a ring deployment methodology for testing and production use by importing the sample [iOS/iPadOS Security Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/iOS) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).",
+      "after": "When using these examples, work with your security team to evaluate the threat environment, risk appetite, and the effect the different levels and configurations can have on usability. After reviewing and adjusting the examples to meet the needs of your organization, you can incorporate them within a ring deployment methodology for testing and production use by importing the sample [iOS/iPadOS Security Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/iOS) with [Intune's PowerShell scripts](https://github.com/microsoft/mggraph-intune-samples).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/security-configurations/ios-ipados-personal.md",
+          "title": "iOS/iPadOS personal device security configuration examples",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-personal",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/device-security/security-configurations/ios-ipados-personal.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/device-security/security-configurations/ios-ipados-personal.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "0bf1c67e2f4a-29c9e58eebd0",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "iOS/iPadOS supervised device security configurations examples",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "When using these examples, work with your security team to evaluate the threat environment, risk appetite, and the effect the different levels and configurations can have on usability. After reviewing and adjusting the examples to meet the needs of your organization, you can incorporate them within a ring deployment methodology for testing and production use by importing the sample [iOS/iPadOS Security Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/iOS) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).",
+      "after": "When using these examples, work with your security team to evaluate the threat environment, risk appetite, and the effect the different levels and configurations can have on usability. After reviewing and adjusting the examples to meet the needs of your organization, you can incorporate them within a ring deployment methodology for testing and production use by importing the sample [iOS/iPadOS Security Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/iOS) with [Intune's PowerShell scripts](https://github.com/microsoft/mggraph-intune-samples).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/security-configurations/ios-ipados-supervised.md",
+          "title": "iOS/iPadOS supervised device security configurations examples",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-supervised",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/device-security/security-configurations/ios-ipados-supervised.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/device-security/security-configurations/ios-ipados-supervised.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/aebdc4a3-c54b-4eea-94e3-663d5e166f57",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/1baec8e6-ab38-4b56-bb59-f6282d94f311",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "0bf1c67e2f4a-f1528e6987a1",
+      "observed_at": "2026-10-22T13:41:18Z",
+      "observed_date": "2026-10-22",
+      "commit_sha": "0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/0bf1c67e2f4a53352f445b53cd4d78e8932257c3",
+      "title": "Migration guide: Set up or move to Microsoft Intune",
+      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
+      "kind": "minor",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Fundamentals",
+      "minor": true,
+      "summary_source": "automatic",
+      "before": "> - These steps use the [Intune beta Graph samples](https://github.com/microsoftgraph/powershell-intune-samples) on GitHub. The sample scripts make changes to your tenant. They're available as-is, and should be validated using a non-production or \"test\" tenant account. Be sure the scripts meet your organization security guidelines.\n   1. Go to [microsoftgraph/powershell-intune-samples](https://github.com/microsoftgraph/powershell-intune-samples), select **Code** &gt; **Download ZIP**. Extract the contents of the `.zip` file.",
+      "after": "> - These steps use the [Intune beta Graph samples](https://github.com/microsoft/mggraph-intune-samples) on GitHub. The sample scripts make changes to your tenant. They're available as-is, and should be validated using a non-production or \"test\" tenant account. Be sure the scripts meet your organization security guidelines.\n   1. Go to [microsoftgraph/powershell-intune-samples](https://github.com/microsoft/mggraph-intune-samples), select **Code** &gt; **Download ZIP**. Extract the contents of the `.zip` file.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/fundamentals/setup-migration.md",
+          "title": "Migration guide: Set up or move to Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/setup-migration",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/432b525071a1904020dca5f2ec08a331d782e66f/intune/fundamentals/setup-migration.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/0bf1c67e2f4a53352f445b53cd4d78e8932257c3/intune/fundamentals/setup-migration.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 2
+    },
     {
       "id": "432b525071a1-71ecce823002",
       "observed_at": "2026-10-22T01:47:08Z",
@@ -46189,1021 +46710,6 @@
           "after": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
             "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-d9a0e98cd655",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to audit remote control usage in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/remote-control/audit-remote-control-usage.md",
-          "title": "How to audit remote control usage in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/remote-control/audit-remote-control-usage",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/remote-control/audit-remote-control-usage.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/remote-control/audit-remote-control-usage.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-35a8d85a75d0",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Configuring remote control in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/remote-control/configuring-remote-control.md",
-          "title": "Configuring remote control in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/remote-control/configuring-remote-control",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/remote-control/configuring-remote-control.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/remote-control/configuring-remote-control.md"
-        }
-      ],
-      "lines_added": 16,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ddab3cd8-636f-4a91-896e-1c23f399a6bd"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f409bb5d-e203-40c5-9d95-0ee717231beb"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-0690ed27d1e1",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Introduction to remote control in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/remote-control/introduction-to-remote-control.md",
-          "title": "Introduction to remote control in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/remote-control/introduction-to-remote-control",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/remote-control/introduction-to-remote-control.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/remote-control/introduction-to-remote-control.md"
-        }
-      ],
-      "lines_added": 16,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ddab3cd8-636f-4a91-896e-1c23f399a6bd"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f409bb5d-e203-40c5-9d95-0ee717231beb"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-8c265c8b2537",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Prerequisites for remote control in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/remote-control/prerequisites-for-remote-control.md",
-          "title": "Prerequisites for remote control in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/remote-control/prerequisites-for-remote-control",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/remote-control/prerequisites-for-remote-control.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/remote-control/prerequisites-for-remote-control.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-3ce57eafe5f8",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to remotely administer a Windows client computer by using Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer.md",
-          "title": "How to remotely administer a Windows client computer by using Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/remote-control/remotely-administer-a-windows-client-computer.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-a73e93192c1d",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Security and privacy for remote control in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/remote-control/security-and-privacy-for-remote-control.md",
-          "title": "Security and privacy for remote control in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/remote-control/security-and-privacy-for-remote-control",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/remote-control/security-and-privacy-for-remote-control.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/remote-control/security-and-privacy-for-remote-control.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-b20040d04409",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Troubleshooting dashboard",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/software-update-health-dashboard.md",
-          "title": "Troubleshooting dashboard",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/software-update-health-dashboard",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/software-update-health-dashboard.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/software-update-health-dashboard.md"
-        }
-      ],
-      "lines_added": 16,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-71a9cb27c617",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Surface device dashboard in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/surface-device-dashboard.md",
-          "title": "Surface device dashboard in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/surface-device-dashboard",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/surface-device-dashboard.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/surface-device-dashboard.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/062d60c9-ee0f-402e-a046-b4e67c3572d6"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/17d3b3f6-a66e-4c69-9774-14a73c38e669"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-ac5a1c7883ee",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Integrate Upgrade Readiness with Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/upgrade-readiness.md",
-          "title": "Integrate Upgrade Readiness with Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/upgrade-readiness",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/upgrade-readiness.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/upgrade-readiness.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-4944bef46c59",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to exclude clients from upgrade in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/upgrade/exclude-clients-windows.md",
-          "title": "How to exclude clients from upgrade in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/upgrade/exclude-clients-windows",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/upgrade/exclude-clients-windows.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/upgrade/exclude-clients-windows.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-7645e601ecf4",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to test client upgrades in a pre-production collection",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/upgrade/test-client-upgrades.md",
-          "title": "How to test client upgrades in a pre-production collection",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/upgrade/test-client-upgrades",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/upgrade/test-client-upgrades.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/upgrade/test-client-upgrades.md"
-        }
-      ],
-      "lines_added": 18,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/1e69816a-aaaa-474e-a36f-3ec7790fadc3",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9"
           ],
           "first_captured": true
         }
