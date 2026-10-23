@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T13:38:16.543145Z",
-  "latest_commit_at": "2026-10-23T13:38:01Z",
+  "generated_at": "2026-10-23T19:35:10.048178Z",
+  "latest_commit_at": "2026-10-23T19:34:58Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,71 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3639,
+  "total_updates": 3640,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "4f9b74e775c4-6b906bdb29fe",
+      "observed_at": "2026-10-23T19:34:58Z",
+      "observed_date": "2026-10-23",
+      "commit_sha": "4f9b74e775c449a16783d6db56664c163c6fedc4",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/4f9b74e775c449a16783d6db56664c163c6fedc4",
+      "title": "Common questions, answers, and scenarios with policies and profiles in Microsoft Intune",
+      "summary": "The captured documentation changed in “Policy refresh intervals”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Configuration",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "| macOS | Every 15 minutes for 1 hour, and then around every 8 hours |",
+      "after": "| macOS | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every hour |",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-configuration/troubleshoot-device-profiles.md",
+          "title": "Common questions, answers, and scenarios with policies and profiles in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/troubleshoot-device-profiles",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/df3166a9a5c98d568fa48381772efc8394029a21/intune/device-configuration/troubleshoot-device-profiles.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/4f9b74e775c449a16783d6db56664c163c6fedc4/intune/device-configuration/troubleshoot-device-profiles.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 5,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "df3166a9a5c9-1b095ce07f09",
       "observed_at": "2026-10-23T13:38:01Z",
@@ -46702,99 +46762,6 @@
           "before": null,
           "after": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-5364eb68bcaf",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Prerequisites for power management in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/power/prerequisites-for-power-management.md",
-          "title": "Prerequisites for power management in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/power/prerequisites-for-power-management",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/power/prerequisites-for-power-management.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/power/prerequisites-for-power-management.md"
-        }
-      ],
-      "lines_added": 16,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/7cbaac1e-1137-4825-819f-cd751d73c036"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/eda7d4a5-11e2-4d6f-b379-0d496f2a17a5"
           ],
           "first_captured": true
         }
