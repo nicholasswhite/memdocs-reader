@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T19:35:10.048178Z",
-  "latest_commit_at": "2026-10-23T19:34:58Z",
+  "generated_at": "2026-10-24T01:47:44.836894Z",
+  "latest_commit_at": "2026-10-24T01:47:29Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,42 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3640,
+  "total_updates": 3641,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "f5995d98883e-42add675cfc9",
+      "observed_at": "2026-10-24T01:47:29Z",
+      "observed_date": "2026-10-24",
+      "commit_sha": "f5995d98883e77d8fd209a7969f1c42e037c000a",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/f5995d98883e77d8fd209a7969f1c42e037c000a",
+      "title": "Microsoft Intune Management Agent for macOS",
+      "summary": "The captured documentation changed in “How can I manually initiate an agent check-in from a Mac?”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "App Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Alternatively, open **Terminal**, run the `sudo killall IntuneMdmAgent` command to terminate the `IntuneMdmAgent` process. The `IntuneMdmAgent` process restarts immediately, which will initiate a check-in with Intune.",
+      "after": "",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/app-management/deployment/management-agent-macos.md",
+          "title": "Microsoft Intune Management Agent for macOS",
+          "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/management-agent-macos",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/4f9b74e775c449a16783d6db56664c163c6fedc4/intune/app-management/deployment/management-agent-macos.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/f5995d98883e77d8fd209a7969f1c42e037c000a/intune/app-management/deployment/management-agent-macos.md"
+        }
+      ],
+      "lines_added": 0,
+      "lines_removed": 2
+    },
     {
       "id": "4f9b74e775c4-6b906bdb29fe",
       "observed_at": "2026-10-23T19:34:58Z",
@@ -46671,97 +46702,6 @@
             "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
             "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
             "https://authoring-docs-microsoft.poolparty.biz/devrel/6735bd7e-4f7b-457d-b58c-29e6f0198677"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-9ae611dd0e35",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "How to monitor and plan for power management in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/power/monitor-and-plan-for-power-management.md",
-          "title": "How to monitor and plan for power management in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/power/monitor-and-plan-for-power-management",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/power/monitor-and-plan-for-power-management.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/power/monitor-and-plan-for-power-management.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863"
           ],
           "first_captured": true
         }
