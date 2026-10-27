@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T01:53:12.067647Z",
-  "latest_commit_at": "2026-10-27T01:52:59Z",
+  "generated_at": "2026-10-27T19:32:19.631331Z",
+  "latest_commit_at": "2026-10-27T19:32:08Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,113 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3654,
+  "total_updates": 3656,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "350eb2982fe1-713525107b22",
+      "observed_at": "2026-10-27T19:32:08Z",
+      "observed_date": "2026-10-27",
+      "commit_sha": "350eb2982fe190fab5cb0b63a9e8d39b8a309bb0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/350eb2982fe190fab5cb0b63a9e8d39b8a309bb0",
+      "title": "Intune data platform schema",
+      "summary": "The captured documentation changed in “`AppleAccessibility`; `AppleContentCachePeer`”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "Windows",
+        "iOS/iPadOS",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Advanced Analytics",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": ">  **Supported platforms**: Android, Windows",
+      "after": "## `AppleAccessibility`\n\n> **Description**: Reports accessibility settings on Apple devices.  \n>  **Supported platforms**: iOS, iPadOS\n\nThese properties are available on supervised devices running iOS 16 or later or iPadOS 16 or later.\n\n| Property | Type | Description | Platform |\n| --- | --- | --- | --- |\n| `BoldTextEnabled` | bool | Indicates whether bold text is enabled. | iOS, iPadOS |\n| `IncreaseContrastEnabled` | bool | Indicates whether increased display contrast is enabled. | iOS, iPadOS |\n| `ReduceMotionEnabled` | bool | Indicates whether reduced motion is enabled. | iOS, iPadOS |\n| `ReduceTransparencyEnabled` | bool | Indicates whether reduced transparency is enabled. | iOS, iPadOS |\n| `TextSize` | long | The configured accessibility text-size value. Values range from 0 (smallest) to 11 (largest). A value of -1 indicates that the size is unknown or hasn't been explicitly set. | iOS, iPadOS |\n| `TouchAccommodationsEnabled` | bool | Indicates whether Touch Accommodations is enabled. | iOS, iPadOS |\n| `VoiceOverEnabled` | bool | Indicates whether the VoiceOver screen reader is enabled. | iOS, iPadOS |\n| `ZoomEnabled` | bool | Indicates whether accessibility Zoom is enabled. | iOS, iPadOS |\n\n\n## `AppleContentCache`\n\n> **Description**: Reports content caching configuration, storage usage, and service status.  \n>  **Supported platforms**: macOS\n\nThese properties require macOS 27 or later.\n\n| Property | Type | Description | Platform |\n| --- | --- | --- | --- |\n| `CacheServerGuid` | string | The unique identifier of the content caching server. | macOS |\n| `CacheStatus` | string | The reported status of the content cache. | macOS |\n| `FreeBytes` | long | The available content cache storage, in bytes. | macOS |\n| `LimitBytes` | long | The storage limit for the content c\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/advanced-analytics/ref-data-platform-schema.md",
+          "title": "Intune data platform schema",
+          "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/ref-data-platform-schema",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/9dcdeb48a6c4fc8006ff16f6fbc0d6786a130b25/intune/advanced-analytics/ref-data-platform-schema.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/350eb2982fe190fab5cb0b63a9e8d39b8a309bb0/intune/advanced-analytics/ref-data-platform-schema.md"
+        }
+      ],
+      "lines_added": 144,
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-03-24T00:00:00Z",
+          "after": "2026-10-26T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "350eb2982fe1-73a866a2a2ed",
+      "observed_at": "2026-10-27T19:32:08Z",
+      "observed_date": "2026-10-27",
+      "commit_sha": "350eb2982fe190fab5cb0b63a9e8d39b8a309bb0",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/350eb2982fe190fab5cb0b63a9e8d39b8a309bb0",
+      "title": "Summary of changes in Configuration Manager current branch, version 2609",
+      "summary": "The captured documentation changed in “Summary of KB2377842”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- The early update ring version is available as an in-console update that can be installed at the top-tier site in a hierarchy.",
+      "after": "- As of October 26, 2026, version 2609 is globally available for all customers to install.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2609/2377842.md",
+          "title": "Summary of changes in Configuration Manager current branch, version 2609",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2609/2377842",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/9dcdeb48a6c4fc8006ff16f6fbc0d6786a130b25/intune/configmgr/hotfix/2609/2377842.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/350eb2982fe190fab5cb0b63a9e8d39b8a309bb0/intune/configmgr/hotfix/2609/2377842.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 7,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/eea02214-631d-404a-92d1-5a3357c32a26"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d",
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/f42c31d7-eed9-43b7-9757-54caffb53cdc"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "9dcdeb48a6c4-1335d04045d4",
       "observed_at": "2026-10-27T01:52:59Z",
@@ -47191,170 +47293,6 @@
           "after": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3f56b378-07a9-4fa1-afe8-9889fdc77628"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-37494e9e881e",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Security and privacy for hardware inventory in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-hardware-inventory.md",
-          "title": "Security and privacy for hardware inventory in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-hardware-inventory",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-hardware-inventory.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-hardware-inventory.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-ba5944cd0b14",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Security and privacy for software inventory in Configuration Manager",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-software-inventory.md",
-          "title": "Security and privacy for software inventory in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-software-inventory",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-software-inventory.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/inventory/security-and-privacy-for-software-inventory.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
           ],
           "first_captured": true
         }
