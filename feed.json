@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T19:32:19.631331Z",
-  "latest_commit_at": "2026-10-27T19:32:08Z",
+  "generated_at": "2026-10-28T19:32:09.313528Z",
+  "latest_commit_at": "2026-10-28T19:31:59Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,150 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3656,
+  "total_updates": 3657,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "32f4abf28018-4ee26c40ae56",
+      "observed_at": "2026-10-28T19:31:59Z",
+      "observed_date": "2026-10-28",
+      "commit_sha": "32f4abf2801869fba628c43338c2f33939e12607",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/32f4abf2801869fba628c43338c2f33939e12607",
+      "title": "Manage system settings with Endpoint Privilege Management",
+      "summary": "The captured article wording changed. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Endpoint Privilege Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> EPM System settings (Network settings) is rolling out gradually and may not yet be available in your tenant.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/epm/manage-system-settings.md",
+          "title": "Manage system settings with Endpoint Privilege Management",
+          "url": "https://learn.microsoft.com/en-us/intune/epm/manage-system-settings",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/350eb2982fe190fab5cb0b63a9e8d39b8a309bb0/intune/epm/manage-system-settings.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/32f4abf2801869fba628c43338c2f33939e12607/intune/epm/manage-system-settings.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "A common scenario is a user who travels between sites. To connect a device at a new location, the user might need to set a static IP address or DNS server before the device is online. An elevation system settings policy lets the user make that change, even when the device is offline."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "For elevation system settings policies to take effect, devices must also have an *elevation settings policy* targeted that enables EPM. For more information, see [Manage elevation settings](manage-elevation-settings.md)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## About elevation system settings policy"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "A common scenario is a user who travels between sites. To connect a device at a new location, the user might need to set a static IP address or DNS server before the device is online. An elevation system settings policy lets the user make that change, even when the device is offline."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "For elevation system settings policies to take effect, devices must also have an *elevation settings policy* targeted that enables EPM. For more information, see [Manage elevation settings](manage-elevation-settings.md)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> EPM System settings (Network settings) is rolling out gradually and may not yet be available in your tenant."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## About elevation system settings policy"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/49ede7b2-2f56-4945-b7e6-22fec420737b",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/103d59ae-20d6-4a29-babb-43fe986b6c52",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "350eb2982fe1-713525107b22",
       "observed_at": "2026-10-27T19:32:08Z",
@@ -47200,99 +47339,6 @@
             "payur",
             "qiani",
             "umaikhan"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-de774ad78e3a",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Resource Explorer default inventory classes",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/inventory/resource-explorer-classes.md",
-          "title": "Resource Explorer default inventory classes",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/inventory/resource-explorer-classes",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/inventory/resource-explorer-classes.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/inventory/resource-explorer-classes.md"
-        }
-      ],
-      "lines_added": 16,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c6f99e62-1cf6-4b71-af9b-649b05f80cce"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
-          ],
-          "first_captured": true
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": null,
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3f56b378-07a9-4fa1-afe8-9889fdc77628"
           ],
           "first_captured": true
         }
