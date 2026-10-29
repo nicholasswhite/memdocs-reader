@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T01:35:23.044758Z",
-  "latest_commit_at": "2026-10-29T01:35:08Z",
+  "generated_at": "2026-10-29T13:34:17.065508Z",
+  "latest_commit_at": "2026-10-29T13:34:07Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,69 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 3658,
+  "total_updates": 3659,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "c957dc5ea066-35535f058f06",
+      "observed_at": "2026-10-29T13:34:07Z",
+      "observed_date": "2026-10-29",
+      "commit_sha": "c957dc5ea0665f71b581749dc5b121b6ab44c6e2",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/c957dc5ea0665f71b581749dc5b121b6ab44c6e2",
+      "title": "Preprovision BitLocker in Windows PE with Configuration Manager",
+      "summary": "The captured article wording changed. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Configuration Manager",
+      "area": "Osd",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "The **Pre-provision BitLocker** task sequence step in Configuration Manager allows you to enable BitLocker from the Windows Preinstallation Environment (Windows PE) prior to operating system deployment. Only the used drive space is encrypted, and therefore, encryption times are much faster. This is done with a randomly generated clear protector applied to the formatted volume and encrypting the volume prior to running the Windows setup process. The ability to pre-provision BitLocker was introduced with Windows 8 and Windows Server 2012. However, you can pre-provision BitLocker on a hard drive and install Windows 7 as long as you follow specific steps. After Windows 7 Setup completes, you must set a BitLocker key protector because the Windows 7 BitLocker control panel does not support BitLocker with a clear protector. You must add a key protector by using the **Enable BitLocker** step or by using the manage-bde.exe command-line tool.\nGenerally, you must do the following to successfully pre-provision BitLocker on a computer that will install Windows 7:\n- Restart the computer in Windows PE\n  > You must use a boot image with Windows PE 4 or later to pre-provision BitLocker. For more information about supported Windows PE versions in Configuration Manager, see [Dependencies External to Configuration Manager](../plan-design/infrastructure-requirements-for-operating-system-deployment.md#dependencies-external-to-configuration-manager).\n- Install Windows 7 with specific operating system and network settings\n- Add a key protector to BitLocker\n  In Configuration Manager, the recommended way to pre-provision BitLocker on a hard drive and install Windows 7 is to create a new task sequence and select **Install an existing image package** from the **Create New Task Sequence** page of\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "The **Pre-provision BitLocker** task sequence step in Configuration Manager allows you to enable BitLocker from the Windows Preinstallation Environment (Windows PE) prior to operating system deployment. Only the used drive space is encrypted, and therefore, encryption times are much faster. This is done with a randomly generated clear protector applied to the formatted volume and encrypting the volume prior to running the Windows setup process. The ability to pre-provision BitLocker only applies to currently supported Windows operating system versions.\nGenerally, you must do the following to successfully pre-provision BitLocker on a computer that will install Windows:\n- If starting your task sequence in the full OS, restart the computer in Windows PE\n  > You must use a boot image from a supported ADK version and updated Configuration Manager client version to pre-provision BitLocker. For more information about supported Windows PE versions in Configuration Manager, see [Dependencies External to Configuration Manager](../plan-design/infrastructure-requirements-for-operating-system-deployment.md#dependencies-external-to-configuration-manager).\n- Install Windows with specific operating system and network settings\n- Enable BitLocker\n  In Configuration Manager, the recommended way to pre-provision BitLocker on a hard drive and install Windows is to create a new task sequence and select **Install an existing image package** from the **Create New Task Sequence** page of the **Create Task Sequence Wizard**. The wizard creates the task sequence steps listed in following table.\n| Enable BitLocker | This step enables BitLocker encryption on the hard drive and sets key protectors. Because the hard drive was pre-provisioned with BitLocker, this step completes very quickly. Windows r\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/osd/deploy-use/preprovision-bitlocker-in-windows-pe.md",
+          "title": "Preprovision BitLocker in Windows PE with Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/osd/deploy-use/preprovision-bitlocker-in-windows-pe",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/41e56d0dbdab959c39240ce32acc1038d078a098/intune/configmgr/osd/deploy-use/preprovision-bitlocker-in-windows-pe.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/intune/configmgr/osd/deploy-use/preprovision-bitlocker-in-windows-pe.md"
+        }
+      ],
+      "lines_added": 10,
+      "lines_removed": 8,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8"
+          ],
+          "after": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "41e56d0dbdab-1b095ce07f09",
       "observed_at": "2026-10-29T01:35:08Z",
@@ -47369,79 +47427,6 @@
             "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
             "https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3a764584-4f97-452b-8f1d-36f19b12f6ae"
-          ],
-          "first_captured": true
-        }
-      ],
-      "metadata_baseline": true
-    },
-    {
-      "id": "a52014febbb5-bf43f8528298",
-      "observed_at": "2026-10-09T13:43:53Z",
-      "observed_date": "2026-10-09",
-      "commit_sha": "a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/a52014febbb51b9b46513d6ccad015dcb5e62645",
-      "title": "Introduction to hardware inventory",
-      "summary": "Additional document metadata was first captured as tracking expanded. Article text is unchanged. Newly captured values may predate this observation.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory.md",
-          "title": "Introduction to hardware inventory",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e053e0d34b5c8a9f26bdfa343f17f42ae03273a0/intune/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/a52014febbb51b9b46513d6ccad015dcb5e62645/intune/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory.md"
-        }
-      ],
-      "lines_added": 10,
-      "lines_removed": 0,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": null,
-          "after": "sccmavenger",
-          "first_captured": true
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": null,
-          "after": "laurawi",
-          "first_captured": true
-        },
-        {
-          "field": "moniker_range_name",
-          "label": "Version applicability",
-          "before": null,
-          "after": "",
-          "first_captured": true
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": null,
-          "after": "dannygu",
-          "first_captured": true
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": null,
-          "after": [
-            "brianhun",
-            "hugowu",
-            "payur",
-            "qiani",
-            "umaikhan"
           ],
           "first_captured": true
         }
