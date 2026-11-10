@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T20:33:32.194657Z",
-  "latest_commit_at": "2026-11-09T20:32:51Z",
+  "generated_at": "2026-11-10T02:37:41.416991Z",
+  "latest_commit_at": "2026-11-10T02:37:00Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,169 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10232,
+  "total_updates": 10236,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "fa66c9415621-fd53d103e6f9",
+      "observed_at": "2026-11-10T02:37:00Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "fa66c94156215c28d07783656e68f91c356da2e7",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/fa66c94156215c28d07783656e68f91c356da2e7",
+      "title": "Configure the Microsoft Managed Home Screen App for Android Enterprise",
+      "summary": "The captured documentation changed in “Using Configuration Designer”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "App Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "| Exclude these apps from the silence setting | bundleArray | See **Enter JSON Data** section of this document | Specify apps to exclude from silencing while Managed Home Screen requires authentication. These apps can start activities, show notifications, appear in recent apps, or trigger alerts like toasts, dialogs, or ringing while the device is locked. Specify the apps by entering the package name for each app that you want to exclude. **Note:** On devices running Android 11 and later, if a user opens protected content in a MAM-integrated app while Managed Home Screen requires sign-in or session PIN authentication, the app redirects the user to Managed Home Screen to authenticate. To use this behavior, exclude the MAM-integrated app from silencing and assign an [Intune app protection policy](../protection/create-policy.md) to both the app and the signed-in user. No specific app protection policy setting is required. | ❌ |",
+      "after": "| Exclude these apps from the silence setting | bundleArray | See **Enter JSON Data** section of this document | Specify apps to exclude from silencing while Managed Home Screen requires authentication. These apps can start activities, show notifications, appear in recent apps, or trigger alerts like toasts, dialogs, or ringing while the device is locked. Specify the apps by entering the package name for each app that you want to exclude. **Note:** If a user opens protected content in a MAM-integrated app while Managed Home Screen requires sign-in or session PIN authentication, the app redirects the user to Managed Home Screen to authenticate. To use this behavior, exclude the MAM-integrated app from silencing and assign an [Intune app protection policy](../protection/create-policy.md) to both the app and the signed-in user. No specific app protection policy setting is required. | ❌ |",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/app-management/configuration/configure-managed-home-screen.md",
+          "title": "Configure the Microsoft Managed Home Screen App for Android Enterprise",
+          "url": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-home-screen",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/38421fd767aec19ad244ac0ecb2d3c66f48272a3/intune/app-management/configuration/configure-managed-home-screen.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/app-management/configuration/configure-managed-home-screen.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
+    {
+      "id": "fa66c9415621-5455d6f518bc",
+      "observed_at": "2026-11-10T02:37:00Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "fa66c94156215c28d07783656e68f91c356da2e7",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/fa66c94156215c28d07783656e68f91c356da2e7",
+      "title": "Become a Microsoft Intune Mobile Device Management Partner",
+      "summary": "This article was newly captured in the tracker. This does not establish when Microsoft first published it or released a feature.",
+      "kind": "new",
+      "platforms": [
+        "Android",
+        "iOS/iPadOS",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "# Become a Microsoft Intune Mobile Device Management Partner\n\nThe Third-Party Compliance MDM Partner Program is designed for mobile device management (MDM) solutions that determine and manage compliance for user-associated devices and use Microsoft Entra ID to communicate device compliance status to Microsoft services.\n\n## Supported scenarios\n\nTo be eligible as an Intune compliance partner, your MDM solution must meet the following criteria:\n\n- Manage devices using MDM protocols.\n- Evaluate device compliance for user-based scenarios.\n- Use Microsoft Entra ID for user identification.\n- Support one or more of the following platforms: Android, iOS/iPadOS, and macOS.\n\n## Apply to become an Intune compliance MDM partner\n\nPartners interested in integrating with Microsoft should begin by creating a Microsoft Entra app for their MDM product. For instructions, see [Register a Microsoft Entra app and create a service principal](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal).\n\nAfter you create a Microsoft Entra app and obtain a Microsoft Entra app ID, you can apply to become a partner through the [Intune Compliance MDM Partner Application](https://forms.cloud.microsoft/r/GKYuFnrSdv).\n\nMicrosoft uses the submitted information to validate that:\n\n- The solution aligns with the intended Intune and Microsoft Entra ID Conditional Access scenario.\n- The proposed integration is appropriate for the Intune Device Compliance API.\n- The partner is prepared to provide enterprise-grade support to customers after launch.\n\nTo protect your organization and customers, do not include detailed implementation information, source code, API payloads, security internals, proprietary design details, or other information not reasonably necessary for Microso\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-security/compliance/become-mobile-device-management-compliance-provider.md",
+          "title": "Become a Microsoft Intune Mobile Device Management Partner",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/become-mobile-device-management-compliance-provider",
+          "old_url": null,
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/device-security/compliance/become-mobile-device-management-compliance-provider.md"
+        }
+      ],
+      "lines_added": 63,
+      "lines_removed": 0
+    },
+    {
+      "id": "fa66c9415621-91096db0faaf",
+      "observed_at": "2026-11-10T02:37:00Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "fa66c94156215c28d07783656e68f91c356da2e7",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/fa66c94156215c28d07783656e68f91c356da2e7",
+      "title": "Using third-party device compliance partners with Intune",
+      "summary": "The captured article wording changed. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "# Support third-party device compliance partners in Intune",
+      "after": "# Using third-party device compliance partners with Intune",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/compliance/third-party-partners.md",
+          "title": "Using third-party device compliance partners with Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/third-party-partners",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/38421fd767aec19ad244ac0ecb2d3c66f48272a3/intune/device-security/compliance/third-party-partners.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/device-security/compliance/third-party-partners.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "title",
+          "label": "Page title",
+          "before": "Support third-party device compliance partners in Intune",
+          "after": "Using third-party device compliance partners with Intune",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "fa66c9415621-251c940c3b22",
+      "observed_at": "2026-11-10T02:37:00Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "fa66c94156215c28d07783656e68f91c356da2e7",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/fa66c94156215c28d07783656e68f91c356da2e7",
+      "title": "Install the Certificate Connector for Microsoft Intune",
+      "summary": "The captured documentation changed in “Configure the certificate connector”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Fundamentals",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "> Be sure to include the HTTP or HTTPS prefix. This is a change from the proxy configuration for previous versions of the connector.",
+      "after": "> Include the HTTP or HTTPS prefix in the proxy address. This requirement differs from previous versions of the connector.\n   >\n   > The proxy settings configured in the Certificate Connector wizard apply to the connector services. They don't configure the system-wide Windows HTTP Services (WinHTTP) proxy.\n   >\n   > If your environment also requires a WinHTTP proxy, configure it separately. Changing the system-wide WinHTTP proxy can affect other applications and services that use the default WinHTTP proxy configuration. Review any changes with your network administrator.\n\n   If your environment requires a system-wide static WinHTTP proxy, use the following procedure:\n\n   1. Open **Command Prompt as administrator**. Before making changes, display and record the existing configuration:\n\n      ```cmd\n      netsh winhttp show proxy\n      ```\n   2. Configure the proxy. The following example sets a static proxy and bypass list. Replace the server, port, and bypass entries with values approved for your environment:\n\n      ```cmd\n      netsh winhttp set proxy proxy-server=\"proxy.contoso.com:8080\" bypass-list=\"<local>;*.contoso.com\"\n      ```\n\n      The bypass list allows direct connections to short-name hosts and hosts matching `*.contoso.com`.\n   3. Verify the resulting configuration:\n\n      ```cmd\n      netsh winhttp show proxy\n      ```\n\n   To remove the configured proxy and use direct connections, run the following command only if direct connectivity is intended:\n\n   ```cmd\n   netsh winhttp reset proxy\n   ```\n\n   Resetting the proxy doesn't restore a previous proxy configuration and can interrupt connectivity where a proxy is required.\n\n   For available commands and configuration options, see [netsh winhttp](https://learn.microsoft.com/en-us/windows-server/administration/wi\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/fundamentals/certificates/connector/setup-connector.md",
+          "title": "Install the Certificate Connector for Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/connector/setup-connector",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/38421fd767aec19ad244ac0ecb2d3c66f48272a3/intune/fundamentals/certificates/connector/setup-connector.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/fundamentals/certificates/connector/setup-connector.md"
+        }
+      ],
+      "lines_added": 38,
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "ai-usage",
+          "label": "ai-usage",
+          "before": null,
+          "after": "ai-assisted",
+          "first_captured": false
+        },
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": null,
+          "after": "msecd-doc-authoring-1032",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-10-09T00:00:00Z",
+          "after": "2026-11-06T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "38421fd767ae-533b06088cf2",
       "observed_at": "2026-11-09T20:32:51Z",
@@ -19810,220 +19968,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/workloads",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/workloads.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/workloads.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-977d56d249e1",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Configure Microsoft Edge Legacy settings in Configuration Manager",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Compliance",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/compliance/deploy-use/browser-profiles.md",
-          "title": "Configure Microsoft Edge Legacy settings in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/compliance/deploy-use/browser-profiles",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/compliance/deploy-use/browser-profiles.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/compliance/deploy-use/browser-profiles.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-28f9df681e62",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "How to create child configuration items in Configuration Manager",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Compliance",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/compliance/deploy-use/create-child-configuration-items.md",
-          "title": "How to create child configuration items in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/compliance/deploy-use/create-child-configuration-items",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/compliance/deploy-use/create-child-configuration-items.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/compliance/deploy-use/create-child-configuration-items.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-07c9453a6d8d",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Create configuration baselines in Configuration Manager",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Compliance",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/compliance/deploy-use/create-configuration-baselines.md",
-          "title": "Create configuration baselines in Configuration Manager",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/compliance/deploy-use/create-configuration-baselines",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/compliance/deploy-use/create-configuration-baselines.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/compliance/deploy-use/create-configuration-baselines.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-26d6ef22b8e9",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Create configuration items for macOS X devices",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [
-        "macOS"
-      ],
-      "product": "Configuration Manager",
-      "area": "Compliance",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md",
-          "title": "Create configuration items for macOS X devices",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md"
         }
       ],
       "lines_added": 2,
