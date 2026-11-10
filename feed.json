@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T02:37:41.416991Z",
-  "latest_commit_at": "2026-11-10T02:37:00Z",
+  "generated_at": "2026-11-10T20:33:07.813927Z",
+  "latest_commit_at": "2026-11-10T20:32:27Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,262 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10236,
+  "total_updates": 10241,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "ab281ff9f891-7799c1491398",
+      "observed_at": "2026-11-10T20:32:27Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "title": "Work or school apps for iOS",
+      "summary": "The captured documentation changed in “How do I get work or school apps?; What can my org manage in an app?”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Intune-managed apps (*managed* apps for short) are apps that've been configured for you to securely use at work or school. They're specially configured to meet your organization's security requirements and protect internal data. For example, if you're signed in to one of these apps with your work or school account, your org can restrict certain features, such as copy and paste. Or they could restrict you from saving work files to your device's local storage. These types of restrictions prevent proprietary information from being shared outside of the app or org.\n1. You connect to your organization's network in a managed browser app, such as Microsoft Edge.\n2. You click a link to open a peer's presentation file.\n3. An appropriate managed app, such as Microsoft PowerPoint, opens the file.\nYour organization may purchase iOS app licenses in bulk to accommodate the number of students or employees they have. If prompted to, review and accept the Apple Volume Purchase Program agreement to install the app.\nThe following list describes the settings your IT support person can control within an app. These settings affect how you view, access, and otherwise use work or school data on your device:\nBy default, your device doesn't trust line-of-business (LOB) apps acquired outside of the App Store, which may prevent your organization's own company apps from being installed. You'll know this is happening if you open an installed LOB app and receive an *untrusted enterprise developer* message.\n- Contact your IT support person for more information about work or school apps. Check the Company Portal app or [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for your organization's support and helpdesk information.\n- For information about using work or school apps on a\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "Intune-managed apps (*managed* apps for short) are apps configured for you to securely use at work or school. They're specially configured to meet your organization's security requirements and protect internal data. For example, if you sign in to one of these apps with your work or school account, your org can restrict certain features, such as copy and paste. Or they could restrict you from saving work files to your device's local storage. These types of restrictions prevent proprietary information from being shared outside of the app or org.\n- You connect to your organization's network in a managed browser app, such as Microsoft Edge.\n- You click a link to open a peer's presentation file.\n- An appropriate managed app, such as Microsoft PowerPoint, opens the file.\nYour organization might purchase iOS app licenses in bulk to accommodate the number of students or employees they have. If prompted to, review and accept the Apple Volume Purchase Program agreement to install the app.\nThe following list describes the settings your IT support person can control in an app. These settings affect how you view, access, and otherwise use work or school data on your device:\nBy default, your device doesn't trust line-of-business (LOB) apps acquired outside of the App Store, which might prevent your organization's own company apps from being installed. You know this is happening if you open an installed LOB app and receive an *untrusted enterprise developer* message.\nContact your IT support person for more information about work or school apps. Check the Company Portal app or [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for your organization's support and helpdesk information.\n\nFor information about using work or school apps on an Android device, see [Get\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/user-help/apps/managed-apps-ios.md",
+          "title": "Work or school apps for iOS",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/apps/managed-apps-ios",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/user-help/apps/managed-apps-ios.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb/intune/user-help/apps/managed-apps-ios.md"
+        }
+      ],
+      "lines_added": 13,
+      "lines_removed": 11,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Learn how to access work or school apps on your iOS device.",
+          "after": "Get work or school apps on your iPhone or iPad. Find out how to install managed apps, identify protected apps, and request new ones through Company Portal.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-05-15T00:00:00Z",
+          "after": "2026-11-03T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "ab281ff9f891-5109f11b1b34",
+      "observed_at": "2026-11-10T20:32:27Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "title": "Get the Intune Company Portal app",
+      "summary": "The captured documentation changed in “Install app; Sign in to app”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "If the app stores listed above are unavailable, or you're using a device that doesn't support Google Mobile Services, you can [download Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) on your device and side-load the app. When installed this way, the app doesn't receive updates or software fixes automatically. Be sure to regularly update and patch the app yourself.\nGoogle Play Store is not available in People's Republic of China. You can install the Company Portal app from select Chinese app marketplaces instead. For more information, see [Install Company Portal app in People's Republic of China](install-android-china.md).\nInstall Company Portal for macOS from [Enroll my Mac](https://go.microsoft.com/fwlink/?linkid=853070). Selecting this link will immediately download the Company Portal installer package on your device.\nThere are three ways to sign in to Company Portal:\n1. Open the app and tap **Sign In**.\n2. Enter the email address associated with your school or work account and then tap **Next**.\n3. Enter your password and tap **Sign In**.\nYou'll only see this sign-in option if your organization allows certificate-based authentication and you have a certificate available to use.\n2. Enter the email address associated with your work or school account and then tap **Next**.\n3. Tap **Sign in with a certificate**.\n4. Tap **Continue** to use the certificate.\n1. Open Company Portal on the device you'll be using to access your work resources.\n3. Write down the one-time, sign-in code that appears on screen (or just keep this screen handy for the next couple steps).\n   ![Instructions are provided to go to the https://microsoft.com/devicelogin page, with a unique passcode, from your work computer, then to use the code to si\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "If the app stores listed earlier are unavailable, or you're using a device that doesn't support Google Mobile Services, you can [download Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) on your device and side-load the app. When you install the app this way, it doesn't receive updates or software fixes automatically. Be sure to regularly update and patch the app yourself.\nGoogle Play Store isn't available in People's Republic of China. You can install the Company Portal app from select Chinese app marketplaces instead. For more information, see [Install Company Portal app in People's Republic of China](install-android-china.md).\nInstall Company Portal for macOS from [Enroll my Mac](https://go.microsoft.com/fwlink/?linkid=853070). Selecting this link immediately downloads the Company Portal installer package on your device.\nYou can sign in to Company Portal in three ways:\n1. Open the app and select **Sign In**.\n2. Enter the email address associated with your school or work account and then select **Next**.\n3. Enter your password and select **Sign In**.\nYou see this sign-in option only if your organization allows certificate-based authentication and you have a certificate available to use.\n2. Enter the email address associated with your work or school account and then select **Next**.\n3. Select **Sign in with a certificate**.\n4. Select **Continue** to use the certificate.\n1. Open Company Portal on the device to use to access your work resources.\n3. Write down the one-time sign-in code that appears on screen, or keep this screen handy for the next couple steps.\n   ![Screenshot shows instructions to go to the devicelogin page, with a unique passcode.](media/index/cp_ios_aad_signin_after_1804_006.PNG)\n5. Enter the code w\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/user-help/company-portal/index.md",
+          "title": "Get the Intune Company Portal app",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/company-portal/",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/user-help/company-portal/index.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb/intune/user-help/company-portal/index.md"
+        }
+      ],
+      "lines_added": 24,
+      "lines_removed": 23,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Learn where to get the Company Portal app and how to sign in.",
+          "after": "Intune Company Portal is available for Android, iOS, macOS, and Windows. Learn where to install the app and how to sign in to access your work resources.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-01-27T00:00:00Z",
+          "after": "2026-11-03T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "ab281ff9f891-ee632b22e80f",
+      "observed_at": "2026-11-10T20:32:27Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "title": "Company Portal device setting requirements for Android",
+      "summary": "The captured documentation changed in “Device limit reached; Operating system isn't supported”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "This article describes the Android device setting requirements that Intune Company Portal can enforce on behalf of your workplace or school. Requirements are determined by your organization, and help keep your device secure while you're using it for work or school purposes. You only need to update settings flagged by Company Portal.\nTo prevent unauthorized access to internal data, your school or workplace might limit the number of devices you can register. If you reach the device limit, we recommend removing one of your devices or contacting your support person to increase the device limit. Your options:\nThe operating system (OS) version on your device isn't supported. It's possible the latest version doesn't work with your organization's apps, tools, and other internal infrastructure. To resolve this issue, contact your IT support person and find out what the OS requirements are for your device.\n*Rooting* a device involves changing its software. These changes make the device more prone to unauthorized access and malicious attacks, which is why rooted devices are often blocked from accessing company emails or files. Your organization might block your device from accessing work or school resources if:\n- You install an app on your device that the root detection software thinks is a security risk. For example, if you're prompted to unroot your device immediately after you install an app, uninstall the app and then check to see if you regain access.\n- Your device manufacturer installed software on your device that the root detection software thinks is a security risk. Contact your IT support person for help. For contact information, sign in to the Company Portal website or Company Portal app.\n- You rooted the device. Reverse the root (commonly done with PC software or apps)\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "This article describes the Android device setting requirements that Intune Company Portal can enforce on behalf of your workplace or school. Your organization determines these requirements. They help keep your device secure while you use it for work or school purposes. You only need to update settings flagged by Company Portal.\nTo prevent unauthorized access to internal data, your school or workplace might limit the number of devices you can register. If you reach the device limit, remove one of your devices or contact your support person to increase the device limit. Your options:\nThe operating system (OS) version on your device isn't supported. The latest version might not work with your organization's apps, tools, and other internal infrastructure. To resolve this issue, contact your IT support person and find out what the OS requirements are for your device.\n*Rooting* a device involves changing its software. These changes make the device more prone to unauthorized access and malicious attacks. For this reason, rooted devices are often blocked from accessing company emails or files. Your organization might block your device from accessing work or school resources if:\n- You install an app on your device that the root detection software identifies as a security risk. For example, if you're prompted to unroot your device immediately after you install an app, uninstall the app and then check to see if you regain access.\n- Your device manufacturer installed software on your device that the root detection software identifies as a security risk. Contact your IT support person for help. For contact information, sign in to the Company Portal website or Company Portal app.\n- You rooted the device. Reverse the root (commonly done with PC software or apps) and restore the device\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/user-help/compliance/update-settings-android.md",
+          "title": "Company Portal device setting requirements for Android",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/compliance/update-settings-android",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/user-help/compliance/update-settings-android.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb/intune/user-help/compliance/update-settings-android.md"
+        }
+      ],
+      "lines_added": 14,
+      "lines_removed": 13,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Learn more about Intune Company Portal device setting requirements for Android.",
+          "after": "Learn how to resolve Intune Company Portal device setting issues on Android, from screen lock and OS updates to rooted device alerts, and regain work access.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-02-06T00:00:00Z",
+          "after": "2026-11-03T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "ab281ff9f891-93aa0adfb8df",
+      "observed_at": "2026-11-10T20:32:27Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "title": "Set up iOS or iPadOS device with Company Portal and Entrust",
+      "summary": "The captured documentation changed in “What are derived credentials?; Prerequisites”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "During enrollment, you'll also install a derived credential on your device. Your organization might require you to use the derived credential as an authentication method when accessing resources, or for signing and encrypting emails.\nIn this article, you will:\n### What are derived credentials?\nTo complete enrollment, you must have:\n- Your school or work-provided smart card\n- Your mobile device\n   ![Example image of Company Portal app with onscreen message and code.](media/enroll-intercede-ios/copy-code-intercede.png)\n   ![Example screenshot of the Company Portal website \"Enter code\" prompt.](media/enroll-disa-purebred-android/enter-code-intercede.png)\n7. After enrollment is complete, Company Portal will notify you to set up your smart card. Tap the notification. If you don't get a notification, check your email.\n   ![Example screenshot of the Company Portal push notification on device home screen.](media/enroll-intercede-ios/action-required-in-app-intercede.png)\n8. On the **Setup mobile smart card access** screen: a. Tap the link to your organization's setup instructions. If your organization doesn't provide additional instructions, you'll be sent to this article. b. Tap **Begin**.\n   ![Example screenshot of the Company Portal Set up mobile smart card access screen.](media/enroll-intercede-ios/smart-card-info-intercede.png)\n11. When you're prompted to select a certificate, pick your smart card credentials. Then select **OK**.\n13. You'll be asked to choose from a list of actions. Select the one that lets you enroll for a derived mobile smart credential. The link or button might say **I'd like to enroll for a derived mobile smart card credential.**\n14. Select that you've successfully downloaded and installed the smart credential-enabled application. Then continue to the n\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "During enrollment, you also install a derived credential on your device. Your organization might require you to use the derived credential as an authentication method when accessing resources, or for signing and encrypting emails.\nIn this article, you:\n## What are derived credentials?\nTo complete enrollment, you need:\n- A school or work smart card\n- A mobile device\n   ![Screenshot shows the Company Portal app with onscreen message and code.](media/enroll-intercede-ios/copy-code-intercede.png)\n   ![Screenshot shows the Company Portal website Enter code prompt.](media/enroll-disa-purebred-android/enter-code-intercede.png)\n7. After enrollment is complete, Company Portal notifies you to set up your smart card. Tap the notification. If you don't get a notification, check your email.\n   ![Screenshot shows the Company Portal push notification on device home screen.](media/enroll-intercede-ios/action-required-in-app-intercede.png)\n8. On the **Setup mobile smart card access** screen:\n   1. Tap the link to your organization's setup instructions. If your organization doesn't provide additional instructions, you're sent to this article.\n   2. Tap **Begin**.\n\n   ![Screenshot shows the Company Portal Set up mobile smart card access screen.](media/enroll-intercede-ios/smart-card-info-intercede.png)\n11. When prompted to select a certificate, pick your smart card credentials. Then select **OK**.\n13. You're asked to choose from a list of actions. Select the one that lets you enroll for a derived mobile smart credential. The link or button might say **I'd like to enroll for a derived mobile smart card credential.**\n14. Select that you successfully downloaded and installed the smart credential-enabled application. Then continue to the next screen.\n15. Enter information about your derived s\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/user-help/enrollment/enroll-entrust-datacard-ios.md",
+          "title": "Set up iOS or iPadOS device with Company Portal and Entrust",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-entrust-datacard-ios",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/user-help/enrollment/enroll-entrust-datacard-ios.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb/intune/user-help/enrollment/enroll-entrust-datacard-ios.md"
+        }
+      ],
+      "lines_added": 30,
+      "lines_removed": 22,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Enroll an iOS or iPadOS device and set up derived credential authentication with Entrust.",
+          "after": "Set up an Entrust derived credential on your iPhone or iPad with Intune Company Portal. Learn how to use your smart card to access work resources on mobile.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2020-07-08T00:00:00Z",
+          "after": "2026-11-03T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "ab281ff9f891-e87a75b55b11",
+      "observed_at": "2026-11-10T20:32:27Z",
+      "observed_date": "2026-11-10",
+      "commit_sha": "ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb",
+      "title": "Enroll device with Android work profile",
+      "summary": "The captured documentation changed in “Before you begin; Enroll device”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Enroll your personal Android device to get access to work emails, apps, Wi-Fi, and other resources. During enrollment, you will:\n1. Create a work profile.\n2. Activate the work profile.\n3. Update device settings.\nThis article describes how to enroll your device using the Intune Company Portal app. For more information about the work profile and its features, see [Introduction to Android work profile](work-profile-android.md).\n[Install the Intune Company Portal app from Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). The Company Portal app is used to enroll and manage your device, install work apps, and get IT support.\nMake sure you're signed in to the primary user account on your device. Work profile enrollment isn't supported on secondary user accounts.\n2. On the **Company Access Setup** screen, review the tasks required to enroll your device. Then tap **BEGIN**.\n3. On the privacy information screen, review the list of items that your organization can and can't see on your device. Then tap **CONTINUE**.\n4. Review the Google terms for creating a work profile. Accept the terms to continue. The appearance of this screen varies based on OS version.\n7. On the **Company Access Setup** screen, confirm that you created the profile. Then tap **CONTINUE** to proceed to the next enrollment task.\n9. On the **Company Access Setup** screen, confirm that the work profile is active. Then tap **CONTINUE** to proceed to the next enrollment task.\n10. In the Company Portal app, review the list of settings your organization requires. Update the settings on your device if necessary. Tap **RESOLVE** to open the setting on your device. After you're done updating settings, tap **CONFIRM DEVICE SETTINGS**.\n![Screenshot of Company Portal's Up\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "Enroll your personal Android device to get access to work emails, apps, Wi-Fi, and other resources. During enrollment, you:\n- Create a work profile.\n- Activate the work profile.\n- Update device settings.\nThis article describes how to enroll your device by using the Intune Company Portal app. For more information, see [Introduction to Android work profile](work-profile-android.md).\n[Install the Intune Company Portal app from Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). Use the Company Portal app to enroll and manage your device, install work apps, and get IT support.\nEnsure you sign in to the primary user account on your device. The system doesn't support work profile enrollment on secondary user accounts.\n2. On the **Company Access Setup** screen, review the tasks required to enroll your device. Then select **BEGIN**.\n3. On the privacy information screen, review the list of items that your organization can and can't see on your device. Then select **CONTINUE**.\n4. Review the Google terms for creating a work profile. Accept the terms to continue. The appearance of this screen varies based on operating system version.\n7. On the **Company Access Setup** screen, confirm that you created the profile. Then select **CONTINUE** to proceed to the next enrollment task.\n9. On the **Company Access Setup** screen, confirm that the work profile is active. Then select **CONTINUE** to proceed to the next enrollment task.\n10. In the Company Portal app, review the list of settings your organization requires. Update the settings on your device if necessary. Select **RESOLVE** to open the setting on your device. After you're done updating settings, select **CONFIRM DEVICE SETTINGS**.\n    ![Screenshot of Company Portal's Update devic\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/user-help/enrollment/enroll-work-profile-android.md",
+          "title": "Enroll device with Android work profile",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-work-profile-android",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fa66c94156215c28d07783656e68f91c356da2e7/intune/user-help/enrollment/enroll-work-profile-android.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/ab281ff9f8912e42b0a7f5da68d500e8dee1e4bb/intune/user-help/enrollment/enroll-work-profile-android.md"
+        }
+      ],
+      "lines_added": 20,
+      "lines_removed": 21,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "How create a work profile and enroll device with Intune Company Portal.",
+          "after": "Create an Android work profile with Intune Company Portal and enroll your personal device. Follow this guide to access work apps and resources.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-11-13T00:00:00Z",
+          "after": "2026-11-03T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "ms.reviewer",
+          "label": "ms.reviewer",
+          "before": "",
+          "after": null,
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "fa66c9415621-fd53d103e6f9",
       "observed_at": "2026-11-10T02:37:00Z",
@@ -19671,303 +19922,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/quickstart-setup-hybrid-aad",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/quickstart-setup-hybrid-aad.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/quickstart-setup-hybrid-aad.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-215113b89826",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Upgrade Windows for co-management",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Configuration Manager",
-      "area": "Comanage",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/comanage/quickstart-upgrade-win10.md",
-          "title": "Upgrade Windows for co-management",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/quickstart-upgrade-win10",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/quickstart-upgrade-win10.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/quickstart-upgrade-win10.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-88ed7d7be69c",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Cloud connecting with co-management",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Comanage",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/comanage/quickstarts.md",
-          "title": "Cloud connecting with co-management",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/quickstarts",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/quickstarts.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/quickstarts.md"
-        }
-      ],
-      "lines_added": 4,
-      "lines_removed": 5,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
-          ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-852f2749d16d",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Tutorial: Enable co-management for existing Configuration Manager clients",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Comanage",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/comanage/tutorial-co-manage-clients.md",
-          "title": "Tutorial: Enable co-management for existing Configuration Manager clients",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/tutorial-co-manage-clients",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/tutorial-co-manage-clients.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/tutorial-co-manage-clients.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-b7b1a1a41f67",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Tutorial: Enable co-management for new internet-based devices",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Comanage",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/comanage/tutorial-co-manage-new-devices.md",
-          "title": "Tutorial: Enable co-management for new internet-based devices",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/tutorial-co-manage-new-devices",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/tutorial-co-manage-new-devices.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/tutorial-co-manage-new-devices.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "sccmavenger",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "dannygu",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-84499e4384a6",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Co-management workloads",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Configuration Manager",
-      "area": "Comanage",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/configmgr/comanage/workloads.md",
-          "title": "Co-management workloads",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/comanage/workloads",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/comanage/workloads.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/configmgr/comanage/workloads.md"
         }
       ],
       "lines_added": 2,
