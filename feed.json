@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T14:33:47.166247Z",
-  "latest_commit_at": "2026-11-11T14:33:05Z",
+  "generated_at": "2026-11-11T20:33:20.361598Z",
+  "latest_commit_at": "2026-11-11T20:32:39Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,314 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10397,
+  "total_updates": 10399,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "193e789ca8d7-0f7b351077a6",
+      "observed_at": "2026-11-11T20:32:39Z",
+      "observed_date": "2026-11-11",
+      "commit_sha": "193e789ca8d7a1410dca73a95804e0afc148b9ee",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/193e789ca8d7a1410dca73a95804e0afc148b9ee",
+      "title": "Upgrade Microsoft Tunnel for Microsoft Intune",
+      "summary": "The captured documentation changed in “Microsoft Tunnel update history”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Linux"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "### November 10, 2026\n\nVersion Number: 20261026\n\nImage hash values:\n\n- **agentImageDigest**: sha256:92ea2b8510f086f1f01adcecdc6b03ee97f0c6855ab49c0b626836f51aa307d3\n- **serverImageDigest**: sha256:c9f4ddff45b987dc111024a7594b40201af1e36d8ea749d0d555f7b599daa4c5\n\nChanges in this release:\n\n- Upgraded the Tunnel agent to .NET 10.\n- Refreshed Azure Linux 3.0 base images, system dependencies, and VPN server components.\n- Improved diagnostic operations.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/microsoft-tunnel/upgrade.md",
+          "title": "Upgrade Microsoft Tunnel for Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/upgrade",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/f34a1491649390252c9da394534c6fc4861ad057/intune/device-security/microsoft-tunnel/upgrade.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/193e789ca8d7a1410dca73a95804e0afc148b9ee/intune/device-security/microsoft-tunnel/upgrade.md"
+        }
+      ],
+      "lines_added": 17,
+      "lines_removed": 2,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ">"
+              },
+              {
+                "kind": "context",
+                "text": "> Container releases take place in stages. If you notice that your container images aren't the most recent, please be assured that they will be updated and delivered within the following week."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### November 2, 2026"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Version Number: 20261028.3"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ">"
+              },
+              {
+                "kind": "context",
+                "text": "> Container releases take place in stages. If you notice that your container images aren't the most recent, please be assured that they will be updated and delivered within the following week."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "### November 10, 2026"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Version Number: 20261026"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Image hash values:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- **agentImageDigest**: sha256:92ea2b8510f086f1f01adcecdc6b03ee97f0c6855ab49c0b626836f51aa307d3"
+              },
+              {
+                "kind": "added",
+                "text": "- **serverImageDigest**: sha256:c9f4ddff45b987dc111024a7594b40201af1e36d8ea749d0d555f7b599daa4c5"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Changes in this release:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- Upgraded the Tunnel agent to .NET 10."
+              },
+              {
+                "kind": "added",
+                "text": "- Refreshed Azure Linux 3.0 base images, system dependencies, and VPN server components."
+              },
+              {
+                "kind": "added",
+                "text": "- Improved diagnostic operations."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### November 2, 2026"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "Version Number: 20261028.3"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": "msecd-doc-authoring-1030",
+          "after": "msecd-doc-authoring-1032",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-10-30T00:00:00Z",
+          "after": "2026-11-10T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "193e789ca8d7-1b095ce07f09",
+      "observed_at": "2026-11-11T20:32:39Z",
+      "observed_date": "2026-11-11",
+      "commit_sha": "193e789ca8d7a1410dca73a95804e0afc148b9ee",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/193e789ca8d7a1410dca73a95804e0afc148b9ee",
+      "title": "What's new in Microsoft Intune",
+      "summary": "The captured documentation changed in “Week of October 26, 2026 (Service release 2610)”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "What's new",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "#### Newly available protected apps for Intune\n\nThe following protected apps are now available for Microsoft Intune:\n\n- eScription One by DeliverHealth\n- Prisma Browser for Intune by Palo Alto Networks, Inc.\n- Elevate UC for Intune by Serverdata.net, Inc.\n\nFor more information about protected apps, see [Microsoft Intune protected apps](../app-management/ref-protected-apps.md).",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/whats-new/index.md",
+          "title": "What's new in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/f34a1491649390252c9da394534c6fc4861ad057/intune/whats-new/index.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/193e789ca8d7a1410dca73a95804e0afc148b9ee/intune/whats-new/index.md"
+        }
+      ],
+      "lines_added": 10,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "## Week of October 26, 2026 (Service release 2610)"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### App management"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "#### Manage referenced apps on AOSP devices"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "## Week of October 26, 2026 (Service release 2610)"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### App management"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "#### Newly available protected apps for Intune"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "The following protected apps are now available for Microsoft Intune:"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "- eScription One by DeliverHealth"
+              },
+              {
+                "kind": "added",
+                "text": "- Prisma Browser for Intune by Palo Alto Networks, Inc."
+              },
+              {
+                "kind": "added",
+                "text": "- Elevate UC for Intune by Serverdata.net, Inc."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "For more information about protected apps, see [Microsoft Intune protected apps](../app-management/ref-protected-apps.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "#### Manage referenced apps on AOSP devices"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
     {
       "id": "f34a14916493-0cfa32e352e5",
       "observed_at": "2026-11-11T14:33:05Z",
@@ -18155,115 +18458,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-chrome-android",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/app-management/configuration/configure-chrome-android.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/app-management/configuration/configure-chrome-android.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "nicholasswhite",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "nwhite",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-ae7f99e428d7",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "How to Configure the Intune Company Portal Apps, Company Portal Website, and Intune App",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "App Management",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/app-management/configuration/configure-company-portal.md",
-          "title": "How to Configure the Intune Company Portal Apps, Company Portal Website, and Intune App",
-          "url": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-company-portal",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/app-management/configuration/configure-company-portal.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/app-management/configuration/configure-company-portal.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "nicholasswhite",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "nwhite",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-f0722ddec972",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Manage Microsoft Edge on iOS and Android With Intune",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [
-        "Android",
-        "iOS/iPadOS"
-      ],
-      "product": "Intune",
-      "area": "App Management",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/app-management/configuration/configure-edge-ios-android.md",
-          "title": "Manage Microsoft Edge on iOS and Android With Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-edge-ios-android",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/app-management/configuration/configure-edge-ios-android.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/app-management/configuration/configure-edge-ios-android.md"
         }
       ],
       "lines_added": 2,
