@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T14:34:01.207758Z",
-  "latest_commit_at": "2026-11-12T14:33:23Z",
+  "generated_at": "2026-11-12T20:34:47.665697Z",
+  "latest_commit_at": "2026-11-12T20:34:11Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,40 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10501,
+  "total_updates": 10502,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "93b34c561688-72af3707608b",
+      "observed_at": "2026-11-12T20:34:11Z",
+      "observed_date": "2026-11-12",
+      "commit_sha": "93b34c561688a0a071d473992fc161aefdbdc39b",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/93b34c561688a0a071d473992fc161aefdbdc39b",
+      "title": "Device scopes",
+      "summary": "The captured documentation changed in “Before you begin”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Advanced Analytics",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "> >  Only the user who created the custom device scopes or a Global Administrator can delete the custom device scopes.",
+      "after": "> >  Only the user who created the custom device scopes or a user with Global Administrator or Intune Administrator Entra roles can delete the custom device scopes.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/advanced-analytics/device-scopes.md",
+          "title": "Device scopes",
+          "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-scopes",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/b1ac3710260f39743c4afc3ce4c47ef0f934cc15/intune/advanced-analytics/device-scopes.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/advanced-analytics/device-scopes.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
     {
       "id": "b1ac3710260f-ae7f99e428d7",
       "observed_at": "2026-11-12T14:33:23Z",
@@ -16341,61 +16370,6 @@
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d9ebaec0-4879-449e-9781-0afdce99fe0a",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235"
           ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-fbe6ed57dcfd",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Windows Autopilot device preparation scenarios",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Device Preparation",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "autopilot/device-preparation/tutorial/scenarios.md",
-          "title": "Windows Autopilot device preparation scenarios",
-          "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/tutorial/scenarios",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/device-preparation/tutorial/scenarios.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/autopilot/device-preparation/tutorial/scenarios.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "lenewsad",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "lanewsad",
-          "after": "acabello",
           "first_captured": false
         }
       ],
