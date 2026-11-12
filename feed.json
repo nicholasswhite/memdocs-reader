@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T20:33:20.361598Z",
-  "latest_commit_at": "2026-11-11T20:32:39Z",
+  "generated_at": "2026-11-12T02:37:35.377983Z",
+  "latest_commit_at": "2026-11-12T02:36:53Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,107 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10399,
+  "total_updates": 10401,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "e12fbbe1255a-91c73d969e23",
+      "observed_at": "2026-11-12T02:36:53Z",
+      "observed_date": "2026-11-12",
+      "commit_sha": "e12fbbe1255ac71101ad11f7f7de8f403c0be9b6",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/e12fbbe1255ac71101ad11f7f7de8f403c0be9b6",
+      "title": "Release notes for Configuration Manager",
+      "summary": "The captured documentation changed in “Set up and upgrade; Client authentication and registration”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Configuration Manager",
+      "area": "Core",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "## Client management\n### Clients aren't able download content from CMG when branch cache is enabled\n*Applies to: version 2403*\nAfter Branch Cache is enabled on primary sites, clients are unable to download apps and packages from the cloud management gateway (CMG). They typically manage to download only 20-30% of the content before the process gets stuck. In some cases, after downloading certain blocks of packages from the CMG, clients look for Branch Cache to retrieve the remaining content. However, none of the clients are able to download the complete content from the CMG, which prevents others from using Branch Cache to access it. The **CTM.log** on the client includes entries similar to the following:\n```log\n(CTM.log - CTMJob({63B4C4CE-2DC4-4062-93C7-E5019B3B6CE1}): CCTMJob::Start - State=DownloadingContentFromPeers)\nCTM.log _- CTMJob({D21758B0-D895-474E-9695-1023A25A1770}): CCTMJob::_PerformDownloadWithOutBranchCache - Download failure using branchcache, fallback to regular download\nTo work around this issue, disable branch cache.\n> [!NOTE]\n>\n> Clients are able to download content from the on-premises distribution point when Branch Cache is enabled.\n## Endpoint Protection\n### Security configurations removed from Intune\n*Applies to: version 2309 with KB25858444 and later*\nMicrosoft Defender security configurations are no longer managed with Microsoft Intune after updating to Configuration Manager version 2403, or installing the [Update Rollup for 2309](../../../../hotfix/2309/25858444.md).\nThe symptom is seen as a drop in the Microsoft Security Score values when viewed in Intune. This issue happens because security policy configuration data is incorrectly removed from clients after Configuration Manager clients are upgraded.\n\nAn updated version of the Microsoft Secur\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "## Set up and upgrade\n### ODBC driver version 18.7.1.1 can block site configuration before updating to 2609\n*Applies to: upgrades to version 2609*\nMicrosoft ODBC Driver for SQL Server version [18.7.1.1](https://learn.microsoft.com/en-us/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#187) has a known issue with Configuration Manager version 2603 and earlier that can block site configuration.\nTo avoid this issue, don't install ODBC driver version 18.7.1.1 before updating Configuration Manager. Use ODBC driver version [18.6.2.1](https://learn.microsoft.com/en-us/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#186), the validated version shipped with Configuration Manager 2609, for the update. Complete the Configuration Manager update to version 2609 before you install ODBC driver version 18.7.1.1.\n\nFor more information, see [ODBC driver for SQL Server](list-of-prerequisite-checks.md#odbc-driver-for-sql-server).\n\n### Configuration Manager performance counters are missing on Windows Server 2025\n\n*Applies to: primary site servers and management points running Windows Server 2025*\n\nOn Windows Server 2025, Configuration Manager performance counter registration can fail, leaving the counters unavailable in Performance Monitor. This issue can occur after a clean installation of Windows Server 2025 or an in-place upgrade from Windows Server 2022.\n\n**Perfsetup.log** records errors similar to the following:\n\n```text\nError: InstallSMSObjectAndCounterKeySettingsIntoRegistry() could not get the \"HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\SMS_SOFTWARE_INVENTORY_PROCESSOR\\Performance\" registry key; error = 6 (0x6).\nPerfsetup can also exit with code `1000`. The affected component name in the registry path can vary.\nTo resolve this issue, install th\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/core/servers/deploy/install/release-notes.md",
+          "title": "Release notes for Configuration Manager",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/servers/deploy/install/release-notes",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/193e789ca8d7a1410dca73a95804e0afc148b9ee/intune/configmgr/core/servers/deploy/install/release-notes.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e12fbbe1255ac71101ad11f7f7de8f403c0be9b6/intune/configmgr/core/servers/deploy/install/release-notes.md"
+        }
+      ],
+      "lines_added": 70,
+      "lines_removed": 137,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-22T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "e12fbbe1255a-1827b92788e7",
+      "observed_at": "2026-11-12T02:36:53Z",
+      "observed_date": "2026-11-12",
+      "commit_sha": "e12fbbe1255ac71101ad11f7f7de8f403c0be9b6",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/e12fbbe1255ac71101ad11f7f7de8f403c0be9b6",
+      "title": "Update for Microsoft Endpoint Configuration Manager version 2111",
+      "summary": "The captured documentation changed in “Issues that are fixed”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Configuration Manager",
+      "area": "Hotfix",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- The following issue described in the 2111 release notes is resolved.\n  [Unable to open console because extension installation loops](../../core/servers/deploy/install/release-notes.md#unable-to-open-console-because-extension-installation-loops)",
+      "after": "- **Unable to open the console because extension installation loops**\n  In certain circumstances, you're unable to open the console due to an extension installation loop. This issue occurs when two or more versions of a single extension are marked as [required for installation](../../core/servers/manage/admin-console-extensions.md#require-installation-of-a-console-extension). This issue can occur for extensions imported through the wizard, from a PowerShell script, or through Community hub. To prevent the issue, use the **Make optional** setting before importing a new version of the extension.\n\n  When this issue occurs, it initially appears as a normal console extension installation. After the extension finishes installing, you select **Close** to restart the Configuration Manager console. When the console restarts, you're prompted to install the console extension again. The extension installation continues to loop, and the Configuration Manager console doesn't fully open.\n\n  To prevent and work around this issue in previous versions of Configuration Manager, run the following SQL script on your CAS database and all your primary site databases:\n\n  ```sql\n  ALTER VIEW vSMS_ConsoleExtensionMetadata\n  AS\n      WITH m AS(\n         SELECT *,\n             RN = ROW_NUMBER()OVER(PARTITION BY ID ORDER BY Version DESC)\n         FROM ConsoleExtensionMetadata\n      )\n      SELECT\n          m.ID,\n          m.Name,\n          m.Description,\n          m.Author,\n          m.Version,\n          m.IsEnabled,\n          m.IsApproved,\n          m.CreatedTime,\n          m.CreatedBy,\n          m.UpdateTime,\n          m.IsTombstoned,\n          m.IsRequired,\n          m.IsSigned,\n          m.IsUnsignedAllowed,\n          CASE m.IsRequired\n              WHEN 0 THEN ''\n              ELSE\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/configmgr/hotfix/2111/12709700.md",
+          "title": "Update for Microsoft Endpoint Configuration Manager version 2111",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/hotfix/2111/12709700",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/193e789ca8d7a1410dca73a95804e0afc148b9ee/intune/configmgr/hotfix/2111/12709700.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/e12fbbe1255ac71101ad11f7f7de8f403c0be9b6/intune/configmgr/hotfix/2111/12709700.md"
+        }
+      ],
+      "lines_added": 45,
+      "lines_removed": 3
+    },
     {
       "id": "193e789ca8d7-0f7b351077a6",
       "observed_at": "2026-11-11T20:32:39Z",
@@ -18374,114 +18470,6 @@
           "label": "Microsoft owner",
           "before": "paoloma",
           "after": "dagerrit",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-f6b83e91491e",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Get the App Bundle ID for Your Policies in Microsoft Intune",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "App Management",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/app-management/collect-bundle-ids.md",
-          "title": "Get the App Bundle ID for Your Policies in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/app-management/collect-bundle-ids",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/app-management/collect-bundle-ids.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/app-management/collect-bundle-ids.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "nicholasswhite",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "nwhite",
-          "after": "acabello",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "7535f504cef1-6fdcf04b4d1c",
-      "observed_at": "2026-11-07T13:27:23Z",
-      "observed_date": "2026-11-07",
-      "commit_sha": "7535f504cef1a1425225907f65b83804426feded",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/7535f504cef1a1425225907f65b83804426feded",
-      "title": "Configure Google Chrome for Android Devices Using Intune",
-      "summary": "Ownership information changed. Article text is unchanged.",
-      "kind": "metadata",
-      "platforms": [
-        "Android"
-      ],
-      "product": "Intune",
-      "area": "App Management",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/app-management/configuration/configure-chrome-android.md",
-          "title": "Configure Google Chrome for Android Devices Using Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-chrome-android",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/app-management/configuration/configure-chrome-android.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/7535f504cef1a1425225907f65b83804426feded/intune/app-management/configuration/configure-chrome-android.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "nicholasswhite",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "manager",
-          "label": "Document manager",
-          "before": "laurawi",
-          "after": null,
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "nwhite",
-          "after": "acabello",
           "first_captured": false
         }
       ],
