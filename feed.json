@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T02:35:09.970874Z",
-  "latest_commit_at": "2026-11-13T02:34:34Z",
+  "generated_at": "2026-11-14T02:37:53.040252Z",
+  "latest_commit_at": "2026-11-14T02:37:20Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,758 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10820,
+  "total_updates": 10834,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "db6893abc89b-87f019c7bb73",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Configure local actions for Android devices in Microsoft Intune",
+      "summary": "This article was newly captured in the tracker. This does not establish when Microsoft first published it or released a feature.",
+      "kind": "new",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "Device Configuration",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "# Configure local actions for Android devices in Microsoft Intune\n\nAndroid local actions let you configure actions that run directly on managed Android devices when supported device events occur. By pairing triggers with actions, you can make devices respond to events such as a device reboot, a Managed Home Screen sign-in, or a change in the device's power connection.\n\nYou can use local actions to launch apps, send broadcasts to apps, initiate a global sign-out, or exit Managed Home Screen from kiosk mode.\n\n## Prerequisites\n\n- An Android device enrolled as a [dedicated device](../../device-enrollment/android/setup-dedicated.md) or [fully managed device](../../device-enrollment/android/setup-fully-managed.md).\n- For activity actions, Overlay Permission (`SYSTEM_ALERT_WINDOW`) granted before you deploy the policy. For more information, see [Overlay permission for foreground app launches](#overlay-permission-for-foreground-app-launches).\n\n## Create the profile\n\nTo configure local actions, create a device configuration profile using the **Local actions** template.\n\n1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).\n2. Select **Devices** &gt; **Manage devices** &gt; **Configuration** &gt; **Create** &gt; **New policy**.\n3. Select the following properties:\n\n   - **Platform**: Select **Android Enterprise**.\n   - **Profile type**: Select **Templates**.\n   - **Template name**: Select **Local actions**.\n4. Select **Create**.\n5. In **Basics**, enter the following properties:\n\n   - **Name**: Enter a descriptive name for the policy.\n   - **Description**: Enter a description for the policy. This setting is optional but recommended.\n   - **Profile type**: Select **Corporate owned devices**.\n6. Select **Next**.\n7. In **Configuration sett\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-configuration/templates/configure-local-actions-android.md",
+          "title": "Configure local actions for Android devices in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-local-actions-android",
+          "old_url": null,
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-configuration/templates/configure-local-actions-android.md"
+        }
+      ],
+      "lines_added": 563,
+      "lines_removed": 0
+    },
+    {
+      "id": "db6893abc89b-da654770dc19",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Get an Apple MDM push certificate",
+      "summary": "The captured documentation changed in “Steps to get your certificate; Renew Apple MDM push certificate”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "iOS/iPadOS",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Upload and renew your Apple MDM push certificates in Microsoft Intune. An Apple MDM Push certificate is required to manage iOS/iPadOS and macOS devices in Microsoft Intune, and enables devices to enroll via:\nCertificates must be renewed annually. This article describes how to use Intune to create and renew an Apple MDM push certificate.\nSelect **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.\n> - The certificate is associated with the Apple ID used to create it. As a best practice, use a company email address as your Apple ID and make sure the mailbox is monitored by more than one person, such as by a distribution list. Avoid using a personal Apple ID.\nReturn to the admin center and enter your Apple ID. This is needed to remind you when you need to renew the certificate.\nThe Apple MDM push certificate is valid for 365 days. You must renew it annually to maintain iOS/iPadOS and macOS device management. Once the certificate expires, there is a 30-day grace period to renew it.\nRenew the MDM push certificate with the same Apple account you used to create it.\n6. Select **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.\n> [!TIP]\n>\n> Each certificate has a unique UID. To find it, look for the subject ID, which shows the GUID portion of the UID, in the certificate details. You can also find this information on the enrolled iOS/iPadOS device. Go to **Settings** &gt; **General** &gt; **Device Management** &gt; **Management Profile** &gt; **More Details** &gt; **Management Profile**. The **Topic** value contains the unique GUID that you can mat\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "Upload and renew your Apple MDM push certificates in Microsoft Intune. You need an Apple MDM Push certificate to manage iOS/iPadOS and macOS devices in Microsoft Intune. The certificate enables devices to enroll by using:\nYou must renew certificates annually. This article describes how to use Intune to create and renew an Apple MDM push certificate.\nSelect **Download your CSR** to download and save the request file locally. Use this file to request a trust relationship certificate from the Apple Push Certificates Portal.\n> - The certificate is associated with the Apple ID used to create it. As a best practice, use a company email address as your Apple ID and ensure the mailbox is monitored by more than one person, such as by a distribution list. Avoid using a personal Apple ID.\nReturn to the admin center and enter your Apple ID. This information is needed to remind you when you need to renew the certificate.\nThe Apple MDM push certificate is valid for 365 days. You must renew it annually to maintain iOS/iPadOS and macOS device management. When the certificate expires, there's a 30-day grace period to renew it.\nRenew the MDM push certificate by using the same Apple account you used to create it.\n6. Select **Download your CSR** to download and save the request file locally. Use the file to request a trust relationship certificate from the Apple Push Certificates Portal.\n    > [!TIP]\n    >\n    > Each certificate has a unique UID. To find it, look for the subject ID, which shows the GUID portion of the UID, in the certificate details. You can also find this information on the enrolled iOS/iPadOS device. Go to **Settings** &gt; **General** &gt; **Device Management** &gt; **Management Profile** &gt; **More Details** &gt; **Management Profile**. The **Topic** value contains th\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/apple/create-mdm-push-certificate.md",
+          "title": "Get an Apple MDM push certificate",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/apple/create-mdm-push-certificate",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-enrollment/apple/create-mdm-push-certificate.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-enrollment/apple/create-mdm-push-certificate.md"
+        }
+      ],
+      "lines_added": 19,
+      "lines_removed": 15,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Get an Apple MDM Push certificate to manage iOS/iPadOS devices with Intune.",
+          "after": "Apple MDM push certificate setup in Intune is required to manage iOS/iPadOS and macOS devices. Learn how to create, upload, and renew a certificate.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-05-12T00:00:00Z",
+          "after": "2026-11-04T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-0ab2bfacade4",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Enrollment guide: Enroll Apple mobile devices in Microsoft Intune",
+      "summary": "The captured documentation changed in “Before you begin; Automated Device Enrollment (ADE) (supervised)”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Personal and organization-owned devices can be enrolled in Intune. Once they're enrolled, they receive the policies you create. Apple mobile devices include the following platforms:\nYou have the following options when enrolling Apple mobile devices:\n[![A visual representation of Intune enrollment options by platform](../media/guide/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf)   \n> For a customized experience based on your environment, you can access the [Manage and secure iOS and iPadOS devices guide](https://go.microsoft.com/fwlink/?linkid=2313884) in the [Microsoft 365 admin center](https://admin.microsoft.com).\nFor all Intune-specific prerequisites and configurations needed to prepare your tenant for enrollment, go to [Enrollment guide: Microsoft Intune enrollment](../guide.md).\n> For new and existing tenants, there may be a one-time failure when completing Microsoft Entra ID join. This issue can be resolved by manually syncing the device from the Intune admin center, or from the device on the Intune Company Portal website or Company Portal app. If a failure occurs, it will only happen to one device completing Microsoft Entra ID registration for the tenant. A manual sync will resolve this issue for all future enrollments. Alternatively, as a workaround, add the Microsoft Intune Certificate Authority client production app to your tenant. To do so, a Microsoft Entra administrator must create a service principal object, with app ID 3dde09a2-ff4f-4ebd-9b9a-d24a7a819b6f, in PowerShell or Microsoft Graph.\nUse on devices owned by your organization. This option configures settings using Apple Business or Apple School Manager (ASM). It enrolls a large\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "You can enroll both personal and organization-owned devices in Intune. After enrollment, the devices receive the policies you create. Apple mobile devices include the following platforms:\nYou have the following options for enrolling Apple mobile devices:\n[![](../media/guide/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf)    \n> For a customized experience based on your environment, access the [Manage and secure iOS and iPadOS devices guide](https://go.microsoft.com/fwlink/?linkid=2313884) in the [Microsoft 365 admin center](https://admin.microsoft.com).\nFor Intune-specific prerequisites and configurations to prepare your tenant for enrollment, see [Enrollment guide: Microsoft Intune enrollment](../guide.md).\n> For new and existing tenants, there might be a one-time failure when you complete the Microsoft Entra ID join. You can resolve this issue by manually syncing the device from the Intune admin center, or from the device on the Intune Company Portal website or Company Portal app.\n>\n> If a failure occurs, it only happens to one device completing Microsoft Entra ID registration for the tenant. A manual sync resolves this issue for all future enrollments. Alternatively, as a workaround, add the Microsoft Intune Certificate Authority client production app to your tenant. To add the app, a Microsoft Entra administrator must create a service principal object, with app ID 3dde09a2-ff4f-4ebd-9b9a-d24a7a819b6f, in PowerShell or Microsoft Graph.\nUse this option on devices owned by your organization. This option configures settings by using Apple Business or Apple School Manager (ASM). It enrolls a large number of devices without you ever touching the devic\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/apple/guide-ios-ipados.md",
+          "title": "Enrollment guide: Enroll Apple mobile devices in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/apple/guide-ios-ipados",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-enrollment/apple/guide-ios-ipados.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-enrollment/apple/guide-ios-ipados.md"
+        }
+      ],
+      "lines_added": 90,
+      "lines_removed": 95,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Enroll iOS and iPadOS devices using user and device enrollment, automated device enrollment (DEP), and Apple Configurator in Microsoft Intune. Decide which enrollment method to use, and get an overview of the administrator and end user tasks to enroll devices.",
+          "after": "Enroll iOS and iPadOS devices using user and device enrollment, automated device enrollment (DEP), and Apple Configurator in Microsoft Intune.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-10-28T00:00:00Z",
+          "after": "2026-11-04T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-838a757ed28d",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Enrollment guide: Microsoft Intune enrollment",
+      "summary": "The captured documentation changed in “Supported device scenarios; Prerequisites”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Microsoft Intune, together with Microsoft Entra ID, facilitates a secure, streamlined process for registering and enrolling devices that want access to your internal resources. Once users and devices are registered within your Microsoft Entra ID (also called a *tenant*), then you can utilize Intune for its endpoint management capabilities. The process that enables device management for a device is called **device enrollment**.\nDevices in bring-your-own-device (BYOD) scenarios can be MDM enrolled in Intune. The supported enrollment methods enable employees and students to use their personal devices for work or school tasks.\nTo determine if enrolling personal devices in Intune is right for your organization, go to [Intune planning guide: Personal devices vs Organization-owned devices](../fundamentals/planning-guide.md#personal-devices-vs-organization-owned-devices).\n> Intune marks devices that are [Microsoft Entra registered](https://learn.microsoft.com/en-us/entra/identity/devices/concept-device-registration) as personally-owned devices.\nMicrosoft Intune offers more granular settings and policies for devices classified as **corporate-owned** or **organization-owned**. There are more password settings available for corporate-owned devices. So, you can enforce stricter password requirements.\nMicrosoft Intune automatically marks devices that meet certain criteria as corporate-owned. For more information, go to [Identify devices as corporate-owned](add-corporate-identifiers.md).\n- Intune is set up, and ready to enroll users and devices. Be sure:\n  For more information, go to the [Intune setup deployment guide](../fundamentals/setup-migration.md).\n- Sign in as a member of the **Policy and Profile Manager** built-in Intune role. For information on the permissions in this role,\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "Microsoft Intune, together with Microsoft Entra ID, facilitates a secure, streamlined process for registering and enrolling devices that want access to your internal resources. After users and devices are registered in your Microsoft Entra ID (also called a *tenant*), you can use Intune for its endpoint management capabilities. The process that enables device management for a device is called *device enrollment*.\nYou can MDM enroll devices in bring-your-own-device (BYOD) scenarios in Intune. The supported enrollment methods enable employees and students to use their personal devices for work or school tasks.\nTo determine if enrolling personal devices in Intune is right for your organization, see [Intune planning guide: Personal devices vs Organization-owned devices](../fundamentals/planning-guide.md#personal-devices-vs-organization-owned-devices).\n> Intune marks devices that are [Microsoft Entra registered](https://learn.microsoft.com/en-us/entra/identity/devices/concept-device-registration) as personally owned devices.\nMicrosoft Intune offers more granular settings and policies for devices classified as **corporate-owned** or **organization-owned**. More password settings are available for corporate-owned devices. So, you can enforce stricter password requirements.\nMicrosoft Intune automatically marks devices that meet certain criteria as corporate-owned. For more information, see [Identify devices as corporate-owned](add-corporate-identifiers.md).\n- Intune is set up, and ready to enroll users and devices. Ensure:\n  For more information, see [Intune setup deployment guide](../fundamentals/setup-migration.md).\n- Sign in as a member of the **Policy and Profile Manager** built-in Intune role. For information on the permissions in this role, see [Built-in role permissions\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/guide.md",
+          "title": "Enrollment guide: Microsoft Intune enrollment",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/guide",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-enrollment/guide.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-enrollment/guide.md"
+        }
+      ],
+      "lines_added": 19,
+      "lines_removed": 22,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Enroll Android, Android Enterprise, iOS, iPadOS, Linux, macOS, and Windows devices in Intune. Decide which enrollment method to use, and get an overview of the administrator and end user tasks to enroll devices.",
+          "after": "Enroll Android, Android Enterprise, iOS, iPadOS, Linux, macOS, and Windows devices in Intune. Decide which enrollment method to use.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-06-24T00:00:00Z",
+          "after": "2026-11-04T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-aa9f35ace87e",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Add device enrollment managers",
+      "summary": "The captured documentation changed in “Add a device enrollment manager; Limitations”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "Windows",
+        "iOS/iPadOS",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "A device enrollment manager (DEM) is a nonadministrator user who can enroll devices in Intune. Device enrollment managers are useful to have when you need to enroll and prepare many devices for distribution. People signed in to a DEM account can enroll and manage up to 1,000 devices, while a standard nonadmin account can only enroll 15.\n> If you're using these methods to enroll devices, you do not need to use a DEM account.\n> Only use dedicated accounts that are not assigned to an individual user as Device enrollment manager accounts.\n> Do not delete accounts assigned as a Device enrollment manager if any devices were enrolled using the account. Doing so will lead to issues with these devices.\nThe device enrollment manager account can't be used with all features in Microsoft Intune and has some limitations when used with others. This section describes the limitations you could encounter while setting up devices from a DEM account.\nThe following types of Android Enterprise devices can't be set up via DEM:\nThere are no users associated with a DEM-enrolled device, so apps can't be deployed as **Available**.\nConditional Access is only supported with DEM on devices running:\n> DEM accounts on iOS/iPadOS and macOS do not support Microsoft Entra Join, Microsoft Entra registration, and Workplace Join.\nDEM enrolls Windows devices in shared device mode, so device limit restrictions won't work on them. Instead, you can configure a hard limit for these devices in the Microsoft Entra admin center. For more information, see [Manage device identities](https://learn.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).\nOnly the local device appears in the Company Portal app or Company Portal website. Device users can't wipe DEM-enr\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "A device enrollment manager (DEM) is a nonadministrator user who can enroll devices in Intune. Device enrollment managers are useful when you need to enroll and prepare many devices for distribution. People signed in to a DEM account can enroll and manage up to 1,000 devices, while a standard nonadmin account can only enroll 15.\n> If you're using these methods to enroll devices, you don't need to use a DEM account.\n> Only use dedicated accounts that aren't assigned to an individual user as Device enrollment manager accounts.\n> Don't delete accounts assigned as a Device enrollment manager if any devices were enrolled by using the account. Doing so leads to issues with these devices.\nYou can't use the device enrollment manager account with all features in Microsoft Intune. It also has some limitations when used with other features. This section describes the limitations you might encounter while setting up devices from a DEM account.\nYou can't set up the following types of Android Enterprise devices by using DEM:\nNo users are associated with a DEM-enrolled device, so you can't deploy apps as **Available**.\nConditional Access is only supported with DEM on devices that run:\n> DEM accounts on iOS/iPadOS and macOS don't support Microsoft Entra Join, Microsoft Entra registration, and Workplace Join.\nDEM enrolls Windows devices in shared device mode, so device limit restrictions don't work on them. Instead, configure a hard limit for these devices in the Microsoft Entra admin center. For more information, see [Manage device identities](https://learn.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).\nOnly the local device appears in the Company Portal app or Company Portal website. Device users can't wipe DEM-enrolled de\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/setup-enrollment-manager.md",
+          "title": "Add device enrollment managers",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/setup-enrollment-manager",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-enrollment/setup-enrollment-manager.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-enrollment/setup-enrollment-manager.md"
+        }
+      ],
+      "lines_added": 20,
+      "lines_removed": 14,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Use the device enrollment manager account to enroll devices in Intune.",
+          "after": "Enroll devices at scale with an Intune device enrollment manager account. Discover supported enrollment methods, required permissions, and setup steps.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-06-18T00:00:00Z",
+          "after": "2026-11-04T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-998b07983cf2",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Enrollment guide: Enroll Windows client devices in Microsoft Intune",
+      "summary": "The captured documentation changed in “Before you begin; Windows automatic enrollment”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Personal and organization-owned devices can be enrolled in Intune. Once they're enrolled, they receive the policies and profiles you create.\nYou have the following options when enrolling Windows devices:\n[![A visual representation of Intune enrollment options by platform](../media/guide/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf)   \n- For all Intune-specific prerequisites and configurations needed to prepare your tenant for enrollment, go to [Enrollment guide: Microsoft Intune enrollment](../guide.md).\n---\n\n| You'll use Conditional Access (CA) on devices enrolled using [bulk enrollment](create-bulk-package.md) with a provisioning package. | ✅ On Windows, CA is available for Windows devices enrolled using bulk enrollment. |\n---\n\n- Be sure your devices are running a supported Windows version. For a complete list, go to [supported device platforms](../../fundamentals/ref-supported-platforms.md).\n- Optional. Instead of users entering the Intune server name, you can create a CNAME record that's easier to enter, like `EnterpriseEnrollment.contoso.com`. CNAME records associate a domain name with a specific server. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), test your CNAME record to make sure it's configured correctly. For more information, go to [create a CNAME record](create-cname-autodiscovery.md).\n- In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Windows Enrollment** &gt; **Automatic Enrollment**. In the configuration, you set the **MDM user scope** and **MAM user scope**:\n  - **MDM user scope**: When set to **Some** or **All**, devices are joined to Mic\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "You can enroll both personal and organization-owned devices in Intune. After enrollment, devices receive the policies and profiles you create.\nYou have the following options for enrolling Windows devices:\n[![Screenshot shows a visual representation of Intune enrollment options by platform.](../media/guide/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf)    \n- For all Intune-specific prerequisites and configurations needed to prepare your tenant for enrollment, see [Enrollment guide: Microsoft Intune enrollment](../guide.md).\n| You use Conditional Access (CA) on devices enrolled using [bulk enrollment](create-bulk-package.md) with a provisioning package. | ✅ On Windows, CA is available for Windows devices enrolled using bulk enrollment. |\n- Ensure your devices run a supported Windows version. For a complete list, see [supported device platforms](../../fundamentals/ref-supported-platforms.md).\n- Optional: Instead of users entering the Intune server name, create a CNAME record that's easier to enter, like `EnterpriseEnrollment.contoso.com`. CNAME records associate a domain name with a specific server. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), test your CNAME record to make sure it's configured correctly. For more information, see [Create a CNAME record](create-cname-autodiscovery.md).\n- In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Windows Enrollment** &gt; **Automatic Enrollment**. In the configuration, set the **MDM user scope** and **MAM user scope**:\n  - **MDM user scope**: When set to **Some** or **All**, devices are joined to Microsoft Entra ID, and\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/windows/guide.md",
+          "title": "Enrollment guide: Enroll Windows client devices in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/windows/guide",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-enrollment/windows/guide.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-enrollment/windows/guide.md"
+        }
+      ],
+      "lines_added": 85,
+      "lines_removed": 100,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Enroll Windows devices using Automatic enrollment, Windows Autopilot, group policy, and co-management enrollment options in Microsoft Intune. Decide which enrollment method to use, and get an overview of the administrator and end user tasks to enroll devices.",
+          "after": "Enroll Windows devices using Automatic enrollment, Windows Autopilot, group policy, and co-management enrollment options in Microsoft Intune.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-02-28T00:00:00Z",
+          "after": "2026-11-04T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-2221522312a1",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Use PowerShell Scripts on Windows Devices in Intune",
+      "summary": "The captured documentation changed in “Create a script policy and assign it”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": ">\n     > Intune provides precreated **All Users** and **All Devices** groups in the Microsoft Intune admin center. The groups have built-in optimizations for your convenience. It's highly recommended that you use these groups to target all users and all devices instead of any \"all users\" or \"all devices\" groups that you might create yourself.\n   - If you want to exclude any groups of users affected by this assignment, select **Exclude Groups**.\n\n> [!NOTE]\n>\n> If Microsoft Entra soft-deletes any of these groups, Intune shows them as soft deleted in the console, and their assignments don’t apply until the groups are restored.\n\nFor more information about including and excluding group assignments, see [Include and exclude group assignments](../../app-management/deployment/configure-assignment-scope.md).\n\n> [!NOTE]\n>\n> You see the status of the selected group in the assignments. The possible status options are: Active, Deleted, or Soft-Deleted.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-management/tools/run-powershell-scripts-windows.md",
+          "title": "Use PowerShell Scripts on Windows Devices in Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-management/tools/run-powershell-scripts-windows",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-management/tools/run-powershell-scripts-windows.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-management/tools/run-powershell-scripts-windows.md"
+        }
+      ],
+      "lines_added": 13,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "     > [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": "     >"
+              },
+              {
+                "kind": "context",
+                "text": "     > PowerShell scripts in Intune can be targeted to Microsoft Entra device security groups or Microsoft Entra user security groups. However, when targeting workplace joined (WPJ) devices, only Microsoft Entra device security groups can be used (user targeting is ignored)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "   - Select **Next**."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "     ![Assign or deploy PowerShell script to device groups in Microsoft Intune](media/management-extension-windows/mgmt-extension-assignments.png)"
+              },
+              {
+                "kind": "context",
+                "text": "7. In **Review + add**, a summary is shown of the settings you configured. Select **Add** to save the script. When you select **Add**, the policy is deployed to the groups you chose."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Scenario - Failure to run script"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "     > [!NOTE]"
+              },
+              {
+                "kind": "context",
+                "text": "     >"
+              },
+              {
+                "kind": "context",
+                "text": "     > PowerShell scripts in Intune can be targeted to Microsoft Entra device security groups or Microsoft Entra user security groups. However, when targeting workplace joined (WPJ) devices, only Microsoft Entra device security groups can be used (user targeting is ignored)."
+              },
+              {
+                "kind": "added",
+                "text": "     >"
+              },
+              {
+                "kind": "added",
+                "text": "     > Intune provides precreated **All Users** and **All Devices** groups in the Microsoft Intune admin center. The groups have built-in optimizations for your convenience. It's highly recommended that you use these groups to target all users and all devices instead of any \"all users\" or \"all devices\" groups that you might create yourself."
+              },
+              {
+                "kind": "added",
+                "text": "   - If you want to exclude any groups of users affected by this assignment, select **Exclude Groups**."
+              },
+              {
+                "kind": "context",
+                "text": "   - Select **Next**."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "     ![Assign or deploy PowerShell script to device groups in Microsoft Intune](media/management-extension-windows/mgmt-extension-assignments.png)"
+              },
+              {
+                "kind": "context",
+                "text": "7. In **Review + add**, a summary is shown of the settings you configured. Select **Add** to save the script. When you select **Add**, the policy is deployed to the groups you chose."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> If Microsoft Entra soft-deletes any of these groups, Intune shows them as soft deleted in the console, and their assignments don’t apply until the groups are restored."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "For more information about including and excluding group assignments, see [Include and exclude group assignments](../../app-management/deployment/configure-assignment-scope.md)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> You see the status of the selected group in the assignments. The possible status options are: Active, Deleted, or Soft-Deleted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Scenario - Failure to run script"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "db6893abc89b-b7a1f322fa39",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Configure maintenance windows for Windows updates in Microsoft Intune",
+      "summary": "This article was newly captured in the tracker. This does not establish when Microsoft first published it or released a feature.",
+      "kind": "new",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Updates",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "# Configure maintenance windows for Windows updates in Microsoft Intune\n\nUse maintenance windows in Microsoft Intune to control when automatic Windows Update actions can begin on managed devices. You can restrict downloads, installations, and update-related restarts to a scheduled period.\n\nMaintenance windows help you plan updates for devices that need to remain available during operating hours, such as kiosks, shared devices, and manufacturing equipment. Configure a one-time window or a recurring daily, weekly, or monthly schedule.\n\nMaintenance windows govern Windows Update content, including quality updates, feature updates, Hotpatch updates, .NET updates, drivers, and firmware. They don't determine which updates are approved or offered to a device.\n\n## Before you begin\n\nBefore you create a policy:\n\n- Confirm that devices are enrolled in Intune and run a supported Windows version. The underlying maintenance window settings require Windows 11, version 24H2 with KB5077181, build 26100.7840, or later.\n- Confirm that you have Intune permissions to create, configure, and assign device configuration policies.\n- Identify a device group for your initial deployment. Test the policy on representative devices before assigning it more broadly.\n- Review the update policies assigned to those devices, including deferrals, deadlines, grace periods, and expedited updates.\n\nFor the underlying Windows settings and operating system requirements, see [Update Policy CSP](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update).\n\n## How maintenance windows work\n\nA maintenance window controls when the automatic update actions you select can begin. Actions that aren't selected continue to follow other applicable Windows Update policies.\n\n| Update action | Actions res\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-updates/maintenance-windows.md",
+          "title": "Configure maintenance windows for Windows updates in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-updates/maintenance-windows",
+          "old_url": null,
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-updates/maintenance-windows.md"
+        }
+      ],
+      "lines_added": 253,
+      "lines_removed": 0
+    },
+    {
+      "id": "db6893abc89b-00d0170dd62f",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Update rings policy settings",
+      "summary": "The captured documentation changed in “Update settings; Quality updates”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Updates",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "The policy settings are divided into two main categories: **Update settings** and **User experience settings**.\nUpdate settings control what bits a device will download, and when.\n> Specify the number of days from 0 to 30 for which quality updates are deferred. This period is in addition to any deferral period that is part of the service channel you select.\n> The deadline calculation for both quality and feature updates is based off the time the client's update scan initially discovered the update. See [Enforcing compliance deadlines for updates](https://learn.microsoft.com/en-us/windows/deployment/update/wufb-compliancedeadlines).\n> Specify the number of days from 0 to 365 for which feature updates are deferred. This period is in addition to any deferral period that is part of the service channel you select. The deferral period begins when Microsoft releases the update.\n> When set to *Yes*, eligible Windows 10 devices will upgrade to the most current Windows 11 release.\n> When enabled, targeted devices will move to the pre-release build you specify. You must specify one of the following prerelease builds:\n> - **Dev Chanel**\n> For information about pre-release builds, see [Windows Insider](https://insider.windows.com/understand-flighting).\n> - **Notify download**: Notify the user before downloading the update. Users choose to download and install updates. If the user takes no action, the update will not install until the deadline you have configured is reached.\n> - **Auto install and restart at a scheduled time**: Specify an installation day and time. If unspecified, installation runs at 3 AM daily, followed by a 15-minute countdown to a restart. Logged on users can delay countdown and restart. When set to *Auto install and restart at a scheduled time*, you can configur\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "The policy settings are divided into four main categories: **Update settings**, **Quality updates**, **Feature updates**, and **User experience settings**.\nUpdate settings control what bits a device downloads and when it downloads them.\n## Quality updates\n\n> Specify the number of days from 0 to 30 to defer quality updates. This period adds to any deferral period that's part of the service channel you select.\n> The deadline calculation for both quality and feature updates is based on when the client's update scan first discovers the update. To ensure devices complete their update and stay secure as soon as possible, keep the quality update deferral under three days. See [Enforcing compliance deadlines for updates](https://learn.microsoft.com/en-us/windows/deployment/update/wufb-compliancedeadlines).\n**Use deadline settings**\n\n> This setting enables the configuration of deadline settings. You can configure the following settings for deadlines:\n>\n> - **Deadline for quality updates**: Specifies the number of days a user has before quality updates are installed on their devices automatically (0-30). Set the quality update deadline to either 0 or 1 to ensure devices stay secure.\n> - **Grace period**: Specifies a minimum number of days after update installation until device restarts occur automatically (0-7). Set the quality update grace period to either 1 or 2 days so that users have adequate time to prepare before a forced restart might interrupt their productivity.\n> - **Auto reboot before deadline**: Specifies whether the device will attempt to automatically reboot outside of active hours before the deadline and grace period expire. Set this value to **Yes** to enable the system to reboot when the user isn't using the device. Setting this value to **No** forces the system\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-updates/windows/ref-update-ring-settings.md",
+          "title": "Update rings policy settings",
+          "url": "https://learn.microsoft.com/en-us/intune/device-updates/windows/ref-update-ring-settings",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/device-updates/windows/ref-update-ring-settings.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/device-updates/windows/ref-update-ring-settings.md"
+        }
+      ],
+      "lines_added": 55,
+      "lines_removed": 42,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-01-12T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-3012f5da044b",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Using the Intune Company Portal website",
+      "summary": "The captured article wording changed. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Use the Intune Company Portal website to remotely manage your work apps and enrolled personal devices. To access the Company Portal website, go to [https://portal.manage.microsoft.com/](https://go.microsoft.com/fwlink/?linkid=2010980) on any device (it doesn't have to be an enrolled device) and sign in with your work or school account.\nOnce you're signed in, you can see your enrolled devices and:\nSome actions aren't available on all operating systems and device types. The reset device password action, for example, won't work on an Android device that has a work profile.",
+      "after": "Use the Intune Company Portal website to remotely manage your work apps and enrolled personal devices. To access the Company Portal website, see [https://portal.manage.microsoft.com/](https://go.microsoft.com/fwlink/?linkid=2010980) on any device and sign in with your work or school account. The device doesn't have to be enrolled.\nAfter you sign in, you can see your enrolled devices and do the following tasks:\nSome actions aren't available on all operating systems and device types. The reset device password action, for example, doesn't work on an Android device that has a work profile.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/user-help/company-portal/website.md",
+          "title": "Using the Intune Company Portal website",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/company-portal/website",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/user-help/company-portal/website.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/user-help/company-portal/website.md"
+        }
+      ],
+      "lines_added": 5,
+      "lines_removed": 5,
+      "metadata_changes": [
+        {
+          "field": "author",
+          "label": "Author",
+          "before": "rishitasarin-ms",
+          "after": "iceorbital",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-05-21T00:00:00Z",
+          "after": "2026-11-05T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-1ab07337c751",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Check access from Company Portal app for Windows",
+      "summary": "The captured documentation changed in “Check access”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Organizations enforce requirements, such as encryption and password limits, to make sure only secure, trusted devices access their internal resources. Your device must meet and maintain these requirements to gain access. Complete the steps in this article to check access from the Company Portal app for Windows.\n   ![Screenshot of the Company Portal app for Windows highlighting the \"Devices\" option.](media/validate-device-access-windows/company-portal-windows-devices.png)\n   ![Image of the Company Portal app Devices page highlighting the \"Check access\" button ](media/validate-device-access-windows/company-portal-windows-check-access.png)",
+      "after": "Organizations enforce requirements, such as encryption and password limits, to ensure only secure, trusted devices access their internal resources. Your device must meet and maintain these requirements to gain access. Complete the steps in this article to check access from the Company Portal app for Windows.\n   ![Screenshot of the Company Portal app for Windows highlighting the Devices option.](media/validate-device-access-windows/company-portal-windows-devices.png)\n   ![Image of the Company Portal app Devices page highlighting the Check access button. ](media/validate-device-access-windows/company-portal-windows-check-access.png)",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/user-help/compliance/validate-device-access-windows.md",
+          "title": "Check access from Company Portal app for Windows",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/compliance/validate-device-access-windows",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/user-help/compliance/validate-device-access-windows.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/user-help/compliance/validate-device-access-windows.md"
+        }
+      ],
+      "lines_added": 4,
+      "lines_removed": 4,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-09-03T00:00:00Z",
+          "after": "2026-11-05T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-472b111fb492",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Report a problem in Company Portal for iOS",
+      "summary": "The captured documentation changed in “Access help and support in app; Share diagnostic logs”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "iOS/iPadOS"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "You can access the reporting feature in Company Portal using any of these methods:\n- When you receive an error message or alert, tap **Report**.\n- Under the **More** tab of the Company Portal app, tap **Send Logs**.\n- In the Company Portal app, shake your device, then tap **Send Diagnostic Report**. If the diagnostics report prompt doesn't appear when you shake the device, open the **Settings** and go to **Apps**. Then go to **Company Portal**, and turn on **Shake Gesture**.\n   - When you receive an error message, tap **Report**.\n   - Shake your device. Then tap **Send diagnostic report**.\n4. Wait while Company Portal uploads the logs from Company Portal. When that's done, tap **Open Authenticator** to collect logs from the Microsoft Authenticator app.\n6. Select **Email Logs** to follow up with your support person with more details so they can get started with your case. In the body of the email, explain what you experienced and include your incident ID. Your support person may use the incident ID to enlist help from Microsoft about your case.",
+      "after": "You can access the reporting feature in Company Portal by using any of these methods:\n- When you receive an error message or alert, select **Report**.\n- In the Company Portal app, under **More**, select **Send Logs**.\n- In the Company Portal app, shake your device, and then select **Send Diagnostic Report**. If the diagnostics report prompt doesn't appear when you shake the device, open the **Settings** and go to **Apps**. Then go to **Company Portal**, and turn on **Shake Gesture**.\n   - When you receive an error message, select **Report**.\n   - Shake your device. Then select **Send diagnostic report**.\n4. Wait while Company Portal uploads the logs from Company Portal. When that's done, select **Open Authenticator** to collect logs from the Microsoft Authenticator app.\n6. Select **Email Logs** to follow up with your support person with more details so they can get started with your case. In the body of the email, explain what you experienced and include your incident ID. Your support person might use the incident ID to enlist help from Microsoft about your case.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/user-help/diagnostics/collect-logs-ios.md",
+          "title": "Report a problem in Company Portal for iOS",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/diagnostics/collect-logs-ios",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/user-help/diagnostics/collect-logs-ios.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/user-help/diagnostics/collect-logs-ios.md"
+        }
+      ],
+      "lines_added": 9,
+      "lines_removed": 9,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-02-18T00:00:00Z",
+          "after": "2026-11-05T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-21757092108b",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Turn off battery optimization in Company Portal app",
+      "summary": "The captured article wording changed. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "2. Open the menu and tap **Settings**.\n3. Scroll to **Battery Optimization** and tap **TURN OFF**.\n4. Tap **Allow** to confirm that you want to turn battery optimization off.\nNeed additional help? Contact your IT support person. For contact information, sign in to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) with your work or school account, and then go to **Helpdesk**.",
+      "after": "2. Open the menu and select **Settings**.\n3. Scroll to **Battery Optimization** and select **TURN OFF**.\n4. Select **Allow** to confirm that you want to turn battery optimization off.\nNeed more help? Contact your IT support person. For contact information, sign in to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) with your work or school account, and then go to **Helpdesk**.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/user-help/diagnostics/disable-battery-optimization-android.md",
+          "title": "Turn off battery optimization in Company Portal app",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/diagnostics/disable-battery-optimization-android",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/user-help/diagnostics/disable-battery-optimization-android.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/user-help/diagnostics/disable-battery-optimization-android.md"
+        }
+      ],
+      "lines_added": 7,
+      "lines_removed": 6,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Turn off battery optimization in the Company Portal app for Android.",
+          "after": "Battery optimization can stop Company Portal from running in the background. Learn how to turn it off on Android and keep your work device up to date.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-11-08T00:00:00Z",
+          "after": "2026-11-05T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "db6893abc89b-7a037f7a1ad8",
+      "observed_at": "2026-11-14T02:37:20Z",
+      "observed_date": "2026-11-14",
+      "commit_sha": "db6893abc89b23c0a663d8ee68749eef9093846c",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/db6893abc89b23c0a663d8ee68749eef9093846c",
+      "title": "Remove device from Company Portal for Android",
+      "summary": "The captured documentation changed in “Remove device in Company Portal app; Disable Company Portal device management”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "User Help",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Remove an enrolled device so that it's no longer managed by your organization. After you remove the device from Company Portal:\n- The device no longer appears in Company Portal. This applies to enrolled devices and devices you set up just to access work emails.\n- Setting requirements and restrictions, such as device PIN, disabling the camera, or prohibiting screenshots, are no longer enforced.\n> This article is for devices set up via the [Intune Company Portal app for Android](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). It doesn't apply to devices enrolled using the [Microsoft Intune app](https://play.google.com/store/apps/details?id=com.microsoft.intune). You can't unenroll or remove a corporate-owned device from the Microsoft Intune app.\n   ![Screenshot of Company Portal app, highlighting a device called \"My Android\".](media/unenroll-android/remove-device-from-company-portal-2101-01.png)\n3. Select the menu &gt; **Remove Device**.\n   ![Screenshot of Company Portal app, highlighting the menu button and \"Remove Device\" option.](media/unenroll-android/remove-device-from-company-portal-2101-02.png)\n   ![Screenshot of Company Portal app, \"Remove this device?\" confirmation, highlighting the \"OK\" option.](media/unenroll-android/remove-device-from-company-portal-2101-03.png)\nAnother way to remove your device from management is to disable the Company Portal app. Then you can uninstall the app from your device.\n2. Tap the main menu.\n3. Tap **Remove Company Portal**.\n   ![Screenshot of Company Portal app, highlighting \"Remove Company Portal\" option in menu.](media/unenroll-android/remove-intune-company-portal-android-2101-02.png)\n4. Tap **OK** to remove Company Portal and unenroll the device you're on.\n   ![Screenshot of Company Porta\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "Remove an enrolled device so that your organization no longer manages it. After you remove the device from Company Portal:\n- The device no longer appears in Company Portal. This change applies to enrolled devices and devices you set up just to access work emails.\n- Your organization no longer enforces setting requirements and restrictions, such as device PIN, disabling the camera, or prohibiting screenshots.\n> This article is for devices set up by using the [Intune Company Portal app for Android](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). It doesn't apply to devices enrolled by using the [Microsoft Intune app](https://play.google.com/store/apps/details?id=com.microsoft.intune). You can't unenroll or remove a corporate-owned device by using the Microsoft Intune app.\n   ![Screenshot of Company Portal app, highlighting a device called My Android.](media/unenroll-android/remove-device-from-company-portal-2101-01.png)\n3. From the menu, select **Remove Device**.\n   ![Screenshot of Company Portal app, highlighting the menu button and Remove Device option.](media/unenroll-android/remove-device-from-company-portal-2101-02.png)\n   ![Screenshot of Company Portal app, Remove this device confirmation, highlighting the OK option.](media/unenroll-android/remove-device-from-company-portal-2101-03.png)\nYou can remove your device from management by disabling the Company Portal app. After disabling the app, you can uninstall it from your device.\n2. Select the main menu.\n3. Select **Remove Company Portal**.\n   ![Screenshot of Company Portal app, highlighting Remove Company Portal option in menu.](media/unenroll-android/remove-intune-company-portal-android-2101-02.png)\n4. Select **OK** to remove Company Portal and unenroll the device you're on.\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/user-help/unenrollment/unenroll-android.md",
+          "title": "Remove device from Company Portal for Android",
+          "url": "https://learn.microsoft.com/en-us/intune/user-help/unenrollment/unenroll-android",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/user-help/unenrollment/unenroll-android.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/db6893abc89b23c0a663d8ee68749eef9093846c/intune/user-help/unenrollment/unenroll-android.md"
+        }
+      ],
+      "lines_added": 22,
+      "lines_removed": 21,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-07-01T00:00:00Z",
+          "after": "2026-11-05T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "926de72a7b87-435bdb4968c3",
       "observed_at": "2026-11-13T02:34:34Z",
@@ -13280,612 +14027,6 @@
           "field": "ms.reviewer",
           "label": "ms.reviewer",
           "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-251c940c3b22",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Install the Certificate Connector for Microsoft Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/certificates/connector/setup-connector.md",
-          "title": "Install the Certificate Connector for Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/connector/setup-connector",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/certificates/connector/setup-connector.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/certificates/connector/setup-connector.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-d007c0c247c0",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Set up the Certificate Connector for Microsoft Intune to support the DigiCert PKI Platform",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/certificates/digicert-pkcs.md",
-          "title": "Set up the Certificate Connector for Microsoft Intune to support the DigiCert PKI Platform",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/digicert-pkcs",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/certificates/digicert-pkcs.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/certificates/digicert-pkcs.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "wicale",
-          "after": "iceorbital",
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "wicale",
-          "after": "acabello",
-          "first_captured": false
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-1a6e01838e96",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Use certificates for authentication in Microsoft Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/certificates/overview.md",
-          "title": "Use certificates for authentication in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/overview",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/certificates/overview.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/certificates/overview.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-1dea767e5cc3",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Use APIs to add third-party CAs for SCEP to Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/certificates/ref-scep-api.md",
-          "title": "Use APIs to add third-party CAs for SCEP to Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/ref-scep-api",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/certificates/ref-scep-api.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/certificates/ref-scep-api.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-ac79c814e5d8",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Configure infrastructure to support SCEP with Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/certificates/scep-infrastructure.md",
-          "title": "Configure infrastructure to support SCEP with Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/scep-infrastructure",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/certificates/scep-infrastructure.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/certificates/scep-infrastructure.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-1541c09dbc88",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Add partner certification authority in Intune using SCEP",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/certificates/third-party-ca-scep.md",
-          "title": "Add partner certification authority in Intune using SCEP",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/certificates/third-party-ca-scep",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/certificates/third-party-ca-scep.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/certificates/third-party-ca-scep.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "wicale",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-bf77c0b129df",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Choose the right targeting method in Microsoft Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/choose-targeting-method.md",
-          "title": "Choose the right targeting method in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/choose-targeting-method",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/choose-targeting-method.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/choose-targeting-method.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "matt-call",
-          "after": "wicale",
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "mattcall",
-          "after": "wicale",
-          "first_captured": false
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "mattcall",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-e82ac203081a",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Get started with your Microsoft Intune deployment",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/get-started.md",
-          "title": "Get started with your Microsoft Intune deployment",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/get-started",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/get-started.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/get-started.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-41584664bf98",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Use the Troubleshooting Dashboard to Help Users at Your Company",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/it-pro-support/help-desk-operators.md",
-          "title": "Use the Troubleshooting Dashboard to Help Users at Your Company",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/it-pro-support/help-desk-operators",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/it-pro-support/help-desk-operators.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/it-pro-support/help-desk-operators.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "jlynn",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-6a469bb40393",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Microsoft Intune planning guide",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/planning-guide.md",
-          "title": "Microsoft Intune planning guide",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/planning-guide",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/planning-guide.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/planning-guide.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "davguy",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-c0272fc29cda",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Deployment guide: Manage iOS/iPadOS devices in Microsoft Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [
-        "iOS/iPadOS"
-      ],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/platform-guide-ios-ipados.md",
-          "title": "Deployment guide: Manage iOS/iPadOS devices in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/platform-guide-ios-ipados",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/platform-guide-ios-ipados.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/platform-guide-ios-ipados.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "iceorbital",
-          "after": "beflamm",
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "acabello",
-          "after": "beflamm",
-          "first_captured": false
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "beflamm",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-2316e68c7acd",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Deployment guide: Manage macOS devices in Microsoft Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [
-        "macOS"
-      ],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/platform-guide-macos.md",
-          "title": "Deployment guide: Manage macOS devices in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/platform-guide-macos",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/platform-guide-macos.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/platform-guide-macos.md"
-        }
-      ],
-      "lines_added": 2,
-      "lines_removed": 3,
-      "metadata_changes": [
-        {
-          "field": "author",
-          "label": "Author",
-          "before": "iceorbital",
-          "after": "iye-ms",
-          "first_captured": false
-        },
-        {
-          "field": "ms.author",
-          "label": "Microsoft owner",
-          "before": "acabello",
-          "after": "iye",
-          "first_captured": false
-        },
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "beflamm",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-e755086c8817",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Use Policy Sets to Group Collections of Management Objects",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/policy-sets.md",
-          "title": "Use Policy Sets to Group Collections of Management Objects",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/policy-sets",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/policy-sets.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/policy-sets.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "DaGerrit",
-          "after": null,
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "926de72a7b87-3e40c29cc166",
-      "observed_at": "2026-11-13T02:34:34Z",
-      "observed_date": "2026-11-13",
-      "commit_sha": "926de72a7b875f220c7183b9361a0634f7b2334a",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/926de72a7b875f220c7183b9361a0634f7b2334a",
-      "title": "Public preview in Microsoft Intune",
-      "summary": "Document metadata changed. Article text is unchanged. Expand to see the fields and values.",
-      "kind": "metadata",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Fundamentals",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/fundamentals/public-preview.md",
-          "title": "Public preview in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/fundamentals/public-preview",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/93b34c561688a0a071d473992fc161aefdbdc39b/intune/fundamentals/public-preview.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/926de72a7b875f220c7183b9361a0634f7b2334a/intune/fundamentals/public-preview.md"
-        }
-      ],
-      "lines_added": 0,
-      "lines_removed": 1,
-      "metadata_changes": [
-        {
-          "field": "ms.reviewer",
-          "label": "ms.reviewer",
-          "before": "scottduf",
           "after": null,
           "first_captured": false
         }
