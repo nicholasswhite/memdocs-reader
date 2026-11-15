@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T14:30:54.225623Z",
-  "latest_commit_at": "2026-11-14T14:30:20Z",
+  "generated_at": "2026-11-15T20:31:28.403810Z",
+  "latest_commit_at": "2026-11-15T20:31:04Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,107 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10845,
+  "total_updates": 10846,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "10ef48893a61-e8627c16ea78",
+      "observed_at": "2026-11-15T20:31:04Z",
+      "observed_date": "2026-11-15",
+      "commit_sha": "10ef48893a61dd2d6d06531bbec16f5af3417c16",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/10ef48893a61dd2d6d06531bbec16f5af3417c16",
+      "title": "Create a compliance policy in Microsoft Intune",
+      "summary": "The captured documentation changed in “Create the policy”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "4. For *Custom compliance evaluation frequency*, select how frequently you want the custom compliance settings to be evaluated on the device.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-security/compliance/create-policy.md",
+          "title": "Create a compliance policy in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c7df91208bd443162a70bac0a84c228b36291c9a/intune/device-security/compliance/create-policy.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/10ef48893a61dd2d6d06531bbec16f5af3417c16/intune/device-security/compliance/create-policy.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "   1. On the *Compliance settings* page, expand **Custom Compliance** and set *Custom compliance* to **Require**."
+              },
+              {
+                "kind": "context",
+                "text": "   2. For *Select your discovery script*, select **Click to select**, and then enter the name of a script that you previously added to the Microsoft Intune admin center. This script must be uploaded before you begin to create the policy. Choose **Select** to continue to the next step."
+              },
+              {
+                "kind": "context",
+                "text": "   3. For *Upload and validate the JSON file with your custom compliance settings*, select the folder icon, and then find and add the JSON file for Windows that you want to use with this policy. For assistance with the JSON, see [Create a JSON for custom compliance settings](create-custom-json.md)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "   **For Linux and macOS**:"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "   1. On the *Compliance settings* page, expand **Custom Compliance** and set *Custom compliance* to **Require**."
+              },
+              {
+                "kind": "context",
+                "text": "   2. For *Select your discovery script*, select **Click to select**, and then enter the name of a script that you previously added to the Microsoft Intune admin center. This script must be uploaded before you begin to create the policy. Choose **Select** to continue to the next step."
+              },
+              {
+                "kind": "context",
+                "text": "   3. For *Upload and validate the JSON file with your custom compliance settings*, select the folder icon, and then find and add the JSON file for Windows that you want to use with this policy. For assistance with the JSON, see [Create a JSON for custom compliance settings](create-custom-json.md)."
+              },
+              {
+                "kind": "added",
+                "text": "   4. For *Custom compliance evaluation frequency*, select how frequently you want the custom compliance settings to be evaluated on the device."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "   **For Linux and macOS**:"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
     {
       "id": "c7df91208bd4-b0e7cd594bb2",
       "observed_at": "2026-11-14T14:30:20Z",
@@ -32132,35 +32228,6 @@
           "url": "https://learn.microsoft.com/en-us/intune/device-management/actions/deprovision",
           "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/5fa523299a102066a5cd7abbc8ae8d3ed93a5751/intune/device-management/actions/deprovision.md",
           "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/61d9b58889f8cb40cb4e440ec10f801490bda088/intune/device-management/actions/deprovision.md"
-        }
-      ],
-      "lines_added": 1,
-      "lines_removed": 1
-    },
-    {
-      "id": "61d9b58889f8-aacb9b9fd3d1",
-      "observed_at": "2026-09-30T01:15:27Z",
-      "observed_date": "2026-09-30",
-      "commit_sha": "61d9b58889f8cb40cb4e440ec10f801490bda088",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/61d9b58889f8cb40cb4e440ec10f801490bda088",
-      "title": "Device action: restart",
-      "summary": "Only Markdown link destinations changed; the surrounding wording is unchanged.",
-      "kind": "minor",
-      "platforms": [],
-      "product": "Intune",
-      "area": "Device Management",
-      "minor": true,
-      "summary_source": "automatic",
-      "before": "> Restart is only available for kiosk devices and managed guest session devices. The restart fails on any other type of device. For more information, see [Kiosk apps, managed guest sessions, and smart cards](https://support.google.com/chrome/a/topic/6128720?) (opens Google Chrome Enterprise Help).",
-      "after": "> Restart is only available for kiosk devices and managed guest session devices. The restart fails on any other type of device. For more information, see [Kiosk apps, managed guest sessions, and smart cards](https://support.google.com/chrome/a/topic/6128720) (opens Google Chrome Enterprise Help).",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/device-management/actions/restart.md",
-          "title": "Device action: restart",
-          "url": "https://learn.microsoft.com/en-us/intune/device-management/actions/restart",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/5fa523299a102066a5cd7abbc8ae8d3ed93a5751/intune/device-management/actions/restart.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/61d9b58889f8cb40cb4e440ec10f801490bda088/intune/device-management/actions/restart.md"
         }
       ],
       "lines_added": 1,
