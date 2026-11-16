@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T02:40:00.720789Z",
-  "latest_commit_at": "2026-11-16T02:39:14Z",
+  "generated_at": "2026-11-16T20:34:09.221680Z",
+  "latest_commit_at": "2026-11-16T20:33:23Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,394 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10905,
+  "total_updates": 10910,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "37c0b091f8ac-533b06088cf2",
+      "observed_at": "2026-11-16T20:33:23Z",
+      "observed_date": "2026-11-16",
+      "commit_sha": "37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "title": "Automatic registration of existing devices",
+      "summary": "The captured article wording changed. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Windows Autopilot",
+      "area": "Windows Autopilot",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "You can automatically register existing devices with Windows Autopilot through Intune or another MDM service.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "autopilot/automatic-registration.md",
+          "title": "Automatic registration of existing devices",
+          "url": "https://learn.microsoft.com/en-us/autopilot/automatic-registration",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/04407243c231eb8da4488e3314ea89be98bbcebd/autopilot/automatic-registration.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/37c0b091f8ac3e7f71c56988452907c0bb02f7fa/autopilot/automatic-registration.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "# Automatic registration of existing devices"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Requirements"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "# Automatic registration of existing devices"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "You can automatically register existing devices with Windows Autopilot through Intune or another MDM service."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Requirements"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "37c0b091f8ac-588b68a547b2",
+      "observed_at": "2026-11-16T20:33:23Z",
+      "observed_date": "2026-11-16",
+      "commit_sha": "37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "title": "OEM registration",
+      "summary": "The captured article wording changed. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Windows Autopilot",
+      "area": "Windows Autopilot",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "Windows Autopilot OEM registration lets manufacturers register devices on your behalf.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "autopilot/oem-registration.md",
+          "title": "OEM registration",
+          "url": "https://learn.microsoft.com/en-us/autopilot/oem-registration",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/04407243c231eb8da4488e3314ea89be98bbcebd/autopilot/oem-registration.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/37c0b091f8ac3e7f71c56988452907c0bb02f7fa/autopilot/oem-registration.md"
+        }
+      ],
+      "lines_added": 2,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "# OEM registration"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Device registration process"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "# OEM registration"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Windows Autopilot OEM registration lets manufacturers register devices on your behalf."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Device registration process"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "37c0b091f8ac-094a4e6d3958",
+      "observed_at": "2026-11-16T20:33:23Z",
+      "observed_date": "2026-11-16",
+      "commit_sha": "37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "title": "Windows Autopilot: What's new",
+      "summary": "The captured documentation changed in “Update to BitLocker Recovery Key Process for Windows Autopilot”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Windows Autopilot",
+      "area": "Windows Autopilot",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Microsoft Intune is changing how BitLocker resets occur for reused Windows Autopilot devices in the September (2309) service release. Previously, users could access the BitLocker recovery key via BitLocker self-service when reusing devices that were configured through Windows Autopilot. However, after the change, users will need to contact their IT admin to request a restore or to access the BitLocker recovery key. IT admins will continue to have full access to recovery keys both before and after this change.",
+      "after": "Microsoft Intune is changing how BitLocker resets occur for reused Windows Autopilot devices in the September (2309) service release. Previously, users could access the BitLocker recovery key via BitLocker self-service when reusing devices that were configured through Windows Autopilot. However, after the change, users will need to contact their IT admin to request a restore or to access the BitLocker recovery key.\n\nIT admins who aren't owners of these devices continue to have access to recovery keys both before and after this change. IT admins who own an affected device are subject to the same BitLocker self-service restriction, even if they have administrative permissions. These admins need to contact an IT admin who isn't an owner of that device to retrieve its recovery key.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "autopilot/whats-new.md",
+          "title": "Windows Autopilot: What's new",
+          "url": "https://learn.microsoft.com/en-us/autopilot/whats-new",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/04407243c231eb8da4488e3314ea89be98bbcebd/autopilot/whats-new.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/37c0b091f8ac3e7f71c56988452907c0bb02f7fa/autopilot/whats-new.md"
+        }
+      ],
+      "lines_added": 4,
+      "lines_removed": 2,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-10-29T00:00:00Z",
+          "after": "2026-11-13T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "37c0b091f8ac-babe4aab54c5",
+      "observed_at": "2026-11-16T20:33:23Z",
+      "observed_date": "2026-11-16",
+      "commit_sha": "37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "title": "App Protection Policy Settings for Windows",
+      "summary": "The captured documentation changed in “Data protection”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "App Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "| **Receive data from** | Select one of the following options to specify the sources org users can receive data from:   - **All sources**: Org users can open data from any account, document, location, or application into the org context. - **No sources**: Org users can't open data from external accounts, documents, locations, or applications into the org context. **NOTE**: For Microsoft Edge, **No sources** controls file upload behavior either via drag and drop or the file open dialog. Local file viewing and sharing files between sites/tabs is blocked. | **All sources** |\n| **Send org data to** | Select one of the following options to specify the destinations org users can send data to:   - **All destinations**: Org users can send org data to any account, document, location, or application. - **No destinations**: Org users can't send org data to external accounts, documents, locations, or applications from the org context. **NOTE**: For Microsoft Edge, **No destinations** blocks file download. This means sharing files between sites/tabs are blocked. | **All destinations** |",
+      "after": "| **Receive data from** | Select one of the following options to specify the sources org users can receive data from:   - **All sources**: Org users can open data from any account, document, location, or application into the org context. - **No sources**: Org users can't open data from external accounts, documents, locations, or applications into the org context. **NOTE**: For Microsoft Edge, **No sources** controls file upload behavior either via drag and drop or the file open dialog. Local file viewing and sharing files between sites/tabs is blocked. - **Selected apps**: Org users can open data only from allowed data sources into the org context. | **All sources** |\n| **Allowed data sources** | Select one of the following options to specify the sources org users can receive data from:   - **No sources**: Org users can't open data from external accounts, documents, locations, or applications into the org context. - **OneDrive for Business**: Org users can open data only from OneDrive for Business into the org context. Support for this setting will be introduced in a Microsoft Edge update to be released in the first quarter of calendar year 2027. Users will need that version or a later version for this setting to apply. This page will be updated with the specific version number when it becomes available. | **No sources** |\n| **Send org data to** | Select one of the following options to specify the destinations org users can send data to:   - **All destinations**: Org users can send org data to any account, document, location, or application. - **No destinations**: Org users can't send org data to external accounts, documents, locations, or applications from the org context. **NOTE**: For Microsoft Edge, **No destinations** blocks file download. This means sharing files\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/app-management/protection/ref-settings-windows.md",
+          "title": "App Protection Policy Settings for Windows",
+          "url": "https://learn.microsoft.com/en-us/intune/app-management/protection/ref-settings-windows",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/04407243c231eb8da4488e3314ea89be98bbcebd/intune/app-management/protection/ref-settings-windows.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/37c0b091f8ac3e7f71c56988452907c0bb02f7fa/intune/app-management/protection/ref-settings-windows.md"
+        }
+      ],
+      "lines_added": 7,
+      "lines_removed": 3,
+      "metadata_changes": [
+        {
+          "field": "ai-usage",
+          "label": "ai-usage",
+          "before": null,
+          "after": "ai-assisted",
+          "first_captured": false
+        },
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": null,
+          "after": "msecd-doc-authoring-1032",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-11-06T00:00:00Z",
+          "after": "2026-11-13T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "37c0b091f8ac-3e79c14185d1",
+      "observed_at": "2026-11-16T20:33:23Z",
+      "observed_date": "2026-11-16",
+      "commit_sha": "37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/37c0b091f8ac3e7f71c56988452907c0bb02f7fa",
+      "title": "Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune",
+      "summary": "The captured documentation changed in “Supported OEMConfig apps”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "Device Configuration",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "| KEYENCE | com.keyence.autoid.oemconfig.release |  |",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-configuration/templates/configure-oemconfig-android.md",
+          "title": "Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-oemconfig-android",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/04407243c231eb8da4488e3314ea89be98bbcebd/intune/device-configuration/templates/configure-oemconfig-android.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/37c0b091f8ac3e7f71c56988452907c0bb02f7fa/intune/device-configuration/templates/configure-oemconfig-android.md"
+        }
+      ],
+      "lines_added": 3,
+      "lines_removed": 2,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "| imotion | com.iwaylink.oemconfig |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Inventus | com.inventus.oemconfig.gen |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Janam | com.oemconfig.janam |  |"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "| Kyocera | jp.kyocera.enterprisedeviceconfig |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Lenovo | com.lenovo.oemconfig.rel |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| LG | com.lge.android.oemconfig |  |"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "| imotion | com.iwaylink.oemconfig |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Inventus | com.inventus.oemconfig.gen |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Janam | com.oemconfig.janam |  |"
+              },
+              {
+                "kind": "added",
+                "text": "| KEYENCE | com.keyence.autoid.oemconfig.release |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Kyocera | jp.kyocera.enterprisedeviceconfig |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| Lenovo | com.lenovo.oemconfig.rel |  |"
+              },
+              {
+                "kind": "context",
+                "text": "| LG | com.lge.android.oemconfig |  |"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": "msecd-doc-authoring-1023",
+          "after": "msecd-doc-authoring-1032",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-15T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "04407243c231-cbcd9c9898ca",
       "observed_at": "2026-11-16T02:39:14Z",
@@ -31541,864 +31924,6 @@
           "label": "Document date",
           "before": "2026-06-09T00:00:00Z",
           "after": "2026-09-30T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "fe244440ebc1-1adbea8d5318",
-      "observed_at": "2026-10-06T13:42:09Z",
-      "observed_date": "2026-10-06",
-      "commit_sha": "fe244440ebc1cd92ca8f1e4f876c0731878c98ab",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/fe244440ebc1cd92ca8f1e4f876c0731878c98ab",
-      "title": "Windows MDM security baseline settings reference for Microsoft Intune",
-      "summary": "The captured documentation changed in “Security Baseline for Windows, version 26H2”. Compare the added wording and its surrounding context below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Intune",
-      "area": "Device Security",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "::: zone pivot=\"mdm-26h2\"\n\n## Security Baseline for Windows, version 26H2\n\nThe settings in this baseline are taken from the Windows 11 **version 26H2** security baseline as found in the [Security Compliance Toolkit and Baselines](https://www.microsoft.com/en-us/download/details.aspx?id=55319) from the Microsoft Download Center, and include only the settings that apply to Windows devices managed through Intune. When available, the setting name links to the source Configuration Service Provider (CSP), and then displays that settings default configuration in the baseline.\n\n### Administrative Templates\n\n#### Control Panel &gt; Personalization\n\n- **Prevent enabling lock screen camera**  \n   Baseline default: *Enabled*  \n   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-devicelock?WT.mc_id=Portal-fx#preventenablinglockscreencamera)\n- **Prevent enabling lock screen slide show**  \n   Baseline default: *Enabled*  \n   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-devicelock?WT.mc_id=Portal-fx#preventlockscreenslideshow)\n\n#### MS Security Guide\n\n- **Apply UAC restrictions to local accounts on network logons**  \n   Baseline default: *Enabled*  \n   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mssecurityguide?WT.mc_id=Portal-fx#applyuacrestrictionstolocalaccountsonnetworklogon)\n- **Configure SMB v1 client driver**  \n   Baseline default: *Enabled*  \n   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mssecurityguide?WT.mc_id=Portal-fx#configuresmbv1clientdriver)\n\n  - **Configure MrxSmb10 driver**  \n     Baseline default: *Disable driver (recommended)*\n- **Configure SMB v1 server**  \n   Baseline default: *Disabled*  \n   [Le\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "intune/device-security/security-baselines/ref-windows-mdm-settings.md",
-          "title": "Windows MDM security baseline settings reference for Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/ref-windows-mdm-settings",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6cbeae9763973f167d2c71bca00fe50b8083a863/intune/device-security/security-baselines/ref-windows-mdm-settings.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fe244440ebc1cd92ca8f1e4f876c0731878c98ab/intune/device-security/security-baselines/ref-windows-mdm-settings.md"
-        }
-      ],
-      "lines_added": 1748,
-      "lines_removed": 2,
-      "addition_context": {
-        "hunks": [
-          {
-            "before": [
-              {
-                "kind": "context",
-                "text": "- [Use security baselines](overview.md)"
-              },
-              {
-                "kind": "context",
-                "text": "- [Change the baseline version for a profile](configure-baselines.md#update-a-baseline-profile-to-the-latest-version)"
-              },
-              {
-                "kind": "context",
-                "text": "- [Manage security baselines](configure-baselines.md)"
-              },
-              {
-                "kind": "insertion",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "::: zone pivot=\"mdm-25h2\""
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ],
-            "after": [
-              {
-                "kind": "context",
-                "text": "- [Use security baselines](overview.md)"
-              },
-              {
-                "kind": "context",
-                "text": "- [Change the baseline version for a profile](configure-baselines.md#update-a-baseline-profile-to-the-latest-version)"
-              },
-              {
-                "kind": "context",
-                "text": "- [Manage security baselines](configure-baselines.md)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "::: zone pivot=\"mdm-26h2\""
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "## Security Baseline for Windows, version 26H2"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "The settings in this baseline are taken from the Windows 11 **version 26H2** security baseline as found in the [Security Compliance Toolkit and Baselines](https://www.microsoft.com/en-us/download/details.aspx?id=55319) from the Microsoft Download Center, and include only the settings that apply to Windows devices managed through Intune. When available, the setting name links to the source Configuration Service Provider (CSP), and then displays that settings default configuration in the baseline."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "### Administrative Templates"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "#### Control Panel &gt; Personalization"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "- **Prevent enabling lock screen camera**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-devicelock?WT.mc_id=Portal-fx#preventenablinglockscreencamera)"
-              },
-              {
-                "kind": "added",
-                "text": "- **Prevent enabling lock screen slide show**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-devicelock?WT.mc_id=Portal-fx#preventlockscreenslideshow)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "#### MS Security Guide"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "- **Apply UAC restrictions to local accounts on network logons**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mssecurityguide?WT.mc_id=Portal-fx#applyuacrestrictionstolocalaccountsonnetworklogon)"
-              },
-              {
-                "kind": "added",
-                "text": "- **Configure SMB v1 client driver**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mssecurityguide?WT.mc_id=Portal-fx#configuresmbv1clientdriver)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "  - **Configure MrxSmb10 driver**  "
-              },
-              {
-                "kind": "added",
-                "text": "     Baseline default: *Disable driver (recommended)*"
-              },
-              {
-                "kind": "added",
-                "text": "- **Configure SMB v1 server**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Disabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mssecurityguide?WT.mc_id=Portal-fx#configuresmbv1server)"
-              },
-              {
-                "kind": "added",
-                "text": "- **Enable Structured Exception Handling Overwrite Protection (SEHOP)**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-mssecurityguide?WT.mc_id=Portal-fx#enablestructuredexceptionhandlingoverwriteprotection)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "#### MSS (Legacy)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "- **MSS: (DisableIPSourceRouting IPv6) IP source routing protection level (protects against packet spoofing)**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-msslegacy?WT.mc_id=Portal-fx#ipv6sourceroutingprotectionlevel)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "  - **DisableIPSourceRouting IPv6 (Device)**  "
-              },
-              {
-                "kind": "added",
-                "text": "     Baseline default: *Highest protection, source routing is completely disabled*"
-              },
-              {
-                "kind": "added",
-                "text": "- **MSS: (DisableIPSourceRouting) IP source routing protection level (protects against packet spoofing)**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-msslegacy?WT.mc_id=Portal-fx#ipsourceroutingprotectionlevel)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "  - **DisableIPSourceRouting (Device)**  "
-              },
-              {
-                "kind": "added",
-                "text": "     Baseline default: *Highest protection, source routing is completely disabled*"
-              },
-              {
-                "kind": "added",
-                "text": "- **MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Disabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-msslegacy?WT.mc_id=Portal-fx#allowicmpredirectstooverrideospfgeneratedroutes)"
-              },
-              {
-                "kind": "added",
-                "text": "- **MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers**  "
-              },
-              {
-                "kind": "added",
-                "text": "   Baseline default: *Enabled*  "
-              },
-              {
-                "kind": "added",
-                "text": "   [Learn more](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-msslegacy?WT.mc_id=Portal-fx#allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "gap",
-                "text": "Additional lines omitted."
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "::: zone pivot=\"mdm-25h2\""
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ]
-          }
-        ],
-        "truncated": true
-      },
-      "metadata_changes": [
-        {
-          "field": "description",
-          "label": "Page description",
-          "before": "View the default setting configuration of the various Microsoft Intune security baselines for Windows.",
-          "after": "Review the default settings in each Microsoft Intune Windows security baseline version and compare recommended configurations for managed devices.",
-          "first_captured": false
-        },
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2026-06-23T00:00:00Z",
-          "after": "2026-09-30T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "fe244440ebc1-1b095ce07f09",
-      "observed_at": "2026-10-06T13:42:09Z",
-      "observed_date": "2026-10-06",
-      "commit_sha": "fe244440ebc1cd92ca8f1e4f876c0731878c98ab",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/fe244440ebc1cd92ca8f1e4f876c0731878c98ab",
-      "title": "What's new in Microsoft Intune",
-      "summary": "The captured documentation changed in “Week of October 5, 2026; Week of September 28, 2026 (Service release 2609)”. Compare the added wording and its surrounding context below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Intune",
-      "area": "What's new",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "## Week of October 5, 2026\n\n### Device security\n\n#### Intune security baseline for Windows 11, version 26H2\n\nThe Windows security baseline for Windows 11, version 26H2 is now available in Microsoft Intune. This baseline reflects current Microsoft security recommendations and is the latest available Windows security baseline in Intune.\n\nThe Windows 11, version 26H2 security baseline includes new settings, updated default values, and revised security guidance. Existing security baseline profiles don't automatically update to the new version.\n\nTo use the Windows 11, version 26H2 security baseline, Intune admins can [create a new baseline profile](../device-security/security-baselines/configure-baselines.md#create-a-profile-for-a-security-baseline) or [update an existing profile to the latest version](../device-security/security-baselines/configure-baselines.md#update-a-baseline-profile-to-the-latest-version). Review the settings before moving from a previous baseline version, especially if existing profiles include customizations.\n\nThe **Configure NetBIOS settings** policy isn't included in this baseline release because it's currently supported only on Windows Insider builds. We plan to add the setting in a future baseline update after it becomes available for supported, in-market Windows versions and through the Intune Settings Catalog. This change will be communicated when available.\n\nFor a detailed breakdown of setting changes, see the Windows blog post [Windows 11, version 26H2 security baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/windows-11-version-26h2-security-baseline/4560382).\n\nTo view the default configuration of the Intune baseline for Windows 11, version 26H2, see [Windows MDM baseline settings](https://learn.microsoft.com/en-\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "intune/whats-new/index.md",
-          "title": "What's new in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6cbeae9763973f167d2c71bca00fe50b8083a863/intune/whats-new/index.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/fe244440ebc1cd92ca8f1e4f876c0731878c98ab/intune/whats-new/index.md"
-        }
-      ],
-      "lines_added": 33,
-      "lines_removed": 1,
-      "addition_context": {
-        "hunks": [
-          {
-            "before": [
-              {
-                "kind": "context",
-                "text": "> - [Windows Autopilot: What's new](../../autopilot/whats-new.md)"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs.md#notifications)."
-              },
-              {
-                "kind": "insertion",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "## Week of September 28, 2026 (Service release 2609)"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ],
-            "after": [
-              {
-                "kind": "context",
-                "text": "> - [Windows Autopilot: What's new](../../autopilot/whats-new.md)"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs.md#notifications)."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "## Week of October 5, 2026"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "### Device security"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "#### Intune security baseline for Windows 11, version 26H2"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "The Windows security baseline for Windows 11, version 26H2 is now available in Microsoft Intune. This baseline reflects current Microsoft security recommendations and is the latest available Windows security baseline in Intune."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "The Windows 11, version 26H2 security baseline includes new settings, updated default values, and revised security guidance. Existing security baseline profiles don't automatically update to the new version."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "To use the Windows 11, version 26H2 security baseline, Intune admins can [create a new baseline profile](../device-security/security-baselines/configure-baselines.md#create-a-profile-for-a-security-baseline) or [update an existing profile to the latest version](../device-security/security-baselines/configure-baselines.md#update-a-baseline-profile-to-the-latest-version). Review the settings before moving from a previous baseline version, especially if existing profiles include customizations."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "The **Configure NetBIOS settings** policy isn't included in this baseline release because it's currently supported only on Windows Insider builds. We plan to add the setting in a future baseline update after it becomes available for supported, in-market Windows versions and through the Intune Settings Catalog. This change will be communicated when available."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "For a detailed breakdown of setting changes, see the Windows blog post [Windows 11, version 26H2 security baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/windows-11-version-26h2-security-baseline/4560382)."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "To view the default configuration of the Intune baseline for Windows 11, version 26H2, see [Windows MDM baseline settings](https://learn.microsoft.com/en-us/intune/device-security/security-baselines/ref-windows-mdm-settings?pivots=mdm-26h2#security-baseline-for-windows-version-26h2)."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "Applies to:"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "- Windows 11"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "## Week of September 28, 2026 (Service release 2609)"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ]
-          },
-          {
-            "before": [
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "- Android Enterprise"
-              },
-              {
-                "kind": "context",
-                "text": "- Android (AOSP)"
-              },
-              {
-                "kind": "insertion",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "### Device enrollment"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ],
-            "after": [
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "- Android Enterprise"
-              },
-              {
-                "kind": "context",
-                "text": "- Android (AOSP)"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "#### Windows 11, version 26H2 Settings Catalog update"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "Microsoft Intune provides day-zero support for validated Windows policy settings introduced with Windows 11, version 26H2 in the Settings Catalog. Admins can use the new and updated settings to manage Windows endpoints with the latest 26H2 capabilities."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "For more information, see [Microsoft Intune Settings Catalog updated to support Windows 11, version 26H2](https://techcommunity.microsoft.com/blog/IntuneCustomerSuccess/microsoft-intune-settings-catalog-updated-to-support-windows-11-version-26h2/4560815)."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "Applies to:"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "- Windows 11"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "### Device enrollment"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ]
-          }
-        ],
-        "truncated": false
-      },
-      "metadata_changes": [
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2026-09-29T00:00:00Z",
-          "after": "2026-10-05T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6cbeae976397-1b095ce07f09",
-      "observed_at": "2026-10-05T19:38:01Z",
-      "observed_date": "2026-10-05",
-      "commit_sha": "6cbeae9763973f167d2c71bca00fe50b8083a863",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6cbeae9763973f167d2c71bca00fe50b8083a863",
-      "title": "What's new in Microsoft Intune",
-      "summary": "The captured documentation changed in “Week of September 28, 2026 (Service release 2609)”. Compare the added wording and its surrounding context below.",
-      "kind": "updated",
-      "platforms": [
-        "Android",
-        "Windows",
-        "macOS"
-      ],
-      "product": "Intune",
-      "area": "What's new",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "",
-      "after": "#### Remote Help support for GCCH environments\n\nRemote Help is now available in US Government Community Cloud High (GCCH) environments. This expansion extends the same secure, cloud-based remote assistance capabilities currently available in GCC to GCCH tenants.\n\nIT support staff can establish Remote Help sessions with users on enrolled devices to provide real-time troubleshooting. Remote Help uses role-based access controls through Intune, and both helpers and sharers must sign in with their organization's Microsoft Entra ID accounts. DoD environments aren't supported.\n\nFor more information, see [Planning for Remote Help](../remote-help/plan.md).\n\nApplies to:\n\n- Android\n- macOS\n- Windows",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/whats-new/index.md",
-          "title": "What's new in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/b6071a7a8e001f2046686d195765c5b6d41f2e9d/intune/whats-new/index.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6cbeae9763973f167d2c71bca00fe50b8083a863/intune/whats-new/index.md"
-        }
-      ],
-      "lines_added": 14,
-      "lines_removed": 0,
-      "addition_context": {
-        "hunks": [
-          {
-            "before": [
-              {
-                "kind": "context",
-                "text": "- Android"
-              },
-              {
-                "kind": "context",
-                "text": "- iOS/iPadOS"
-              },
-              {
-                "kind": "context",
-                "text": "- macOS"
-              },
-              {
-                "kind": "insertion",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "### App management"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ],
-            "after": [
-              {
-                "kind": "context",
-                "text": "- Android"
-              },
-              {
-                "kind": "context",
-                "text": "- iOS/iPadOS"
-              },
-              {
-                "kind": "context",
-                "text": "- macOS"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "#### Remote Help support for GCCH environments"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "Remote Help is now available in US Government Community Cloud High (GCCH) environments. This expansion extends the same secure, cloud-based remote assistance capabilities currently available in GCC to GCCH tenants."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "IT support staff can establish Remote Help sessions with users on enrolled devices to provide real-time troubleshooting. Remote Help uses role-based access controls through Intune, and both helpers and sharers must sign in with their organization's Microsoft Entra ID accounts. DoD environments aren't supported."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "For more information, see [Planning for Remote Help](../remote-help/plan.md)."
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "Applies to:"
-              },
-              {
-                "kind": "added",
-                "text": ""
-              },
-              {
-                "kind": "added",
-                "text": "- Android"
-              },
-              {
-                "kind": "added",
-                "text": "- macOS"
-              },
-              {
-                "kind": "added",
-                "text": "- Windows"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              },
-              {
-                "kind": "context",
-                "text": "### App management"
-              },
-              {
-                "kind": "context",
-                "text": ""
-              }
-            ]
-          }
-        ],
-        "truncated": false
-      }
-    },
-    {
-      "id": "512ccb5f38a8-713525107b22",
-      "observed_at": "2026-10-03T14:53:47Z",
-      "observed_date": "2026-10-03",
-      "commit_sha": "512ccb5f38a84c68c555149a017e3cf94b08bca7",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/512ccb5f38a84c68c555149a017e3cf94b08bca7",
-      "title": "A Windows SIM-data limitation is now explicit",
-      "summary": "The Advanced Analytics schema reference now states that ICCID, a SIM identifier, is not supported on Windows.",
-      "kind": "updated",
-      "platforms": [
-        "Android",
-        "Windows"
-      ],
-      "product": "Intune",
-      "area": "Advanced Analytics",
-      "minor": false,
-      "summary_source": "editorial",
-      "before": "The support note described a SimInfo limitation for Android devices with a personally owned work profile.",
-      "after": "The note also explicitly identifies ICCID as unsupported on Windows. The edit documents a limitation; it does not show that an existing collection capability was removed.",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/advanced-analytics/ref-data-platform-schema.md",
-          "title": "Intune data platform schema",
-          "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/ref-data-platform-schema",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/89fee1b3c3838b508d811d8eda33d68d7b8bbdf5/intune/advanced-analytics/ref-data-platform-schema.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/512ccb5f38a84c68c555149a017e3cf94b08bca7/intune/advanced-analytics/ref-data-platform-schema.md"
-        }
-      ],
-      "lines_added": 1,
-      "lines_removed": 1
-    },
-    {
-      "id": "512ccb5f38a8-a17cb8d29170",
-      "observed_at": "2026-10-03T14:53:47Z",
-      "observed_date": "2026-10-03",
-      "commit_sha": "512ccb5f38a84c68c555149a017e3cf94b08bca7",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/512ccb5f38a84c68c555149a017e3cf94b08bca7",
-      "title": "When does Android factory reset protection apply?",
-      "summary": "The Android restrictions reference clarifies how the factory reset protection email setting affects resets on corporate-owned devices with a work profile.",
-      "kind": "updated",
-      "platforms": [
-        "Android"
-      ],
-      "product": "Intune",
-      "area": "Device Configuration",
-      "minor": false,
-      "summary_source": "editorial",
-      "before": "The reset table indicated no factory reset protection for a Settings reset on these devices.",
-      "after": "The table now indicates factory reset protection and includes a configuration exception: a Settings reset does not enforce it when Factory reset protection emails is Not configured. This is a documentation clarification, not evidence of a device behavior change.",
-      "excerpts_truncated": false,
-      "articles": [
-        {
-          "path": "intune/device-configuration/templates/ref-device-restrictions-android-enterprise.md",
-          "title": "Android template device settings list to restrict features using Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/templates/ref-device-restrictions-android-enterprise",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/89fee1b3c3838b508d811d8eda33d68d7b8bbdf5/intune/device-configuration/templates/ref-device-restrictions-android-enterprise.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/512ccb5f38a84c68c555149a017e3cf94b08bca7/intune/device-configuration/templates/ref-device-restrictions-android-enterprise.md"
-        }
-      ],
-      "lines_added": 4,
-      "lines_removed": 2,
-      "metadata_changes": [
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2026-09-23T00:00:00Z",
-          "after": "2026-10-02T00:00:00Z",
           "first_captured": false
         }
       ],
