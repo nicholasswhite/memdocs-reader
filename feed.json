@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T02:37:15.569056Z",
-  "latest_commit_at": "2026-11-18T02:36:41Z",
+  "generated_at": "2026-11-18T20:33:48.218483Z",
+  "latest_commit_at": "2026-11-18T20:33:02Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,45 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10983,
+  "total_updates": 10984,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "1ef3cfca06a1-53bce716f175",
+      "observed_at": "2026-11-18T20:33:02Z",
+      "observed_date": "2026-11-18",
+      "commit_sha": "1ef3cfca06a1740e57f32759308a63b6cbfc791a",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/1ef3cfca06a1740e57f32759308a63b6cbfc791a",
+      "title": "View device details",
+      "summary": "The captured documentation changed in “Hardware details”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Android",
+        "Windows",
+        "iOS/iPadOS",
+        "macOS"
+      ],
+      "product": "Intune",
+      "area": "Device Management",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "| Serial number | The device's serial number from the manufacturer. | All |",
+      "after": "| Serial number | The device's serial number from the manufacturer. | Windows, iOS, macOS, Android |",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-management/inventory-and-status/device-details.md",
+          "title": "View device details",
+          "url": "https://learn.microsoft.com/en-us/intune/device-management/inventory-and-status/device-details",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/5a9602cdfee35108b24a06a74e2fa84f2f7697fc/intune/device-management/inventory-and-status/device-details.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/1ef3cfca06a1740e57f32759308a63b6cbfc791a/intune/device-management/inventory-and-status/device-details.md"
+        }
+      ],
+      "lines_added": 1,
+      "lines_removed": 1
+    },
     {
       "id": "5a9602cdfee3-6fdcf04b4d1c",
       "observed_at": "2026-11-18T02:36:41Z",
@@ -31002,75 +31036,6 @@
             "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-3fc9b33e30dd",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Software Center user guide",
-      "summary": "The captured documentation changed in “How to open Software Center; Applications”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Configuration Manager",
-      "area": "Core",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "Your organization's IT admin uses Software Center to install applications, software updates, and upgrade Windows. This user guide explains the functionality of Software Center for users of the computer.\n- Your IT admin may disable some aspects of Software Center. Your specific experience may vary.\n- If multiple users are using a device at the same time, the user with the lowest session ID will be the only one to see all available deployments in Software Center. For example, multiple users on a remote desktop environment. Users with higher session IDs may not see some of the deployments in Software Center. For example, the users with higher session IDs may see deployed Applications, but not deployed Packages or Task Sequences. Meanwhile the user with the lowest session ID will see all deployed Applications, Packages, and Task Sequences. The **Users** tab of Windows Task Manager shows all users and their session IDs.\n- Your IT admin may change the color of Software Center, and add your organization's logo.\nSoftware Center is installed automatically on Windows devices that your IT organization manages. For the simplest method to start Software Center, go to **Start** and type `Software Center`. You may not need to type the entire string for Windows to find the best match.\n![Software Center best match in Start menu](media/start-menu-software-center.png)\nTo navigate the Start menu, look under the **Microsoft Endpoint Manager** group for the **Software Center** icon.\n![Microsoft Endpoint Manager Start menu icons](media/microsoft-endpoint-manager-start-menu.png)\n> The above Start menu path is for versions from November 2019 (version 1910) or later. In earlier versions, the folder name is **Microsoft System Center**.\n[![Software Center Applications tab](media/software-center-ap\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "Your organization's IT administrator uses Software Center to install applications, update software, and upgrade Windows. This article explains the functionality of Software Center for users of the computer.\n- Your IT admin might disable some aspects of Software Center. Your specific experience might vary.\n- If multiple users are using a device at the same time, the user with the lowest session ID is the only one to see all available deployments in Software Center. For example, take multiple users on a remote desktop environment. Users with higher session IDs might not see some of the deployments in Software Center. The users with higher session IDs might see deployed Applications, but not deployed Packages or Task Sequences. Meanwhile, the user with the lowest session ID sees all deployed Applications, Packages, and Task Sequences. The **Users** tab of Windows Task Manager shows all users and their session IDs.\n- Your IT admin might change the color of Software Center, and add your organization's logo.\nSoftware Center is installed automatically on Windows devices that your IT organization manages. To start Software Center, go to **Start** and type `Software Center`.\n![Screenshot shows Software Center best match in Start menu.](media/start-menu-software-center.png)\nTo navigate the Start menu, look under the **Microsoft Endpoint Manager** group for **Software Center**.\n![Screenshot shows Microsoft Endpoint Manager Start menu icons.](media/microsoft-endpoint-manager-start-menu.png)\n> This Start menu path is for versions from November 2019 (version 1910) or later. In earlier versions, the folder name is **Microsoft System Center**.\n[![Screenshot shows the Software Center Applications tab.](media/software-center-apps.png)](media/software-center-apps.png#lightbox)\n- **Filters\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "intune/configmgr/core/understand/software-center.md",
-          "title": "Software Center user guide",
-          "url": "https://learn.microsoft.com/en-us/intune/configmgr/core/understand/software-center",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/intune/configmgr/core/understand/software-center.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/intune/configmgr/core/understand/software-center.md"
-        }
-      ],
-      "lines_added": 64,
-      "lines_removed": 62,
-      "metadata_changes": [
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/12ed19f9-ebdf-4c8a-8bcd-7a681836774d"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/12ed19f9-ebdf-4c8a-8bcd-7a681836774d",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2024-10-18T00:00:00Z",
-          "after": "2026-10-20T00:00:00Z",
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3a764584-4f97-452b-8f1d-36f19b12f6ae"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3a764584-4f97-452b-8f1d-36f19b12f6ae",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c"
           ],
           "first_captured": false
         }
