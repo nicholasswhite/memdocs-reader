@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T20:33:48.218483Z",
-  "latest_commit_at": "2026-11-18T20:33:02Z",
+  "generated_at": "2026-11-19T02:37:43.330577Z",
+  "latest_commit_at": "2026-11-19T02:36:57Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,313 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10984,
+  "total_updates": 10986,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "9cfb0908863e-ffdd1869325e",
+      "observed_at": "2026-11-19T02:36:57Z",
+      "observed_date": "2026-11-19",
+      "commit_sha": "9cfb0908863eb8174fd6ee1b0157981c17912081",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/9cfb0908863eb8174fd6ee1b0157981c17912081",
+      "title": "Windows Autopilot device preparation - known issues",
+      "summary": "The captured documentation changed in “Known issues”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Windows Autopilot",
+      "area": "Device Preparation",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "### OOBE experience settings for associated devices may not apply immediately after a reset\n\nDate added: *November 18, 2026*\n\nThis issue affects associated devices after a reset. When the device reboots into the out-of-box experience (OOBE), users might advance through setup before organizational settings are downloaded and applied. For example, users might see OOBE pages that their organization configured to skip. The device might not be renamed as configured.\n\nThe device needs to complete Trusted Platform Module (TPM) attestation and local device association before it can retrieve the correct organizational policy. Retrieving the policy can take about a minute. During this time, settings that customize OOBE pages or rename the device might not yet be applied.\n\nThis issue will be resolved in a future OS release.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "autopilot/device-preparation/known-issues.md",
+          "title": "Windows Autopilot device preparation - known issues",
+          "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/known-issues",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/1ef3cfca06a1740e57f32759308a63b6cbfc791a/autopilot/device-preparation/known-issues.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/9cfb0908863eb8174fd6ee1b0157981c17912081/autopilot/device-preparation/known-issues.md"
+        }
+      ],
+      "lines_added": 13,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "> For more information on using RSS for notifications, see [How to use the docs](https://learn.microsoft.com/en-us/intune/use-docs#notifications) in the Intune documentation."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Known issues"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Device preparation deployments on Windows 365 devices time out after 60 minutes"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "> For more information on using RSS for notifications, see [How to use the docs](https://learn.microsoft.com/en-us/intune/use-docs#notifications) in the Intune documentation."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Known issues"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "### OOBE experience settings for associated devices may not apply immediately after a reset"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Date added: *November 18, 2026*"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "This issue affects associated devices after a reset. When the device reboots into the out-of-box experience (OOBE), users might advance through setup before organizational settings are downloaded and applied. For example, users might see OOBE pages that their organization configured to skip. The device might not be renamed as configured."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "The device needs to complete Trusted Platform Module (TPM) attestation and local device association before it can retrieve the correct organizational policy. Retrieving the policy can take about a minute. During this time, settings that customize OOBE pages or rename the device might not yet be applied."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "This issue will be resolved in a future OS release."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Device preparation deployments on Windows 365 devices time out after 60 minutes"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ai-usage",
+          "label": "ai-usage",
+          "before": null,
+          "after": "ai-assisted",
+          "first_captured": false
+        },
+        {
+          "field": "ms.custom",
+          "label": "Custom classifications",
+          "before": null,
+          "after": "msecd-doc-authoring-1030",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-14T00:00:00Z",
+          "after": "2026-11-18T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "9cfb0908863e-344040318490",
+      "observed_at": "2026-11-19T02:36:57Z",
+      "observed_date": "2026-11-19",
+      "commit_sha": "9cfb0908863eb8174fd6ee1b0157981c17912081",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/9cfb0908863eb8174fd6ee1b0157981c17912081",
+      "title": "Windows Autopilot - known issues",
+      "summary": "The captured documentation changed in “Known issues”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Windows Autopilot",
+      "area": "Windows Autopilot",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "### Windows Autopilot deployment report shows failure after successful pre-provisioning\n\nDate added: *November 16, 2026*\n\nAfter Windows Autopilot pre-provisioning and the device enrollment status page (ESP) complete successfully, the deployment report might incorrectly show **Failure**. The report shows a deployment duration of **0-1 seconds**. This issue appears under **Windows &gt; Monitor &gt; Windows Autopilot deployment status** in the Microsoft Intune admin center.\n\nThis issue occurs when the report treats an installation error from a nonblocking, best-effort Win32 app as an ESP-blocking failure. It affects deployment reporting, not enrollment. The device is enrolled and works normally.\n\nThe report should show **Success** and the actual deployment duration. The individual app's installation error should still appear in app reporting.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "autopilot/known-issues.md",
+          "title": "Windows Autopilot - known issues",
+          "url": "https://learn.microsoft.com/en-us/autopilot/known-issues",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/1ef3cfca06a1740e57f32759308a63b6cbfc791a/autopilot/known-issues.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/9cfb0908863eb8174fd6ee1b0157981c17912081/autopilot/known-issues.md"
+        }
+      ],
+      "lines_added": 11,
+      "lines_removed": 1,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "> For issues with Windows Autopilot with Co-management, see [Windows Autopilot with co-management](../intune/configmgr/comanage/autopilot-enrollment.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Known issues"
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Pre-provisioning fails for Microsoft Entra hybrid join when policy conflict resolution requires domain controller connectivity"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "> For issues with Windows Autopilot with Co-management, see [Windows Autopilot with co-management](../intune/configmgr/comanage/autopilot-enrollment.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Known issues"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "### Windows Autopilot deployment report shows failure after successful pre-provisioning"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Date added: *November 16, 2026*"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "After Windows Autopilot pre-provisioning and the device enrollment status page (ESP) complete successfully, the deployment report might incorrectly show **Failure**. The report shows a deployment duration of **0-1 seconds**. This issue appears under **Windows &gt; Monitor &gt; Windows Autopilot deployment status** in the Microsoft Intune admin center."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "This issue occurs when the report treats an installation error from a nonblocking, best-effort Win32 app as an ESP-blocking failure. It affects deployment reporting, not enrollment. The device is enrolled and works normally."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "The report should show **Success** and the actual deployment duration. The individual app's installation error should still appear in app reporting."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Pre-provisioning fails for Microsoft Entra hybrid join when policy conflict resolution requires domain controller connectivity"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2026-09-08T00:00:00Z",
+          "after": "2026-11-16T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "1ef3cfca06a1-53bce716f175",
       "observed_at": "2026-11-18T20:33:02Z",
@@ -30898,139 +31200,6 @@
             "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd",
             "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-6e3dde96d8a9",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "User-driven Microsoft Entra hybrid join: Install the Intune Connector for Active Directory",
-      "summary": "The captured documentation changed in “Install the Intune Connector for Active Directory”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Tutorial",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "> The Intune Connector for Active Directory versions older than 6.2501.2000.5 are deprecated and can no longer process enrollment requests. For more information, see the [Intune Connector for Active Directory with low-privileged account for Windows Autopilot Hybrid Microsoft Entra join deployments](https://aka.ms/Intune-Connector-blog) blog post.\n> 2. Download and install the updated connector (described in this article).\n> If using multiple domains to enroll Autopilot devices:\n> - You'd need a separate connector instance for each domain. A connector can only process enrollment requests for the same domain as the server it was installed on.\n> - There can be at most 1 connector per server (VM or physical). Additional servers per domain can be set up for redundancy, each with its own connector installed. In that setup, if one connector fails, the requests will go to another connector on another server within the same domain.\nSelect the tab that corresponds to the version of the Intune Connector for Active Directory that is being installed:\n- Before you install, make sure that all of the [Intune connector for Active Directory server requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements) are met.\n- Microsoft recommends (not required) that the administrator installing and configuring the Intune Connector for Active Directory has the domain rights listed in [Intune Connector for Active Directory requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements). These rights allow the Intune Connector for Active Directory installer and configuration process to set permissions for the Managed Service Account (MSA) on the **Computer** con\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "> Intune Connector for Active Directory versions older than 6.2501.2000.5 are deprecated and can no longer process enrollment requests. For more information, see the [Intune Connector for Active Directory with low-privileged account for Windows Autopilot Hybrid Microsoft Entra join deployments](https://aka.ms/Intune-Connector-blog) blog post.\n> 2. Download and install the updated connector, as described in this article.\n> If you use multiple domains to enroll Autopilot devices:\n> - You need a separate connector instance for each domain. A connector can only process enrollment requests for the same domain as the server it was installed on.\n> - There can be at most one connector per server, whether virtual machine or physical. You can set up more servers per domain for redundancy, each with its own connector installed. In that setup, if one connector fails, the requests go to another connector on another server in the same domain.\nSelect the tab that corresponds to the version of the Intune Connector for Active Directory that you want to install:\n- Before you install, ensure that you meet the [Intune connector for Active Directory server requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements).\n- Microsoft recommends (but doesn't require) that the administrator who installs and configures the Intune Connector for Active Directory has the domain rights listed in [Intune Connector for Active Directory requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements). These rights allow the Intune Connector for Active Directory installer and configuration process to set permissions for the Managed Service Account (MSA) on the **Computer\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/tutorial/user-driven/hybrid-azure-ad-join-intune-connector.md",
-          "title": "User-driven Microsoft Entra hybrid join: Install the Intune Connector for Active Directory",
-          "url": "https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/hybrid-azure-ad-join-intune-connector",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/tutorial/user-driven/hybrid-azure-ad-join-intune-connector.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/tutorial/user-driven/hybrid-azure-ad-join-intune-connector.md"
-        }
-      ],
-      "lines_added": 70,
-      "lines_removed": 66,
-      "metadata_changes": [
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-d5a32a490d71",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Deploy Microsoft Entra hybrid joined devices by using Intune and Windows Autopilot",
-      "summary": "The captured documentation changed in “Requirements; Set up Windows automatic MDM enrollment”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Windows Autopilot",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "The list of requirements for performing Microsoft Entra hybrid join during Windows Autopilot is organized into three different categories:\n- **General** - general requirements.\n- **Device enrollment** - device enrollment requirements.\n- **Intune connector** - Intune Connector for Active Directory requirements.\n- Successfully configured the [Microsoft Entra hybrid joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-plan). Be sure to [verify the device registration](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-hybrid-join-verify) by using the [Get-MgDevice](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice) cmdlet.\nThe device to be enrolled must follow these requirements:\n- If using Proxy, Web Proxy Auto-Discovery Protocol (WPAD) Proxy settings option must be enabled and configured.\n- Undergo the out-of-box experience (OOBE).\nAlthough not required, configuring Microsoft Entra hybrid join for Active Directory Federated Services (ADFS) enables a faster Windows Autopilot Microsoft Entra registration process during deployments. Federated customers that aren't supporting the use of passwords and using ADFS need to follow the steps in the article [Active Directory Federation Services prompt=login parameter support](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/ad-fs-prompt-login) to properly configure the authentication experience.\n- The Intune Connector for Active Directory, also known as the Offline Domain Join (ODJ) connector, must be installed on a computer that's running Windows Server 2016 or later with .NET Framework version 4.7.2 or later.\n- To increase scale and availability, multiple connectors can be insta\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "The list of requirements for performing Microsoft Entra hybrid join during Windows Autopilot is organized into three categories:\n- **General**: general requirements\n- **Device enrollment**: device enrollment requirements\n- **Intune connector**: Intune Connector for Active Directory requirements\n- Successfully configure the [Microsoft Entra hybrid joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-plan). Be sure to [verify the device registration](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-hybrid-join-verify) by using the [Get-MgDevice](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice) cmdlet.\nThe device you enroll must meet these requirements:\n- If using a proxy, enable and configure the Web Proxy Auto-Discovery Protocol (WPAD) proxy settings option.\n- Be in the out-of-box experience (OOBE) when starting the Windows Autopilot deployment.\nAlthough not required, configuring Microsoft Entra hybrid join for Active Directory Federated Services (ADFS) enables a faster Windows Autopilot Microsoft Entra registration process during deployments. Federated customers that use ADFS and don't support passwords need to follow the steps in [Active Directory Federation Services prompt=login parameter support](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/ad-fs-prompt-login) to properly configure authentication.\n- Install the Intune Connector for Active Directory, also known as the Offline Domain Join (ODJ) connector, on a computer that runs Windows Server 2016 or later with .NET Framework version 4.7.2 or later.\n- To increase scale and availability, install multiple connectors in a domain. Each connector must be able to c\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/windows-autopilot-hybrid.md",
-          "title": "Deploy Microsoft Entra hybrid joined devices by using Intune and Windows Autopilot",
-          "url": "https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/windows-autopilot-hybrid.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/windows-autopilot-hybrid.md"
-        }
-      ],
-      "lines_added": 181,
-      "lines_removed": 183,
-      "metadata_changes": [
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2025-05-29T00:00:00Z",
-          "after": "2026-10-20T00:00:00Z",
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
           ],
           "after": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
