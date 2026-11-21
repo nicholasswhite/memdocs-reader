@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T20:33:01.468432Z",
-  "latest_commit_at": "2026-11-19T20:32:33Z",
+  "generated_at": "2026-11-21T02:37:07.740014Z",
+  "latest_commit_at": "2026-11-21T02:36:22Z",
   "history_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commits/main/",
   "archive_url": "https://github.com/nicholasswhite/memdocs/tree/4b5429df8b47046c6b251e572ee61199fb5d4a5d",
   "baseline": {
@@ -11,11 +11,579 @@
     "note": "Initial article and image captures are excluded from this feed. The preserved source archive is from September 2, 2026."
   },
   "note": "Dates describe tracker observations, not private Microsoft editing times. Captured content can include reconstruction and media maintenance. Excerpts show exact changed text, with unchanged context for insertion-only edits; they are not a complete article comparison.",
-  "total_updates": 10987,
+  "total_updates": 10994,
   "loaded_updates": 500,
   "truncated": true,
   "selection_note": "Recent metadata changes are included alongside reserved space for article updates. Complete history remains on GitHub.",
   "updates": [
+    {
+      "id": "bf04d14d7e36-db98b04c6afe",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Android Enterprise device settings to configure VPN in Intune",
+      "summary": "The captured documentation changed in “Fully Managed, Dedicated, and Corporate-Owned Work Profile; Personally owned work profile”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "Device Configuration",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "> [!NOTE]\n>\n> Android line-of-business (LOB) apps deployed directly through Intune aren't supported for per-app VPN.\n\n> [!NOTE]\n>\n> Android line-of-business (LOB) apps deployed directly through Intune aren't supported for per-app VPN.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-configuration/templates/ref-vpn-settings-android-enterprise.md",
+          "title": "Android Enterprise device settings to configure VPN in Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-configuration/templates/ref-vpn-settings-android-enterprise",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-configuration/templates/ref-vpn-settings-android-enterprise.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-configuration/templates/ref-vpn-settings-android-enterprise.md"
+        }
+      ],
+      "lines_added": 8,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- **Add**: Select managed apps from the list. When users start the apps you add, traffic automatically routes through the VPN connection."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "For more information, see [Use a VPN and per-app VPN policy on Android Enterprise devices](../../app-management/configuration/configure-vpn-android.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Always-on VPN (fully managed, dedicated, and corporate-owned work profile)"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- **Add**: Select managed apps from the list. When users start the apps you add, traffic automatically routes through the VPN connection."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Android line-of-business (LOB) apps deployed directly through Intune aren't supported for per-app VPN."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "For more information, see [Use a VPN and per-app VPN policy on Android Enterprise devices](../../app-management/configuration/configure-vpn-android.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Always-on VPN (fully managed, dedicated, and corporate-owned work profile)"
+              }
+            ]
+          },
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- **Add**: Select managed apps from the list. When users start the apps you add, traffic automatically routes through the VPN connection."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "For more information, see [Use a VPN and per-app VPN policy on Android Enterprise devices](../../app-management/configuration/configure-vpn-android.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Always-on VPN (personally owned work profile)"
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "- **Add**: Select managed apps from the list. When users start the apps you add, traffic automatically routes through the VPN connection."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "> [!NOTE]"
+              },
+              {
+                "kind": "added",
+                "text": ">"
+              },
+              {
+                "kind": "added",
+                "text": "> Android line-of-business (LOB) apps deployed directly through Intune aren't supported for per-app VPN."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "For more information, see [Use a VPN and per-app VPN policy on Android Enterprise devices](../../app-management/configuration/configure-vpn-android.md)."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "### Always-on VPN (personally owned work profile)"
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "bf04d14d7e36-9337c70d3318",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Set up Intune enrollment of Android Enterprise dedicated devices",
+      "summary": "The captured documentation changed in “You should know”. Compare the added wording and its surrounding context below.",
+      "kind": "updated",
+      "platforms": [
+        "Android"
+      ],
+      "product": "Intune",
+      "area": "Device Enrollment",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "",
+      "after": "## You should know\n\nDevices enrolled into Intune as AE dedicated with Shared Device Mode are automatically set up with Microsoft Authenticator and Company Portal. These devices are enrolled into Intune without a user account and aren't associated with a specific user.\n\nDevices are configured in [Microsoft Entra shared device mode](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-shared-devices) during enrollment. Devices enable single sign-on (SSO) between users across [participating apps](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode). By installing Company Portal, users can also leverage SSO when signing out of [apps that are integrated with the Intune SDK](../../app-management/ref-protected-apps.md), even apps that don't yet participate with shared device mode.",
+      "excerpts_truncated": false,
+      "articles": [
+        {
+          "path": "intune/device-enrollment/android/setup-dedicated.md",
+          "title": "Set up Intune enrollment of Android Enterprise dedicated devices",
+          "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/android/setup-dedicated",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-enrollment/android/setup-dedicated.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-enrollment/android/setup-dedicated.md"
+        }
+      ],
+      "lines_added": 6,
+      "lines_removed": 0,
+      "addition_context": {
+        "hunks": [
+          {
+            "before": [
+              {
+                "kind": "context",
+                "text": "- As a standard Android Enterprise dedicated device that's automatically set up with Microsoft Authenticator and configured for [Microsoft Entra shared device mode](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-shared-devices) during enrollment. Enroll these devices in Intune without a user account and don't associate them with a user. These devices are intended for use with apps that integrate with Microsoft Entra shared device mode, and allow for single sign-in and sign"
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "This article describes how to set up and configure Microsoft Intune to enroll dedicated devices. For more information about Android Enterprise management solutions, see [Get started with Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)(opens Android Enterprise Help Center)."
+              },
+              {
+                "kind": "insertion",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Device requirements"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ],
+            "after": [
+              {
+                "kind": "context",
+                "text": "- As a standard Android Enterprise dedicated device that's automatically set up with Microsoft Authenticator and configured for [Microsoft Entra shared device mode](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-shared-devices) during enrollment. Enroll these devices in Intune without a user account and don't associate them with a user. These devices are intended for use with apps that integrate with Microsoft Entra shared device mode, and allow for single sign-in and sign"
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "This article describes how to set up and configure Microsoft Intune to enroll dedicated devices. For more information about Android Enterprise management solutions, see [Get started with Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)(opens Android Enterprise Help Center)."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "## You should know"
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Devices enrolled into Intune as AE dedicated with Shared Device Mode are automatically set up with Microsoft Authenticator and Company Portal. These devices are enrolled into Intune without a user account and aren't associated with a specific user."
+              },
+              {
+                "kind": "added",
+                "text": ""
+              },
+              {
+                "kind": "added",
+                "text": "Devices are configured in [Microsoft Entra shared device mode](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-shared-devices) during enrollment. Devices enable single sign-on (SSO) between users across [participating apps](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode). By installing Company Portal, users can also leverage SSO when signing out of [apps that are integrated "
+              },
+              {
+                "kind": "gap",
+                "text": "Rest of this source line omitted."
+              },
+              {
+                "kind": "context",
+                "text": ""
+              },
+              {
+                "kind": "context",
+                "text": "## Device requirements"
+              },
+              {
+                "kind": "context",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "truncated": true
+      }
+    },
+    {
+      "id": "bf04d14d7e36-602d80275bae",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Configure actions for noncompliant devices in Intune",
+      "summary": "The captured documentation changed in “Available actions for noncompliance; Create a notification message template”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "- **Add device to retire list**: When this action is performed on a device, the device is added to a list of retired, noncompliant devices in the Intune admin center. You can go to **Devices** &gt; **Compliance** and select the **Retire noncompliant devices** tab to view the list. However, the device isn't retired until an administrator explicitly initiates the retirement process. When an admin retires the device from that list, retirement removes all company data from the device and removes that device from Intune management.\n  > Only devices to which the **Add device to retire list** action is triggered appear in the **Retire selected devices** tab. To see a list of all devices that aren't compliant, see the **Noncompliant devices** report mentioned in [Monitor device compliance policy](monitor-policy.md#other-compliance-reports).\n  To retire one or more devices from the list, select devices to retire and then select **Retire selected devices**. When you choose an action that retires devices, a confirmation dialog appears. It's only after confirming the intent to retire the devices that they're cleared of company data and removed from Intune management.\n   - **Email header – Show company logo** (default = *Enable*) - Upload a logo to add your organization's branding to the email templates. For more information about Company Portal branding, see [Company identity branding customization](../../app-management/configuration/configure-company-portal.md#customizing-the-user-experience).\n   - **Email footer – Show company name** (default = *Enable*) - Enable this setting to show your company name in the email. See **Tenant Value** to review the company name on record.\n   - **Email footer – Show contact information** (default = *Enable*) - Enable this setting to show your org\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "- **Add device to retire list**: When this action is performed on a device, the device is added to a list of retired, noncompliant devices in the Intune admin center. You can go to **Devices** &gt; **Compliance** and select the **Retire noncompliant devices** tab to view the list. The device isn't retired until an administrator explicitly initiates the retirement process. When an admin retires the device from that list, retirement removes all company data from the device and removes that device from Intune management.\n\n  > Only devices for which you trigger the **Add device to retire list** action appear in the **Retire selected devices** tab. To see a list of all devices that aren't compliant, see the **Noncompliant devices** report mentioned in [Monitor device compliance policy](monitor-policy.md#other-compliance-reports).\n  To retire devices from the list, select devices to retire and then select **Retire selected devices**. When you choose an action that retires devices, a confirmation dialog box appears. You must confirm the intent to retire the devices before Intune clears company data and removes the devices from management.\n\n   - **Email header – Show company logo** (default = *Enable*): Upload a logo to add your organization's branding to the email templates. For more information about Company Portal branding, see [Company identity branding customization](../../app-management/configuration/configure-company-portal.md#customizing-the-user-experience).\n   - **Email footer – Show company name** (default = *Enable*): Enable this setting to show your company name in the email. See **Tenant Value** to review the company name on record.\n   - **Email footer – Show contact information** (default = *Enable*): Enable this setting to show your organization's contact inform\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-security/compliance/configure-noncompliance-actions.md",
+          "title": "Configure actions for noncompliant devices in Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/configure-noncompliance-actions",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-security/compliance/configure-noncompliance-actions.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-security/compliance/configure-noncompliance-actions.md"
+        }
+      ],
+      "lines_added": 16,
+      "lines_removed": 12,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Configure your compliance policies with one or more actions for noncompliance to protect devices and your organization from unprotected devices. Actions can remotely lock devices, send email or notifications to device users, and more.",
+          "after": "Configure your compliance policies with one or more actions for noncompliance to protect devices and your organization from unprotected devices.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-01-23T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "bf04d14d7e36-27d985b6565d",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Custom compliance discovery scripts for Microsoft Intune",
+      "summary": "The captured documentation changed in “Limits; Sample discovery script for Linux”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "> On Linux, discovery scripts run in the user's context. They can't check for system-level settings that require elevation. An example of this limitation is the `state/hash` of the `/etc/sudoers` file.\nFor more information, see the [Intune Linux Custom Compliance Samples](https://github.com/microsoft/shell-intune-samples/tree/master/Linux) guide.\nDiscovery scripts for macOS use Bash and must include a valid shebang line (for example, `#!/bin/bash`). Scripts must be UTF-8 encoded without BOM, and must return exit code 0 for success and a non-zero exit code for failure.\nBefore deploying your script in production, test it in an isolated environment to ensure the syntax you use behaves as expected.\n1. Sign into [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** &gt; **Device compliance** &gt; **Scripts** &gt; **Add** &gt; *(choose your platform)*.\n   - **Run this script using the logged on credentials** – Set this value to **Yes** to run the script in the context of the logged-on user.\n   - **Enforce script signature check** – Set this value to **Yes** to require a valid signature on the script.\n   - **Hide script notifications on devices** – Set this value to **Yes** to hide notifications from the script on the device.\n   ***For Windows only*** - On **Settings**, configure the following behavior for the PowerShell script:\n> [!NOTE]\n>\n> The script upload workflow doesn't support scope tags. You must be assigned the default scope tag to create, edit, or view custom compliance discovery scripts.\n- **Run this script using the logged on credentials** – By default, the script runs in the System context on the device. Set this value to **Yes** to have it run in the context of the logged-on user. If the user isn't logge\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "> On Linux, discovery scripts run in your user context. They can't check for system-level settings that require elevation. An example of this limitation is the `state/hash` of the `/etc/sudoers` file.\nFor more information, see [Intune Linux Custom Compliance Samples](https://github.com/microsoft/shell-intune-samples/tree/master/Linux).\nDiscovery scripts for macOS use Bash and must include a valid shebang line, such as `#!/bin/bash`. Scripts must be UTF-8 encoded without BOM, and must return exit code 0 for success and a non-zero exit code for failure.\nBefore you deploy your script in production, test it in an isolated environment to ensure the syntax you use behaves as expected.\n1. Sign in to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** &gt; **Device compliance** &gt; **Scripts** &gt; **Add** &gt; *(choose your platform)*.\n   - **Run this script using the logged on credentials**. Set this value to **Yes** to run the script in the context of the logged-on user.\n   - **Enforce script signature check**. Set this value to **Yes** to require a valid signature on the script.\n   - **Hide script notifications on devices**. Set this value to **Yes** to hide notifications from the script on the device.\n   ***For Windows only***: On **Settings**, configure the following behavior for the PowerShell script:\n   > [!NOTE]\n   >\n   > The script upload workflow doesn't support scope tags. You must be assigned the default scope tag to create, edit, or view custom compliance discovery scripts.\n   - **Run this script using the logged on credentials**. By default, the script runs in the System context on the device. Set this value to **Yes** to have it run in the context of the logged-on user. If the user isn't logged in, th\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-security/compliance/create-custom-script.md",
+          "title": "Custom compliance discovery scripts for Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-custom-script",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-security/compliance/create-custom-script.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-security/compliance/create-custom-script.md"
+        }
+      ],
+      "lines_added": 19,
+      "lines_removed": 18,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-09-04T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "bf04d14d7e36-1935ccedd3e6",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Configure Windows Hello for Business on devices when they enroll with Intune",
+      "summary": "The captured documentation changed in “Create a Windows Hello for Business policy for device enrollment; Related content”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "With Microsoft Intune, you can create a tenant-wide policy that configures use of Windows Hello for Business on devices at the time those devices enroll with Intune. This policy targets your entire organization and supports the Windows Autopilot out-of-box-experience (OOBE).\n- [**Endpoint security Account protection policy**](../../device-configuration/endpoint-security/account-protection.md): To manage settings for Windows Hello on devices after they have enrolled with Intune, use the Intune *Account protection* profile, which is part of endpoint security Account protection policy.\n- [**Security baselines**](../security-baselines/overview.md): Some settings for Windows Hello can be managed by security baselines like the baselines for *Microsoft Defender for Endpoint security* or *Security Baseline for Windows 10 and later*.\n- [**Settings catalog**](../../device-configuration/settings-catalog/index.md): The settings from endpoint security Account protection profiles are available in the Intune settings catalog.\n> Prior to the Anniversary Update (Windows version 1607), you could set two different PINS that could be used to authenticate to resources:\n> - The device PIN could be used to unlock the device and connect to cloud resources.\n> - The work PIN was used to access Microsoft Entra resources on a user's personal device (BYOD).\n> In the Anniversary Update, these two PINS were merged into one single device PIN. Any Intune configuration policies you set to control the device PIN, and additionally, any Windows Hello for Business policies you configured, now both set this new PIN value. If you have set both policy types to control the PIN, the Windows Hello for Business policy is applied. To ensure policy conflicts are resolved and that the PIN policy is applied correctly,\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "By using Microsoft Intune, you can create a tenant-wide policy that configures use of Windows Hello for Business on devices at the time those devices enroll with Intune. This policy targets your entire organization and supports the Windows Autopilot out-of-box-experience (OOBE).\n- [Endpoint security Account protection policy](../../device-configuration/endpoint-security/account-protection.md): To manage settings for Windows Hello on devices after they enroll with Intune, use the Intune *Account protection* profile, which is part of endpoint security Account protection policy.\n- [Security baselines](../security-baselines/overview.md): Some settings for Windows Hello can be managed by security baselines like the baselines for *Microsoft Defender for Endpoint security* or *Security Baseline for Windows 10 and later*.\n- [Settings catalog](../../device-configuration/settings-catalog/index.md): The settings from endpoint security Account protection profiles are available in the Intune settings catalog.\n> Before the Anniversary Update (Windows version 1607), you could set two different PINs that you could use to authenticate to resources:\n> - Use the device PIN to unlock the device and connect to cloud resources.\n> - Use the work PIN to access Microsoft Entra resources on a user's personal device (BYOD).\n> In the Anniversary Update, these two PINs merged into one single device PIN. Any Intune configuration policies you set to control the device PIN, and also, any Windows Hello for Business policies you configured, now both set this new PIN value. If you set both policy types to control the PIN, the Windows Hello for Business policy is applied.\n>\n> To ensure policy conflicts are resolved and that the PIN policy is applied correctly, update your Windows Hello for Business Policy\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-security/identity-protection/configure-tenant-wide-policy.md",
+          "title": "Configure Windows Hello for Business on devices when they enroll with Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/identity-protection/configure-tenant-wide-policy",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-security/identity-protection/configure-tenant-wide-policy.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-security/identity-protection/configure-tenant-wide-policy.md"
+        }
+      ],
+      "lines_added": 17,
+      "lines_removed": 19,
+      "metadata_changes": [
+        {
+          "field": "cmproducts",
+          "label": "Product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/798bd9d1-9cc5-4fc7-b0e5-8699d1f6ce2a",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/798bd9d1-9cc5-4fc7-b0e5-8699d1f6ce2a",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
+          ],
+          "first_captured": false
+        },
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Apply policy for Windows Hello for Business on devices at the time they enroll with Microsoft Intune",
+          "after": "Apply policy for Windows Hello for Business on devices at the time they enroll with Microsoft Intune.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2024-07-23T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        },
+        {
+          "field": "spproducts",
+          "label": "Service product classification",
+          "before": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5dc5f65-34a8-4bfc-9917-97d1e20c88b2"
+          ],
+          "after": [
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
+            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5dc5f65-34a8-4bfc-9917-97d1e20c88b2"
+          ],
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "bf04d14d7e36-279747f17add",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Deploy Windows LAPS policy with Microsoft Intune",
+      "summary": "The captured documentation changed in “About Intune LAPS policy; View device actions status”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "When you're ready to manage the *Windows Local Administrator Password Solution* ([Windows LAPS](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview)) on Windows devices you manage with Microsoft Intune, the information in this article can help you use the Intune admin center to:\nBefore creating policies, be familiar with the information in [Microsoft Intune support for Windows LAPS](overview.md), which includes:\nWindows LAPS allows for the management of a single local administrator account per device. Intune policy can specify which local admin account it applies to by use of the policy setting **Administrator Account Name**. If the account name specified in the policy isn't present on the device, no account is managed. However, when **Administrator Account Name** is left blank, the policy defaults to the devices built-in local admin account that is identified by its well-known relative identifier (RID).\nConfigure and assign LAPS policies carefully. The Windows LAPS CSP supports a single configuration for each LAPS setting on a device. Devices that receive multiple Intune policies that include conflicting settings can fail to process policy. Conflicts can also prevent the backup of the managed local admin account and password to your tenants Directory.\nTo help reduce potential conflicts, we recommend assigning a single LAPS policy to each device through device groups, and not through user groups. While LAPS policy supports user group assignments, they can result in a cycle of changing LAPS configurations each time a different user signs in to a device. Frequently changing policies can introduce conflicts, a lack of device compliance with requirements, and create confusion around which local admin account from a device is currently being managed.\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "When you're ready to manage the *Windows Local Administrator Password Solution* ([LAPS](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview)) on Windows devices you manage with Microsoft Intune, the information in this article can help you use the Intune admin center to:\nBefore you create policies, be familiar with the information in [Microsoft Intune support for Windows LAPS](overview.md), which includes:\nWindows LAPS allows for the management of a single local administrator account per device. Intune policy can specify which local admin account it applies to by use of the policy setting **Administrator Account Name**. If the account name specified in the policy isn't present on the device, no account is managed. When **Administrator Account Name** is left blank, the policy defaults to the device's built-in local admin account that is identified by its well-known relative identifier (RID).\nConfigure and assign LAPS policies carefully. The Windows LAPS CSP supports a single configuration for each LAPS setting on a device. Devices that receive multiple Intune policies that include conflicting settings can fail to process a policy. Conflicts can also prevent the backup of the managed local admin account and password to your tenant's Directory.\nTo help reduce potential conflicts, assign a single LAPS policy to each device through device groups, and not through user groups. While LAPS policy supports user group assignments, they can result in a cycle of changing LAPS configurations each time a different user signs in to a device. Frequently changing policies can introduce conflicts, a lack of device compliance with requirements, and create confusion around which local admin account from a device is currently being managed.\nTo create or manage a LAPS\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-security/laps/deploy-policy.md",
+          "title": "Deploy Windows LAPS policy with Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/laps/deploy-policy",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-security/laps/deploy-policy.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-security/laps/deploy-policy.md"
+        }
+      ],
+      "lines_added": 46,
+      "lines_removed": 44,
+      "metadata_changes": [
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-07-22T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
+    {
+      "id": "bf04d14d7e36-5804b5bf386e",
+      "observed_at": "2026-11-21T02:36:22Z",
+      "observed_date": "2026-11-21",
+      "commit_sha": "bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244",
+      "title": "Microsoft Intune support for Windows LAPS",
+      "summary": "The captured documentation changed in “Prerequisites; Role based access controls for LAPS”. Compare the actual removed and added wording below.",
+      "kind": "updated",
+      "platforms": [
+        "Windows"
+      ],
+      "product": "Intune",
+      "area": "Device Security",
+      "minor": false,
+      "summary_source": "automatic",
+      "before": "Every Windows machine has a built-in local administrator account that can't be deleted, and which has full permissions to the device. Securing this account is an important step in securing your organization. Windows devices include *Windows Local Administrator Password Solution* ([LAPS](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview)), a built-in solution to help manage local admin accounts.\nYou can use Microsoft Intune endpoint security policies for [account protection](../../device-configuration/endpoint-security/account-protection.md) to manage LAPS on devices that have enrolled with Intune. Intune policies can:\n- Enforce password requirements for local admin accounts\n- Back up a local admin account from devices to your Active Directory (AD) or Microsoft Entra\nYou can also view details about the managed local admin accounts in the Intune Admin center, and manually rotate their account passwords outside of a scheduled rotation.\nUse of Intune LAPS policies helps you protect Windows devices from attacks that are aimed at exploiting local user accounts like pass-the-hash or lateral-traversal attacks. Managing LAPS with Intune can also help improve security for remote help desk scenarios and recover devices that are otherwise inaccessible.\n- **Set password requirements** - Define password requirements including complexity and length for the local administrator account on a device.\n- **Rotate passwords** - With policy you can have devices automatically rotate the local admin account passwords on a schedule. You can also use the Intune admin center to manually rotate the password for a device as a device action.\n- **Backup accounts and passwords** - You can choose to have devices back up their account and password in either Microsoft Entra ID i\n[Excerpt shortened — open the full change for the rest.]",
+      "after": "Every Windows machine has a built-in local administrator account that you can't delete, and it has full permissions to the device. Securing this account is an important step in securing your organization. Windows devices include *Windows Local Administrator Password Solution* ([LAPS](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview)), a built-in solution to help manage local admin accounts.\nYou can use Microsoft Intune endpoint security policies for [account protection](../../device-configuration/endpoint-security/account-protection.md) to manage LAPS on devices that enroll with Intune. Intune policies can:\n- Enforce password requirements for local admin accounts.\n- Back up a local admin account from devices to your Active Directory (AD) or Microsoft Entra.\nYou can also view details about the managed local admin accounts in the Intune admin center, and manually rotate their account passwords outside of a scheduled rotation.\nUse of Intune LAPS policies helps you protect Windows devices from attacks that exploit local user accounts like pass-the-hash or lateral-traversal attacks. Managing LAPS with Intune can also help improve security for remote help desk scenarios and recover devices that are otherwise inaccessible.\n- **Set password requirements**. Define password requirements including complexity and length for the local administrator account on a device.\n- **Rotate passwords**. With policy you can have devices automatically rotate the local admin account passwords on a schedule. You can also use the Intune admin center to manually rotate the password for a device as a device action.\n- **Backup accounts and passwords**. You can choose to have devices back up their account and password in either Microsoft Entra ID in the cloud, or your on-pre\n[Excerpt shortened — open the full change for the rest.]",
+      "excerpts_truncated": true,
+      "articles": [
+        {
+          "path": "intune/device-security/laps/overview.md",
+          "title": "Microsoft Intune support for Windows LAPS",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/laps/overview",
+          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bd0c219a5c0bbe0a0e420af7a339dfa04fc71ef9/intune/device-security/laps/overview.md",
+          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/bf04d14d7e36191dd3d5b6cfa1aaf02de94f1244/intune/device-security/laps/overview.md"
+        }
+      ],
+      "lines_added": 57,
+      "lines_removed": 56,
+      "metadata_changes": [
+        {
+          "field": "description",
+          "label": "Page description",
+          "before": "Learn how you can use Microsoft Microsoft Intune and application protection policy to manage the local administrator accounts on Windows devices. Through the Windows LAPS CSP, back up accounts and passwords to Microsoft Entra ID, define password requirements, and protect account passwords through scheduled password rotations and manual rotations at need.",
+          "after": "Learn how you can use Microsoft Microsoft Intune and application protection policy to manage the local administrator accounts on Windows devices.",
+          "first_captured": false
+        },
+        {
+          "field": "ms.date",
+          "label": "Document date",
+          "before": "2025-05-29T00:00:00Z",
+          "after": "2026-11-11T00:00:00Z",
+          "first_captured": false
+        }
+      ],
+      "metadata_baseline": false
+    },
     {
       "id": "bd0c219a5c0b-87f019c7bb73",
       "observed_at": "2026-11-19T20:32:33Z",
@@ -30856,386 +31424,6 @@
           "label": "Document date",
           "before": "2026-08-07T00:00:00Z",
           "after": "2026-10-21T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-251d5aa71362",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Create device groups for Windows Autopilot",
-      "summary": "The captured documentation changed in “Create a Windows Autopilot device group using Intune; Add devices”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Windows Autopilot",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "- To create a group that includes all the Windows Autopilot devices with a specific Purchase Order ID, enter: `(device.devicePhysicalIds -any (_ -eq \"[PurchaseOrderId]:76222342342\"))` **Save** the expressions.\nFor a detailed tutorial on creating a device group for each of the Windows Autopilot scenarios using Intune, see the following links:\n- [User-driven Microsoft Entra join: Create a device group](tutorial/user-driven/azure-ad-join-device-group.md).\n- [User-driven Microsoft Entra hybrid join: Create a device group](tutorial/user-driven/hybrid-azure-ad-join-device-group.md).\n- [Pre-provision Microsoft Entra join: Create a device group](tutorial/pre-provisioning/azure-ad-join-device-group.md).\n- [Pre-provision Microsoft Entra hybrid join: Create a device group](tutorial/pre-provisioning/hybrid-azure-ad-join-device-group.md).\n- [Self-deploying mode: Create a device group](tutorial/self-deploying/self-deploying-device-group.md).\nThe dynamic device group that includes Windows Autopilot devices automatically adds existing Windows Autopilot devices to the device group. To manually add new devices as Windows Autopilot devices using a CSV file so that they become part of the device group, see [Manually register devices with Windows Autopilot](add-devices.md).\nA licensed Intune user can be assigned to a specific Windows Autopilot device. For supported OEMs, this assignment will:\n- Pre-populate the Microsoft Entra user Principal Name (UPN) under the pre-provisioning landing page and Microsoft Entra sign-in page.\n- Allows setting of a custom greeting name.\nFor more information including a list of supported OEMs, see [Return of key functionality for Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/return-of-key-fu\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "- To create a group that includes all the Windows Autopilot devices with a specific Purchase Order ID, enter: `(device.devicePhysicalIds -any (_ -eq \"[PurchaseOrderId]:76222342342\"))`\n\n     **Save** the expressions.\nFor a detailed tutorial on creating a device group for each of the Windows Autopilot scenarios using Intune, see the following resources:\n- [User-driven Microsoft Entra join: Create a device group](tutorial/user-driven/azure-ad-join-device-group.md)\n- [User-driven Microsoft Entra hybrid join: Create a device group](tutorial/user-driven/hybrid-azure-ad-join-device-group.md)\n- [Pre-provision Microsoft Entra join: Create a device group](tutorial/pre-provisioning/azure-ad-join-device-group.md)\n- [Pre-provision Microsoft Entra hybrid join: Create a device group](tutorial/pre-provisioning/hybrid-azure-ad-join-device-group.md)\n- [Self-deploying mode: Create a device group](tutorial/self-deploying/self-deploying-device-group.md)\nThe dynamic device group that includes Windows Autopilot devices automatically adds existing Windows Autopilot devices to the device group. To manually add new devices as Windows Autopilot devices by using a CSV file so they become part of the device group, see [Manually register devices with Windows Autopilot](add-devices.md).\nYou can assign a licensed Intune user to a specific Windows Autopilot device. For supported manufacturers, this assignment:\n- Prepopulates the Microsoft Entra user Principal Name (UPN) under the pre-provisioning landing page and Microsoft Entra sign-in page.\n- Enables setting a custom greeting name.\nFor more information, including a list of supported manufacturers, see [Return of key functionality for Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/re\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/enrollment-autopilot.md",
-          "title": "Create device groups for Windows Autopilot",
-          "url": "https://learn.microsoft.com/en-us/autopilot/enrollment-autopilot",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/enrollment-autopilot.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/enrollment-autopilot.md"
-        }
-      ],
-      "lines_added": 48,
-      "lines_removed": 44,
-      "metadata_changes": [
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2024-09-13T00:00:00Z",
-          "after": "2026-10-21T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-9d6186cb4183",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Overview of Windows Autopilot",
-      "summary": "The captured documentation changed in “Process overview; Requirements”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Windows Autopilot",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "Windows Autopilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. Windows Autopilot can be used to deploy Windows PCs or HoloLens 2 devices. For more information about deploying HoloLens 2 with Windows Autopilot, see [Windows Autopilot for HoloLens 2](https://learn.microsoft.com/en-us/hololens/hololens2-autopilot).\nWindows Autopilot can also be used to reset, repurpose, and recover devices. This solution enables an IT department to achieve these goals with little to no infrastructure to manage, with a process that's easy and simple.\nWindows Autopilot simplifies the Windows device lifecycle, for both IT and end users, from initial deployment to end of life. Using cloud-based services, Windows Autopilot:\nWhen new Windows devices are initially deployed, Windows Autopilot uses the OEM-optimized version of Windows client. This version is preinstalled on the device, so custom images and drivers for every device model don't have to be maintained. Instead of re-imaging the device, the existing Windows installation can be transformed into a \"business-ready\" state that can:\n- Change the edition of Windows being used to support advanced features. For example, from Windows Pro to Windows Enterprise.\n![Process overview.](images/image1.png)\nOnce deployed, Windows devices can be managed with:\nA [supported version](https://learn.microsoft.com/en-us/windows/release-information/) of Windows semi-annual channel is required to use Windows Autopilot. For more information, see [Windows Autopilot software](https://learn.microsoft.com/en-us/autopilot/requirements?tabs=software), [networking](https://learn.microsoft.com/en-us/autopilot/requirements?tabs=networking), [configuration](https://learn.microsoft.com/en-us/autopilot/r\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "Windows Autopilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. You can use Windows Autopilot to deploy Windows PCs or HoloLens 2 devices. For more information, see [Windows Autopilot for HoloLens 2](https://learn.microsoft.com/en-us/hololens/hololens2-autopilot).\nYou can also use Windows Autopilot to reset, repurpose, and recover devices. This solution enables an IT department to achieve these goals with little to no infrastructure to manage, with a process that's easy and simple.\nWindows Autopilot simplifies the Windows device lifecycle, for both IT and end users, from initial deployment to end of life. By using cloud-based services, Windows Autopilot:\nWhen new Windows devices are initially deployed, Windows Autopilot uses the OEM-optimized version of Windows client. This version is preinstalled on the device, so custom images and drivers for every device model don't have to be maintained. Instead of re-imaging the device, the existing Windows installation can be transformed into a *business-ready* state that can:\n- Change the edition of Windows to support advanced features, such as upgrading from Windows Pro to Windows Enterprise.\n![Diagram provides an overview of the process.](images/image1.png)\nAfter deployment, you can manage Windows devices by using:\nTo use Windows Autopilot, you need a [supported version](https://learn.microsoft.com/en-us/windows/release-information/) of Windows semi-annual channel. For more information, see [Windows Autopilot software](https://learn.microsoft.com/en-us/autopilot/requirements?tabs=software), [networking](https://learn.microsoft.com/en-us/autopilot/requirements?tabs=networking), [configuration](https://learn.microsoft.com/en-us/autopilot/requirements?tabs=conf\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/overview.md",
-          "title": "Overview of Windows Autopilot",
-          "url": "https://learn.microsoft.com/en-us/autopilot/overview",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/overview.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/overview.md"
-        }
-      ],
-      "lines_added": 17,
-      "lines_removed": 17,
-      "metadata_changes": [
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2025-06-13T00:00:00Z",
-          "after": "2026-10-20T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-937ed221b781",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Windows Autopilot for pre-provisioned deployment",
-      "summary": "The captured documentation changed in “Requirements; Preparation”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Windows Autopilot",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "![Diagram of the OEM process.](images/wg01.png)\nWith **Windows Autopilot for pre-provisioned deployment**, the provisioning process is split. The time-consuming portions are done by IT, partners, or OEMs. The end user simply completes a few necessary settings and policies and then they can begin using their device.\n![Diagram of the OEM process with partner.](images/wg02.png)\n- Network connectivity. Using wireless connectivity requires selecting region, language and keyboard before being able to connect and start provisioning.\n> - Because the OEM or vendor performs the pre-provisioning process, this process **doesn't require access to an end-user's on-prem domain infrastructure**. The pre-provisioning process is unlike a typical Microsoft Entra hybrid joined scenario because rebooting the device is postponed. The device is resealed before the time when connectivity to a domain controller is expected. Instead the domain network is contacted when the device is unboxed on-premises by the end-user.\n> - See [Windows Autopilot known issues](known-issues.md) and [Troubleshooting Windows Autopilot device import and enrollment](troubleshooting-faq.yml#troubleshooting-windows-autopilot-device-import-and-enrollment) to review known issues and their solutions.\nDevices slated for pre-provisioning are registered for Windows Autopilot via the normal registration process.\nTo be ready to try out Windows Autopilot for pre-provisioned deployment, make sure that existing Windows Autopilot user-driven scenarios can be successfully used:\n- User-driven Microsoft Entra join. Make sure that devices can be deployed using Windows Autopilot and join them to a Microsoft Entra ID tenant.\n- User-driven with Microsoft Entra hybrid join. To enable the features of Microsoft Entra hybrid join, make sure t\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "![Diagram shows the OEM process, which includes the OEM and the end user.](images/wg01.png)\nBy using **Windows Autopilot for pre-provisioned deployment**, you can split the provisioning process. IT, partners, or hardware manufacturers complete the time-consuming portions. The end user completes a few necessary settings and policies and then can begin using their device.\n![Diagram shows the OEM process with partner between the OEM and the end user.](images/wg02.png)\n- Network connectivity. Using wireless connectivity requires selecting region, language, and keyboard before you can connect and start provisioning.\n> - Because the manufacturer or vendor performs the pre-provisioning process, this process **doesn't require access to an end-user's on-prem domain infrastructure**. The pre-provisioning process is unlike a typical Microsoft Entra hybrid joined scenario because restarting the device is postponed. The device is resealed before the time when connectivity to a domain controller is expected. Instead the domain network is contacted when the device is unboxed on-premises by the end-user.\n> - To review known issues, see [Windows Autopilot known issues](known-issues.md) and [Troubleshooting Windows Autopilot device import and enrollment](troubleshooting-faq.yml#troubleshooting-windows-autopilot-device-import-and-enrollment).\nDevices slated for pre-provisioning are registered for Windows Autopilot by using the normal registration process.\nTo be ready to try out Windows Autopilot for pre-provisioned deployment, ensure that you can successfully use existing Windows Autopilot user-driven scenarios:\n- User-driven Microsoft Entra join. Ensure that you can deploy devices by using Windows Autopilot and join them to a Microsoft Entra ID tenant.\n- User-driven with Microsoft Entra\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/pre-provision.md",
-          "title": "Windows Autopilot for pre-provisioned deployment",
-          "url": "https://learn.microsoft.com/en-us/autopilot/pre-provision",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/pre-provision.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/pre-provision.md"
-        }
-      ],
-      "lines_added": 52,
-      "lines_removed": 49,
-      "metadata_changes": [
-        {
-          "field": "description",
-          "label": "Page description",
-          "before": "Windows Autopilot for pre-provisioned deployment.",
-          "after": "Windows Autopilot helps organizations provision new devices by using the preinstalled manufacturer image and drivers. Learn how users get their devices ready.",
-          "first_captured": false
-        },
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2025-04-09T00:00:00Z",
-          "after": "2026-10-21T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-8f50d02e6714",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Configure Windows Autopilot profiles",
-      "summary": "The captured documentation changed in “Create a Windows Autopilot deployment profile; Edit a Windows Autopilot deployment profile”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Windows Autopilot",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "After the [device group](enrollment-autopilot.md) is created, a Windows Autopilot deployment profile can be applied to each device in the group. Deployment profiles determine the deployment mode, and customize the out-of-box experience (OOBE) for end users.\nWindows Autopilot profiles can be created via:\n1. [Microsoft 365 admin center](https://admin.microsoft.com/).\n2. [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).\n3. [Intune graph](https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview).\nFor Intune managed devices, pre-provisioning, self-deploying, and co-management profiles can only be created and assigned in Intune.\nWindows Autopilot deployment profiles are used to configure the Windows Autopilot devices. Up to 350 profiles can be created per tenant.\n2. In the **Home** screen, select **Devices** in the left hand pane.\n3. In the **Devices | Overview** screen, under **By platform**, select **Windows**.\n4. In the **Windows | Windows devices** screen, under **Device onboarding**, select **Enrollment**.\n5. In the **Windows | Windows enrollment** screen, under **Windows Autopilot**, select **Deployment Profiles**\n6. In the **Windows Autopilot deployment profiles** screen, select the **Create Profile** drop down menu and then select either **Windows PC** or **HoloLens**. This article explains how to set up Windows Autopilot for a Windows PC. For more information about Windows Autopilot and HoloLens, see [Windows Autopilot for HoloLens 2](https://learn.microsoft.com/en-us/hololens/hololens2-autopilot).\n7. In the **Create profile** screen, on the **Basics** page, enter a **Name** and optional **Description**.\n8. If all devices in the assigned groups should automatically register to Windows Autopilot, set **Convert all tar\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "After you create the [device group](enrollment-autopilot.md), you can apply a Windows Autopilot deployment profile to each device in the group. Deployment profiles determine the deployment mode, and customize the out-of-box experience (OOBE) for end users.\nYou can create Windows Autopilot profiles by using the following resources:\n- [Microsoft 365 admin center](https://admin.microsoft.com/)\n- [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)\n- [Intune graph](https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview)\nFor Intune managed devices, you can only create and assign pre-provisioning, self-deploying, and co-management profiles in Intune.\nUse Windows Autopilot deployment profiles to configure Windows Autopilot devices. You can create up to 350 profiles per tenant.\n2. In the **Home** screen, in the left pane, select **Devices**.\n3. In **Devices | Overview**, under **By platform**, select **Windows**.\n4. In **Windows | Windows devices**, under **Device onboarding**, select **Enrollment**.\n5. In **Windows | Windows enrollment**, under **Windows Autopilot**, select **Deployment profiles**.\n6. In **Windows Autopilot deployment profiles**, select **Create profile** and then select either **Windows PC** or **HoloLens**. This article explains how to set up Windows Autopilot for a Windows PC. For more information about Windows Autopilot and HoloLens, see [Windows Autopilot for HoloLens 2](https://learn.microsoft.com/en-us/hololens/hololens2-autopilot).\n7. In **Create profile**, on the **Basics** page, enter a **Name** and optional **Description**.\n8. To automatically register all devices in the assigned groups to Windows Autopilot, set **Convert all targeted devices to Autopilot** to **Yes**.\n\n   All corporate owned, non-Win\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/profiles.md",
-          "title": "Configure Windows Autopilot profiles",
-          "url": "https://learn.microsoft.com/en-us/autopilot/profiles",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/profiles.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/profiles.md"
-        }
-      ],
-      "lines_added": 55,
-      "lines_removed": 48,
-      "metadata_changes": [
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4b132a0c-342a-42eb-91ff-8159e1ed413d"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4b132a0c-342a-42eb-91ff-8159e1ed413d",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "description",
-          "label": "Page description",
-          "before": "Learn how to configure device profiles for Windows Autopilot deployment.",
-          "after": "Learn how to configure device profiles for Windows Autopilot deployment. Profiles determine the deployment mode, and customize the out-of-box experience.",
-          "first_captured": false
-        },
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2025-03-27T00:00:00Z",
-          "after": "2026-10-21T00:00:00Z",
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235"
-          ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-2f2ae03026ba",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Windows Autopilot troubleshooting FAQ",
-      "summary": "The captured article wording changed. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Windows Autopilot",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "- [Windows 11](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions).\n  - [Windows 10](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client#windows-10-supported-versions).\n  - question: What concepts should be understood when troubleshooting Windows Autopilot?\n      5. Automatic mobile device management (MDM) enrollment occurs. As part of the Microsoft Entra join process, the device enrolls in the MDM service configured in Microsoft Entra ID (for example, Microsoft Intune).\n      6. Settings are applied. If the [enrollment status page](enrollment-status.md) is configured, most settings are applied while the enrollment status page is displayed. If not configured or available, settings will be applied after the user is signed in.\n      When an Internet-connected Windows device boots up, it attempts to connect to the Windows Autopilot service and download a Windows Autopilot profile. The Windows Autopilot profile is downloaded as soon as possible, and again after each reboot.\n      > At this stage, it's important that a Windows Autopilot profile exists in the tenant so that a blank profile isn't cached locally on the device. If necessary, a new Windows Autopilot profile can be retrieved by rebooting the device.\n      > If a computer needs to be rebooted during the Windows out-of-box experience (OOBE) to retrieve a new Windows Autopilot profile:\n      > 1. Select Shift-F10 to open a command prompt window.\n      > 2. In the command prompt window, enter one of the following two commands:\n      On [Windows 11](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions), the Windows Autopilot diagnostic page can\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "- [Windows 11](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions)\n  - [Windows 10](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client#windows-10-supported-versions)\n  - question: What concepts should you understand when troubleshooting Windows Autopilot?\n      5. Automatic mobile device management (MDM) enrollment occurs. As part of the Microsoft Entra join process, the device enrolls in the MDM service configured in Microsoft Entra ID, for example, Microsoft Intune.\n      6. Settings are applied. If the [enrollment status page](enrollment-status.md) is configured, most settings are applied while the enrollment status page is displayed. If not configured or available, settings apply after the user is signed in.\n      When an Internet-connected Windows device starts, it attempts to connect to the Windows Autopilot service and download a Windows Autopilot profile. The Windows Autopilot profile is downloaded as soon as possible, and again after each restart.\n      > At this stage, it's important that a Windows Autopilot profile exists in the tenant so that a blank profile isn't cached locally on the device. If necessary, a new Windows Autopilot profile can be retrieved by restarting the device.\n      > If a computer needs to be restarted during the Windows out-of-box experience (OOBE) to get a new Windows Autopilot profile:\n      > 1. Select `Shift`+`F10` to open a Command Prompt window.\n      > 2. In the Command Prompt window, enter one of the following commands:\n      On [Windows 11](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions), the Windows Autopilot diagnostic page can be opened to vie\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/troubleshooting-faq.yml",
-          "title": "Windows Autopilot troubleshooting FAQ",
-          "url": "https://learn.microsoft.com/en-us/autopilot/troubleshooting-faq",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/troubleshooting-faq.yml",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/troubleshooting-faq.yml"
-        }
-      ],
-      "lines_added": 36,
-      "lines_removed": 36,
-      "metadata_changes": [
-        {
-          "field": "description",
-          "label": "Page description",
-          "before": "Troubleshooting of common Windows Autopilot issues",
-          "after": "Use this information to understand and troubleshoot some common Windows Autopilot issues that you might encounter.",
-          "first_captured": false
-        },
-        {
-          "field": "ms.date",
-          "label": "Document date",
-          "before": "2025-04-21T00:00:00Z",
-          "after": "2026-10-21T00:00:00Z",
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-fb9fad3a35fc",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Pre-provision Microsoft Entra hybrid join: Increase the computer account limit in the Organizational Unit (OU)",
-      "summary": "The captured documentation changed in “Increase the computer account limit in the Organizational Unit (OU)”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Tutorial",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "> - The administrator that installed and configured the Intune Connector had appropriate rights as outlined above, but the [Managed Service Account (MSA)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#standalone-managed-service-accounts) could not be granted permission to create computer objects in the organizational unit(s) specified during the Intune Connector installation. For more information, see [Configure the new Microsoft Intune connector for Active Directory with the least privilege principle](https://techcommunity.microsoft.com/blog/intunecustomersuccess/configure-the-new-microsoft-intune-connector-for-active-directory-with-the-least/4432478).\nWith default permissions in Active Directory, domain joins by the Intune Connector for Active Directory might initially work without any permission modifications to the OU in Active Directory. However after MSA attempts to join more than 10 computers to the on-premises domain, it would stop working because by default, Active Directory only allows any single account to join up to 10 computers to the on-premises domain.\nIf the administrator installing or configuring the Intune Connector for Active Directory doesn't have the necessary permissions to set permissions on the OUs, then the following steps need to be followed:\n1. Sign in to a computer that has access to the **Active Directory Users and Computers** console with an account that as the necessary permissions to set permissions on OUs.\n3. Expand the desired domain and navigate to the organizational unit (OU) that computers are joining to during Windows Autopilot.\n   > The OU that computers join during the Windows Autopilot deployment is specified later during the **Configure and assign domain join profile** step.\n5\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "> - The administrator that installed and configured the Intune Connector had appropriate rights as outlined above, but the [Managed Service Account (MSA)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#standalone-managed-service-accounts) couldn't be granted permission to create computer objects in the organizational unit(s) specified during the Intune Connector installation. For more information, see [Configure the new Microsoft Intune connector for Active Directory with the least privilege principle](https://techcommunity.microsoft.com/blog/intunecustomersuccess/configure-the-new-microsoft-intune-connector-for-active-directory-with-the-least/4432478).\nWith default permissions in Active Directory, domain joins by the Intune Connector for Active Directory might initially work without any permission modifications to the OU in Active Directory. After MSA attempts to join more than 10 computers to the on-premises domain, it would stop working because, by default, Active Directory only allows any single account to join up to 10 computers to the on-premises domain.\nIf the administrator who installs or configures the Intune Connector for Active Directory doesn't have the necessary permissions to set permissions on the OUs, then use the following steps:\n1. Sign in to a computer that has access to the **Active Directory Users and Computers** console with an account that has the necessary permissions to set permissions on OUs.\n3. Expand the desired domain and navigate to the organizational unit (OU) that computers join to during Windows Autopilot.\n   > You specify the OU that computers join during the Windows Autopilot deployment later in the **Configure and assign domain join profile** step.\n5. In the OU **Properties** windows\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-computer-account-limit.md",
-          "title": "Pre-provision Microsoft Entra hybrid join: Increase the computer account limit in the Organizational Unit (OU)",
-          "url": "https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-computer-account-limit",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-computer-account-limit.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-computer-account-limit.md"
-        }
-      ],
-      "lines_added": 25,
-      "lines_removed": 25,
-      "metadata_changes": [
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4b132a0c-342a-42eb-91ff-8159e1ed413d"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
-          "first_captured": false
-        }
-      ],
-      "metadata_baseline": false
-    },
-    {
-      "id": "6e26907cb50b-9aeaf721c7bd",
-      "observed_at": "2026-10-29T19:33:30Z",
-      "observed_date": "2026-10-29",
-      "commit_sha": "6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "commit_url": "https://github.com/nicholasswhite/memdocs-change-tracker/commit/6e26907cb50baec2f6e21e68208bc969fbd9475b",
-      "title": "Pre-provision Microsoft Entra hybrid join: Install the Intune Connector for Active Directory",
-      "summary": "The captured documentation changed in “Install the Intune Connector for Active Directory”. Compare the actual removed and added wording below.",
-      "kind": "updated",
-      "platforms": [
-        "Windows"
-      ],
-      "product": "Windows Autopilot",
-      "area": "Tutorial",
-      "minor": false,
-      "summary_source": "automatic",
-      "before": "> The Intune Connector for Active Directory versions older than 6.2501.2000.5 are deprecated and can no longer process enrollment requests. For more information, see the [Intune Connector for Active Directory with low-privileged account for Windows Autopilot Hybrid Microsoft Entra join deployments](https://aka.ms/Intune-Connector-blog) blog post.\n> 2. Download and install the updated connector (described in this article).\n> If using multiple domains to enroll Autopilot devices:\n> - You'd need a separate connector instance for each domain. A connector can only process enrollment requests for the same domain as the server it was installed on.\n> - There can be at most 1 connector per server (VM or physical). Additional servers per domain can be set up for redundancy, each with its own connector installed. In that setup, if one connector fails, the requests will go to another connector on another server within the same domain.\nSelect the tab that corresponds to the version of the Intune Connector for Active Directory that is being installed:\n- Before you install, make sure that all of the [Intune connector for Active Directory server requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements) are met.\n- Microsoft recommends (not required) that the administrator installing and configuring the Intune Connector for Active Directory has the domain rights listed in [Intune Connector for Active Directory requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements). These rights allow the Intune Connector for Active Directory installer and configuration process to set permissions for the Managed Service Account (MSA) on the **Computer** con\n[Excerpt shortened — open the full change for the rest.]",
-      "after": "> Intune Connector for Active Directory versions older than 6.2501.2000.5 are deprecated and can no longer process enrollment requests. For more information, see the [Intune Connector for Active Directory with low-privileged account for Windows Autopilot Hybrid Microsoft Entra join deployments](https://aka.ms/Intune-Connector-blog) blog post.\n> 2. Download and install the updated connector, as described in this article.\n> If you use multiple domains to enroll Autopilot devices:\n> - You need a separate connector instance for each domain. A connector can only process enrollment requests for the same domain as the server it was installed on.\n> - There can be at most one connector per server, whether virtual machine or physical. You can set up more servers per domain for redundancy, each with its own connector installed. In that setup, if one connector fails, the requests go to another connector on another server in the same domain.\nSelect the tab that corresponds to the version of the Intune Connector for Active Directory that you want to install:\n- Before you install, ensure that you meet the [Intune connector for Active Directory server requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements).\n- Microsoft recommends (but doesn't require) that the administrator who installs and configures the Intune Connector for Active Directory has the domain rights listed in [Intune Connector for Active Directory requirements](https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid?tabs=intune-connector-requirements#requirements). These rights allow the Intune Connector for Active Directory installer and configuration process to set permissions for the Managed Service Account (MSA) on the **Computer\n[Excerpt shortened — open the full change for the rest.]",
-      "excerpts_truncated": true,
-      "articles": [
-        {
-          "path": "autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-intune-connector.md",
-          "title": "Pre-provision Microsoft Entra hybrid join: Install the Intune Connector for Active Directory",
-          "url": "https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-intune-connector",
-          "old_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/c957dc5ea0665f71b581749dc5b121b6ab44c6e2/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-intune-connector.md",
-          "new_url": "https://github.com/nicholasswhite/memdocs-change-tracker/blob/6e26907cb50baec2f6e21e68208bc969fbd9475b/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-intune-connector.md"
-        }
-      ],
-      "lines_added": 70,
-      "lines_removed": 66,
-      "metadata_changes": [
-        {
-          "field": "cmproducts",
-          "label": "Product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/37da4cc9-0cfc-42a9-ba5e-805706b01ef8",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f"
-          ],
-          "first_captured": false
-        },
-        {
-          "field": "spproducts",
-          "label": "Service product classification",
-          "before": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
-          "after": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12",
-            "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3661fb96-d414-4a4e-b7ad-9370637790dd"
-          ],
           "first_captured": false
         }
       ],
